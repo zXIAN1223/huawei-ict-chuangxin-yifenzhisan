@@ -94,6 +94,13 @@
   box-sizing: border-box;
 }
 
+/* 作者样式里的 display（如 .banner 的 flex、.btn 的 inline-flex）优先级高于
+ * 浏览器默认的 [hidden]{display:none}，会使 JS 通过 hidden 属性切换的可见性失效
+ * （表现为「暂时无法连接后端服务」等提示条始终显示）。此处统一强制隐藏。 */
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   margin: 0;
