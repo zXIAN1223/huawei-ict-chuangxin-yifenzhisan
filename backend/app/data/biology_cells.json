@@ -1,0 +1,1697 @@
+{
+  "subject": "biology",
+  "chapter_id": "cells",
+  "chapter_title": "细胞的结构与功能",
+  "chapter_summary": "本章以「结构与功能相适应」为主线，系统梳理细胞学说、细胞膜与生物膜系统、细胞质基质与各类细胞器、细胞核，以及物质跨膜运输、酶与ATP、细胞呼吸、光合作用、细胞增殖与细胞命运（分化、衰老、凋亡、癌变）等核心概念，帮助建立从微观结构到生命活动的整体认识。",
+  "theory_notes": "本章学习理论落点：①双重编码（dual_coding）——每个知识点均配自绘结构示意图与文字讲解，视觉与语言编码协同；②交错练习（interleaving）——线粒体/叶绿体、有氧/无氧呼吸、光反应/暗反应等成对概念穿插对比；③检索练习（retrieval_practice）——每题均附解析，鼓励先回忆再核对；④费曼技巧（feynman）——建议用「讲给别人听」的方式复述物质跨膜运输与光合呼吸过程。",
+  "knowledge_points": [
+    {
+      "kp_id": "cell-theory",
+      "chapter_id": "cells",
+      "title": "细胞学说与细胞的多样性",
+      "summary": "细胞学说揭示了细胞的统一性，说明一切动植物都由细胞构成、新细胞由老细胞分裂产生；而细胞的多样性则体现为形态、大小与类别的差异。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞学说是19世纪自然科学的重大成就之一。1838—1839年，德国植物学家施莱登与动物学家施旺在总结前人研究的基础上提出：植物和动物都是由细胞构成的。此后德国医生魏尔肖进一步补充提出「细胞通过分裂产生新细胞」，使细胞学说逐步完善。它把纷繁复杂的生物界在细胞这一层次上统一起来。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "所有动植物都由细胞发育而来，并由细胞和细胞产物构成；",
+            "细胞是一个相对独立的单位，既有它自己的生命，又对与其他细胞共同构成的整体生命起作用；",
+            "新细胞由老细胞通过分裂产生（后代学者对早期说法的修正）。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/cell-theory.svg",
+          "caption": "细胞学说的三个要点",
+          "alt": "细胞学说三要点示意图：构成统一、单位独立、来源统一"
+        },
+        {
+          "type": "paragraph",
+          "text": "细胞具有多样性：不同生物以及同一生物的不同组织，细胞的形态、大小和功能差异很大——红细胞呈两面凹的圆饼状以增大表面积，肌细胞呈长条形，神经细胞具有许多突起，而受精卵体积较大。这种差异正是细胞功能专门化的结果。按有无核膜包被的细胞核，细胞又可分为原核细胞与真核细胞。"
+        },
+        {
+          "type": "table",
+          "caption": "原核细胞与真核细胞的比较",
+          "headers": ["比较项目", "原核细胞", "真核细胞"],
+          "rows": [
+            ["细胞核", "无核膜包被的细胞核（拟核）", "有核膜包被的细胞核"],
+            ["细胞器", "只有核糖体，无其他具膜细胞器", "有多种细胞器（线粒体、叶绿体等）"],
+            ["典型代表", "细菌、蓝细菌（蓝藻）等", "动物、植物、真菌等"],
+            ["大小", "一般较小（约1~10 μm）", "一般较大（约10~100 μm）"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "细胞学说揭示了细胞的统一性，也说明了生物界的统一性；但它并未揭示细胞的多样性，也未完全回答细胞如何产生的问题——这些由后来的细胞分裂与遗传学研究所补充。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "记忆口诀：细胞学说「三统一」——构成统一（都由细胞构成）、单位统一（细胞是基本单位）、来源统一（新细胞来自老细胞）。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/cell-theory.svg",
+          "caption": "细胞学说的三个要点",
+          "alt": "细胞学说三要点示意图：构成统一、单位独立、来源统一"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-cell-root",
+        "label": "细胞学说与细胞多样性",
+        "children": [
+          {
+            "id": "mm-cell-c1",
+            "label": "建立过程",
+            "children": [
+              {"id": "mm-cell-c1a", "label": "施莱登、施旺（1838—1839）"},
+              {"id": "mm-cell-c1b", "label": "魏尔肖补充：细胞来自细胞"}
+            ]
+          },
+          {
+            "id": "mm-cell-c2",
+            "label": "三个要点",
+            "children": [
+              {"id": "mm-cell-c2a", "label": "动植物由细胞构成"},
+              {"id": "mm-cell-c2b", "label": "细胞是相对独立的单位"},
+              {"id": "mm-cell-c2c", "label": "新细胞由老细胞分裂产生"}
+            ]
+          },
+          {
+            "id": "mm-cell-c3",
+            "label": "意义",
+            "children": [{"id": "mm-cell-c3a", "label": "揭示细胞的统一性"}]
+          },
+          {
+            "id": "mm-cell-c4",
+            "label": "细胞多样性",
+            "children": [
+              {"id": "mm-cell-c4a", "label": "形态多样"},
+              {"id": "mm-cell-c4b", "label": "大小多样"},
+              {"id": "mm-cell-c4c", "label": "原核细胞与真核细胞"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "cell-theory-q1",
+          "type": "single_choice",
+          "difficulty": 1,
+          "importance": 4,
+          "question": "细胞学说的主要创立者是（　）",
+          "options": ["虎克和列文虎克", "施莱登和施旺", "沃森和克里克", "达尔文和孟德尔"],
+          "answer": "施莱登和施旺",
+          "keywords": [],
+          "explanation": "1838—1839年德国的施莱登与施旺提出细胞学说，认为动植物都由细胞构成，是细胞学说的主要创立者。虎克、列文虎克最早观察并命名细胞，但不是学说创立者。",
+          "points": 1
+        },
+        {
+          "qid": "cell-theory-q2",
+          "type": "true_false",
+          "difficulty": 2,
+          "importance": 4,
+          "question": "细胞学说指出，新细胞可以由老细胞通过分裂产生。",
+          "options": ["正确", "错误"],
+          "answer": "正确",
+          "keywords": [],
+          "explanation": "魏尔肖在原有学说基础上补充提出「细胞通过分裂产生新细胞」，即新细胞来自老细胞，这是细胞学说的重要组成。",
+          "points": 1
+        },
+        {
+          "qid": "cell-theory-q3",
+          "type": "short_answer",
+          "difficulty": 2,
+          "importance": 5,
+          "question": "请简述细胞学说的三个要点。",
+          "options": [],
+          "answer": "①所有动植物都由细胞发育而来，并由细胞和细胞产物构成；②细胞是一个相对独立的单位，既有自己的生命，又对与其他细胞共同构成的整体生命起作用；③新细胞由老细胞（通过分裂）产生。",
+          "keywords": ["动植物", "细胞产物", "相对独立", "整体生命", "老细胞", "分裂"],
+          "explanation": "三个要点分别强调构成统一、单位独立与来源统一，答出「动植物由细胞构成」「细胞是相对独立单位」「新细胞来自老细胞」三方面即得分。",
+          "points": 1
+        }
+      ],
+      "tags": ["细胞学说", "细胞多样性", "原核细胞", "真核细胞"],
+      "difficulty": 2,
+      "importance": 4,
+      "est_minutes": 18,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "cell-membrane",
+      "chapter_id": "cells",
+      "title": "细胞膜的结构与功能",
+      "summary": "细胞膜以磷脂双分子层为基本骨架、蛋白质镶嵌其中，外侧有糖被，具有流动性和选择透过性两大特性。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞膜主要由脂质（约50%）和蛋白质（约40%）组成，还有少量糖类。其结构可用「流动镶嵌模型」来描述：磷脂双分子层构成基本骨架，蛋白质分子有的镶嵌在磷脂双分子层表面，有的部分或全部嵌入其中，有的贯穿整个磷脂双分子层；磷脂分子和大多数蛋白质分子都可以运动，因此膜具有一定的流动性。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "将细胞与外界环境分隔开，维持细胞内环境的相对稳定；",
+            "控制物质进出细胞，允许营养物质进入、代谢废物排出，具有选择透过性；",
+            "进行细胞间的信息交流，如糖蛋白参与识别，激素与受体结合传递信息。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/cell-membrane.svg",
+          "caption": "细胞膜的流动镶嵌模型",
+          "alt": "细胞膜流动镶嵌模型示意图：磷脂双分子层为骨架，蛋白质镶嵌，糖蛋白位于外侧"
+        },
+        {
+          "type": "table",
+          "caption": "细胞膜的结构特点与功能特点",
+          "headers": ["特性", "内容", "实例或说明"],
+          "rows": [
+            ["结构特点", "具有一定的流动性", "变形虫伪足运动、胞吞胞吐、细胞融合"],
+            ["功能特点", "具有选择透过性", "细胞需要的物质可进入，不需要的或有害的则不能"],
+            ["物质基础", "磷脂双分子层 + 蛋白质 + 糖类", "磷脂头部亲水、尾部疏水；糖被位于膜外侧"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "text": "易混点：不要把「结构特点」与「功能特点」颠倒。结构特点是「流动性」，功能特点是「选择透过性」，两者不是一回事。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "判断膜内外的技巧：糖蛋白（糖被）只分布在细胞膜外侧，可作为识别膜内外的标记。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/cell-membrane.svg",
+          "caption": "细胞膜的流动镶嵌模型",
+          "alt": "细胞膜流动镶嵌模型示意图：磷脂双分子层为骨架，蛋白质镶嵌，糖蛋白位于外侧"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-membrane-root",
+        "label": "细胞膜的结构与功能",
+        "children": [
+          {
+            "id": "mm-membrane-c1",
+            "label": "组成成分",
+            "children": [
+              {"id": "mm-membrane-c1a", "label": "脂质（磷脂为主）"},
+              {"id": "mm-membrane-c1b", "label": "蛋白质"},
+              {"id": "mm-membrane-c1c", "label": "少量糖类（糖被）"}
+            ]
+          },
+          {
+            "id": "mm-membrane-c2",
+            "label": "流动镶嵌模型",
+            "children": [
+              {"id": "mm-membrane-c2a", "label": "磷脂双分子层为骨架"},
+              {"id": "mm-membrane-c2b", "label": "蛋白质镶嵌/贯穿"},
+              {"id": "mm-membrane-c2c", "label": "具有一定流动性"}
+            ]
+          },
+          {
+            "id": "mm-membrane-c3",
+            "label": "三大功能",
+            "children": [
+              {"id": "mm-membrane-c3a", "label": "分隔细胞与外界"},
+              {"id": "mm-membrane-c3b", "label": "控制物质进出（选择透过性）"},
+              {"id": "mm-membrane-c3c", "label": "进行细胞间信息交流"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "cell-membrane-q1",
+          "type": "single_choice",
+          "difficulty": 2,
+          "importance": 5,
+          "question": "细胞膜的基本骨架是（　）",
+          "options": ["蛋白质", "磷脂双分子层", "糖蛋白", "胆固醇"],
+          "answer": "磷脂双分子层",
+          "keywords": [],
+          "explanation": "在流动镶嵌模型中，磷脂双分子层构成细胞膜的基本骨架，蛋白质镶嵌或贯穿其中，糖类与蛋白质结合形成糖蛋白。",
+          "points": 1
+        },
+        {
+          "qid": "cell-membrane-q2",
+          "type": "multi_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "下列关于细胞膜的说法，正确的是（　）",
+          "options": [
+            "细胞膜的成分主要是脂质和蛋白质",
+            "糖蛋白分布在细胞膜的外表面",
+            "细胞膜的功能特点是具有一定的流动性",
+            "细胞膜具有一定的流动性是胞吞胞吐的基础"
+          ],
+          "answer": ["细胞膜的成分主要是脂质和蛋白质", "糖蛋白分布在细胞膜的外表面", "细胞膜具有一定的流动性是胞吞胞吐的基础"],
+          "keywords": [],
+          "explanation": "细胞膜成分主要是脂质和蛋白质（A正确）；糖被位于膜外侧（B正确）；流动性是「结构特点」，选择透过性才是「功能特点」（C错误）；胞吞胞吐依赖膜的流动性（D正确）。",
+          "points": 1
+        },
+        {
+          "qid": "cell-membrane-q3",
+          "type": "short_answer",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "请写出细胞膜的三项功能，并说明哪一项体现了它的选择透过性。",
+          "options": [],
+          "answer": "三项功能：①将细胞与外界环境分隔开，维持细胞内环境相对稳定；②控制物质进出细胞；③进行细胞间的信息交流。其中「控制物质进出细胞」体现了细胞膜的选择透过性，即细胞需要的物质可以进入，不需要的物质或有害物质不易进入。",
+          "keywords": ["分隔", "控制物质进出", "信息交流", "选择透过性"],
+          "explanation": "按分隔、物质进出、信息交流三个层次作答，并指出「控制物质进出」对应选择透过性即可得分。",
+          "points": 1
+        }
+      ],
+      "tags": ["细胞膜", "流动镶嵌模型", "选择透过性", "糖蛋白"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 25,
+      "theory_tags": ["dual_coding", "interleaving", "retrieval_practice"]
+    },
+    {
+      "kp_id": "cell-organelles-overview",
+      "chapter_id": "cells",
+      "title": "细胞质基质与细胞器",
+      "summary": "细胞质基质是多种代谢反应的场所，其中悬浮的各种细胞器分工协作，共同完成物质合成、能量转换、运输与分解等多种生命活动。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞质包括细胞质基质和细胞器。细胞质基质是呈胶质状的液态部分，其中含有水、无机盐、脂质、糖类、氨基酸、核苷酸和多种酶，是活细胞进行新陈代谢的主要场所，例如细胞呼吸的第一阶段就在这里进行。细胞器则是分布在细胞质基质中、具有特定形态结构与功能的结构。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "线粒体：有氧呼吸的主要场所，是细胞的「动力车间」；",
+            "叶绿体：绿色植物进行光合作用的场所，是「养料制造车间」；",
+            "内质网：蛋白质等大分子的合成、加工与运输通道；",
+            "高尔基体：对来自内质网的蛋白质进行再加工、分类与包装；",
+            "溶酶体：含多种水解酶，能分解衰老细胞器与侵入的病菌；",
+            "核糖体：蛋白质合成（翻译）的场所，无膜结构；",
+            "中心体：与动物细胞和低等植物细胞的有丝分裂有关，无膜结构；",
+            "液泡：主要存在于植物细胞，调节细胞内的环境与渗透压。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/organelles-overview.svg",
+          "caption": "细胞质基质与主要细胞器总览（动物/植物细胞示意）",
+          "alt": "细胞器总览示意图：细胞核、线粒体、叶绿体、内质网、高尔基体、核糖体、溶酶体、中心体、液泡"
+        },
+        {
+          "type": "table",
+          "caption": "常见细胞器的膜层数与主要功能",
+          "headers": ["细胞器", "膜层数", "主要功能"],
+          "rows": [
+            ["线粒体", "双层膜", "有氧呼吸的主要场所，产生大量ATP"],
+            ["叶绿体", "双层膜", "光合作用场所（光反应+暗反应）"],
+            ["内质网", "单层膜", "蛋白质、脂质的合成与运输通道"],
+            ["高尔基体", "单层膜", "蛋白质的加工、分类与包装（植物细胞还与细胞壁形成有关）"],
+            ["溶酶体", "单层膜", "含水解酶，进行细胞内消化"],
+            ["液泡", "单层膜", "储存物质、调节渗透压（植物细胞）"],
+            ["核糖体", "无膜", "蛋白质合成场所"],
+            ["中心体", "无膜", "与有丝分裂（纺锤体形成）有关"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "动物细胞与高等植物细胞在细胞器上的主要区别：动物细胞有中心体而一般无叶绿体、液泡；高等植物细胞有叶绿体、液泡而一般无中心体。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "「有膜 / 无膜」是高频考点：线粒体、叶绿体、细胞核为双层膜；内质网、高尔基体、溶酶体、液泡为单层膜；核糖体、中心体无膜。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/organelles-overview.svg",
+          "caption": "细胞质基质与主要细胞器总览（动物/植物细胞示意）",
+          "alt": "细胞器总览示意图：细胞核、线粒体、叶绿体、内质网、高尔基体、核糖体、溶酶体、中心体、液泡"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-organelles-root",
+        "label": "细胞质与细胞器",
+        "children": [
+          {
+            "id": "mm-organelles-c1",
+            "label": "细胞质基质",
+            "children": [
+              {"id": "mm-organelles-c1a", "label": "含水、无机盐、有机物和多种酶"},
+              {"id": "mm-organelles-c1b", "label": "新陈代谢的主要场所"}
+            ]
+          },
+          {
+            "id": "mm-organelles-c2",
+            "label": "双层膜细胞器",
+            "children": [
+              {"id": "mm-organelles-c2a", "label": "线粒体——动力车间"},
+              {"id": "mm-organelles-c2b", "label": "叶绿体——养料制造车间"}
+            ]
+          },
+          {
+            "id": "mm-organelles-c3",
+            "label": "单层膜细胞器",
+            "children": [
+              {"id": "mm-organelles-c3a", "label": "内质网"},
+              {"id": "mm-organelles-c3b", "label": "高尔基体"},
+              {"id": "mm-organelles-c3c", "label": "溶酶体"},
+              {"id": "mm-organelles-c3d", "label": "液泡"}
+            ]
+          },
+          {
+            "id": "mm-organelles-c4",
+            "label": "无膜细胞器",
+            "children": [
+              {"id": "mm-organelles-c4a", "label": "核糖体——蛋白质合成场所"},
+              {"id": "mm-organelles-c4b", "label": "中心体——与有丝分裂有关"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "organelles-overview-q1",
+          "type": "single_choice",
+          "difficulty": 2,
+          "importance": 5,
+          "question": "下列细胞器中，不具有膜结构的是（　）",
+          "options": ["线粒体", "叶绿体", "核糖体", "高尔基体"],
+          "answer": "核糖体",
+          "keywords": [],
+          "explanation": "核糖体由RNA和蛋白质构成，没有膜结构；线粒体、叶绿体为双层膜，高尔基体为单层膜。无膜细胞器还有中心体。",
+          "points": 1
+        },
+        {
+          "qid": "organelles-overview-q2",
+          "type": "multi_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "关于细胞内各结构的功能，下列叙述正确的是（　）",
+          "options": [
+            "线粒体是有氧呼吸的主要场所",
+            "核糖体是蛋白质合成的场所",
+            "溶酶体含多种水解酶，可分解衰老的细胞器",
+            "高尔基体是细胞进行光合作用的场所"
+          ],
+          "answer": ["线粒体是有氧呼吸的主要场所", "核糖体是蛋白质合成的场所", "溶酶体含多种水解酶，可分解衰老的细胞器"],
+          "keywords": [],
+          "explanation": "线粒体是有氧呼吸主要场所（A对）；核糖体合成蛋白质（B对）；溶酶体含水解酶执行细胞内消化（C对）；光合作用场所是叶绿体而非高尔基体（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "organelles-overview-q3",
+          "type": "short_answer",
+          "difficulty": 4,
+          "importance": 4,
+          "question": "请指出核糖体、内质网、高尔基体三者在分泌蛋白合成与运输中的分工。",
+          "options": [],
+          "answer": "核糖体是蛋白质（肽链）的合成场所；内质网对肽链进行初步加工、折叠，并作为运输通道；高尔基体对来自内质网的蛋白质进行进一步加工、分类和包装，再经囊泡运输到细胞膜分泌到细胞外。",
+          "keywords": ["核糖体", "合成", "内质网", "加工", "高尔基体", "分类", "分泌"],
+          "explanation": "三者分工为「合成（核糖体）→ 初加工与运输（内质网）→ 再加工、分类与包装（高尔基体）」，指向分泌蛋白的膜泡运输路径。",
+          "points": 1
+        }
+      ],
+      "tags": ["细胞质基质", "细胞器", "线粒体", "核糖体", "溶酶体"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 30,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "cell-mitochondria-chloroplast",
+      "chapter_id": "cells",
+      "title": "线粒体与叶绿体——能量转换器",
+      "summary": "线粒体是有氧呼吸的主要场所，叶绿体是光合作用的场所，二者都通过增大膜面积来高效完成能量转换，结构与功能高度适应。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "线粒体与叶绿体是细胞中最重要的两种能量转换器。线粒体普遍存在于需氧生活的真核细胞中，是进行有氧呼吸的主要场所，被称为细胞的「动力车间」；叶绿体主要存在于绿色植物的叶肉细胞等部位，是进行光合作用的场所，被称为「养料制造车间」。二者都是双层膜细胞器，且内部都含有少量DNA和核糖体，具有一定的自主性。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "线粒体：外膜平滑，内膜向内折叠形成「嵴」，嵴增大了内膜面积，为呼吸酶提供更多附着位点；",
+            "叶绿体：内部有由类囊体堆叠而成的「基粒」，类囊体薄膜上分布着光合色素和光反应所需的酶；",
+            "共同点：均为双层膜、含少量DNA与核糖体、与能量转换密切相关；",
+            "增大膜面积的结构：线粒体靠「嵴」，叶绿体靠「类囊体（基粒）」。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/mitochondria.svg",
+          "caption": "线粒体的结构：外膜、内膜、嵴与基质",
+          "alt": "线粒体结构示意图，标注外膜、内膜、嵴、基质及含少量DNA与核糖体"
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/chloroplast.svg",
+          "caption": "叶绿体的结构：双层膜、类囊体（基粒）与基质",
+          "alt": "叶绿体结构示意图，标注外膜、内膜、类囊体、基粒、基质"
+        },
+        {
+          "type": "table",
+          "caption": "线粒体与叶绿体的比较",
+          "headers": ["比较项目", "线粒体", "叶绿体"],
+          "rows": [
+            ["膜结构", "双层膜", "双层膜"],
+            ["增大膜面积的方式", "内膜向内折叠形成嵴", "类囊体堆叠形成基粒"],
+            ["主要功能", "有氧呼吸的主要场所", "光合作用的场所"],
+            ["含色素", "不含", "含叶绿素等光合色素"],
+            ["能量转换", "有机物中的化学能→热能、ATP中的化学能", "光能→有机物中的化学能"],
+            ["分布", "需氧真核细胞普遍存在", "绿色植物叶肉细胞等"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "「结构与功能相适应」是本知识点的核心思想：线粒体的嵴、叶绿体的类囊体都是为了增大膜面积，从而容纳更多酶或色素，提高反应效率。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "对比记忆：线粒体与叶绿体都含少量DNA和核糖体，属于半自主性细胞器；但只有叶绿体含色素，只有线粒体与有氧呼吸直接相关。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/mitochondria.svg",
+          "caption": "线粒体的结构：外膜、内膜、嵴与基质",
+          "alt": "线粒体结构示意图，标注外膜、内膜、嵴、基质及含少量DNA与核糖体"
+        },
+        {
+          "src": "/static/img/biology/cells/chloroplast.svg",
+          "caption": "叶绿体的结构：双层膜、类囊体（基粒）与基质",
+          "alt": "叶绿体结构示意图，标注外膜、内膜、类囊体、基粒、基质"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-energy-root",
+        "label": "线粒体与叶绿体",
+        "children": [
+          {
+            "id": "mm-energy-c1",
+            "label": "共同点",
+            "children": [
+              {"id": "mm-energy-c1a", "label": "双层膜"},
+              {"id": "mm-energy-c1b", "label": "含少量DNA与核糖体"},
+              {"id": "mm-energy-c1c", "label": "与能量转换有关"}
+            ]
+          },
+          {
+            "id": "mm-energy-c2",
+            "label": "线粒体",
+            "children": [
+              {"id": "mm-energy-c2a", "label": "内膜折叠成嵴"},
+              {"id": "mm-energy-c2b", "label": "有氧呼吸的主要场所"},
+              {"id": "mm-energy-c2c", "label": "「动力车间」"}
+            ]
+          },
+          {
+            "id": "mm-energy-c3",
+            "label": "叶绿体",
+            "children": [
+              {"id": "mm-energy-c3a", "label": "类囊体堆叠成基粒"},
+              {"id": "mm-energy-c3b", "label": "含光合色素"},
+              {"id": "mm-energy-c3c", "label": "光合作用的场所"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "mitochondria-chloroplast-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "线粒体增大膜面积的结构是（　）",
+          "options": ["类囊体", "嵴", "基粒", "核孔"],
+          "answer": "嵴",
+          "keywords": [],
+          "explanation": "线粒体内膜向内折叠形成「嵴」，增大内膜面积；类囊体、基粒是叶绿体中增大膜面积的结构，核孔属于细胞核。",
+          "points": 1
+        },
+        {
+          "qid": "mitochondria-chloroplast-q2",
+          "type": "multi_choice",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "线粒体和叶绿体共同具有的特点是（　）",
+          "options": ["具有双层膜结构", "含有少量DNA和核糖体", "含有光合色素", "与细胞内的能量转换有关"],
+          "answer": ["具有双层膜结构", "含有少量DNA和核糖体", "与细胞内的能量转换有关"],
+          "keywords": [],
+          "explanation": "二者都是双层膜、都含少量DNA和核糖体、都与能量转换有关；但只有叶绿体含光合色素，线粒体不含（C错误）。",
+          "points": 1
+        },
+        {
+          "qid": "mitochondria-chloroplast-q3",
+          "type": "short_answer",
+          "difficulty": 4,
+          "importance": 4,
+          "question": "为什么说线粒体和叶绿体的结构与其功能相适应？请各举一例。",
+          "options": [],
+          "answer": "线粒体：内膜向内折叠形成嵴，扩大了内膜面积，为与有氧呼吸有关的酶提供了更多附着位点，有利于有氧呼吸的进行；叶绿体：类囊体堆叠成基粒，扩大了膜面积，其上分布有光合色素和光反应有关的酶，有利于光反应的进行。",
+          "keywords": ["嵴", "内膜面积", "酶", "类囊体", "基粒", "光合色素"],
+          "explanation": "核心是「增大膜面积以容纳更多酶或色素」，分别指出线粒体的嵴、叶绿体的类囊体（基粒）即可。",
+          "points": 1
+        }
+      ],
+      "tags": ["线粒体", "叶绿体", "能量转换", "嵴", "类囊体"],
+      "difficulty": 4,
+      "importance": 5,
+      "est_minutes": 28,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "cell-membrane-system",
+      "chapter_id": "cells",
+      "title": "内质网、高尔基体、溶酶体与生物膜系统",
+      "summary": "内质网、高尔基体、溶酶体等具膜结构协同完成分泌蛋白的加工运输与细胞内消化，它们与细胞膜、核膜共同构成生物膜系统。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "内质网是蛋白质等大分子的初步加工场所和运输通道；高尔基体对来自内质网的蛋白质进行再加工、分类与包装，再通过囊泡运往细胞膜或溶酶体等目的地；溶酶体含有多种水解酶，能够分解衰老、损伤的细胞器以及侵入细胞的病菌，是细胞的「消化车间」。三者与细胞膜、核膜在结构和功能上相互联系，构成细胞的生物膜系统。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "内质网：分为粗面内质网（附着核糖体，加工蛋白质）和光面内质网（参与脂质合成）；",
+            "高尔基体：动物细胞中主要对蛋白质加工、分类、包装；植物细胞中还与细胞壁的形成有关；",
+            "溶酶体：内含多种水解酶，可分解衰老、损伤的细胞器并吞噬病菌。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/membrane-system.svg",
+          "caption": "分泌蛋白的合成与运输路径与生物膜系统",
+          "alt": "分泌蛋白合成运输示意图：核糖体→内质网→高尔基体→囊泡→细胞膜，并标注生物膜系统"
+        },
+        {
+          "type": "table",
+          "caption": "生物膜系统的组成与意义",
+          "headers": ["项目", "内容"],
+          "rows": [
+            ["组成", "细胞膜、核膜以及内质网、高尔基体、溶酶体、线粒体、叶绿体等细胞器膜"],
+            ["分泌蛋白路径", "核糖体→内质网→高尔基体→囊泡→细胞膜→细胞外"],
+            ["主要意义", "使细胞功能区域化；为多种酶提供附着位点；进行物质运输、能量转换和信息传递"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "注意区分：核糖体、中心体无膜结构，因此不属于生物膜系统；而线粒体、叶绿体的膜属于生物膜系统。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "记忆口诀：分泌蛋白「走三段路」——合成在核糖体、加工在内质网与高尔基体；运输靠囊泡，分泌出细胞膜。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/membrane-system.svg",
+          "caption": "分泌蛋白的合成与运输路径与生物膜系统",
+          "alt": "分泌蛋白合成运输示意图：核糖体→内质网→高尔基体→囊泡→细胞膜，并标注生物膜系统"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-memsys-root",
+        "label": "生物膜系统",
+        "children": [
+          {
+            "id": "mm-memsys-c1",
+            "label": "主要成员功能",
+            "children": [
+              {"id": "mm-memsys-c1a", "label": "内质网——初加工与运输"},
+              {"id": "mm-memsys-c1b", "label": "高尔基体——再加工、分类、包装"},
+              {"id": "mm-memsys-c1c", "label": "溶酶体——细胞内消化"}
+            ]
+          },
+          {
+            "id": "mm-memsys-c2",
+            "label": "分泌蛋白路径",
+            "children": [
+              {"id": "mm-memsys-c2a", "label": "核糖体（合成）"},
+              {"id": "mm-memsys-c2b", "label": "内质网→高尔基体"},
+              {"id": "mm-memsys-c2c", "label": "囊泡→细胞膜→胞外"}
+            ]
+          },
+          {
+            "id": "mm-memsys-c3",
+            "label": "意义",
+            "children": [
+              {"id": "mm-memsys-c3a", "label": "功能区域化"},
+              {"id": "mm-memsys-c3b", "label": "提供酶附着位点"},
+              {"id": "mm-memsys-c3c", "label": "物质运输、能量转换与信息传递"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "membrane-system-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 4,
+          "question": "分泌蛋白经过加工后，最终由下列哪种结构包装并分泌到细胞外（　）",
+          "options": ["核糖体", "内质网", "高尔基体", "溶酶体"],
+          "answer": "高尔基体",
+          "keywords": [],
+          "explanation": "核糖体负责合成，内质网初步加工与运输，高尔基体进行再加工、分类和包装，再经囊泡运到细胞膜分泌到细胞外。",
+          "points": 1
+        },
+        {
+          "qid": "membrane-system-q2",
+          "type": "true_false",
+          "difficulty": 3,
+          "importance": 4,
+          "question": "核糖体和中心体因为没有膜结构，所以不属于生物膜系统。",
+          "options": ["正确", "错误"],
+          "answer": "正确",
+          "keywords": [],
+          "explanation": "生物膜系统由细胞膜、核膜以及具膜细胞器的膜构成。核糖体、中心体无膜结构，因此不属于生物膜系统。",
+          "points": 1
+        },
+        {
+          "qid": "membrane-system-q3",
+          "type": "short_answer",
+          "difficulty": 4,
+          "importance": 4,
+          "question": "请写出分泌蛋白从合成到分泌到细胞外的完整路径。",
+          "options": [],
+          "answer": "核糖体（合成肽链）→内质网（初步加工、折叠并运输）→高尔基体（再加工、分类、包装）→囊泡→细胞膜（囊泡与细胞膜融合）→细胞外。",
+          "keywords": ["核糖体", "内质网", "高尔基体", "囊泡", "细胞膜", "分泌"],
+          "explanation": "完整路径应包含核糖体、内质网、高尔基体、囊泡、细胞膜五个环节，缺一不可。",
+          "points": 1
+        }
+      ],
+      "tags": ["内质网", "高尔基体", "溶酶体", "生物膜系统", "分泌蛋白"],
+      "difficulty": 4,
+      "importance": 4,
+      "est_minutes": 24,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "cell-nucleus",
+      "chapter_id": "cells",
+      "title": "细胞核的结构与功能",
+      "summary": "细胞核由核膜、核孔、核仁和染色质构成，是遗传信息库，也是细胞代谢和遗传的控制中心。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞核是真核细胞内最大的细胞器，由核膜、核孔、核仁和染色质等组成。核膜是双层膜，把核内物质与细胞质分开；核膜上有核孔，是大分子物质（如mRNA、蛋白质）进出细胞核的通道；核仁与某种RNA的合成以及核糖体的形成有关；染色质主要由DNA和蛋白质组成，是遗传物质的主要载体。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "核膜：双层膜，使核内物质与细胞质分开；",
+            "核孔：实现核质之间频繁的物质交换和信息交流，是mRNA、蛋白质等大分子进出的通道；",
+            "核仁：与核糖体的形成以及某种RNA的合成有关；",
+            "染色质：由DNA和蛋白质组成，是遗传信息的载体；在细胞分裂时会高度螺旋化成为染色体。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/nucleus.svg",
+          "caption": "细胞核的结构：核膜、核孔、核仁与染色质",
+          "alt": "细胞核结构示意图，标注核膜（双层）、核孔、核仁、染色质"
+        },
+        {
+          "type": "table",
+          "caption": "细胞核各部分结构对应功能",
+          "headers": ["结构", "特点", "功能"],
+          "rows": [
+            ["核膜", "双层膜", "将核内物质与细胞质分开"],
+            ["核孔", "核膜上的孔道", "大分子（如mRNA、蛋白质）进出细胞核的通道"],
+            ["核仁", "圆球形，无膜", "与核糖体的形成及某种RNA的合成有关"],
+            ["染色质", "由DNA和蛋白质组成", "遗传信息的载体（分裂时成为染色体）"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "染色质与染色体是同一物质在不同时期的两种形态：分裂间期呈细长的染色质，分裂期高度螺旋化成为染色体，二者成分相同、形态不同。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "一句话概括细胞核功能：细胞核是遗传信息库，是细胞代谢和遗传的控制中心。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/nucleus.svg",
+          "caption": "细胞核的结构：核膜、核孔、核仁与染色质",
+          "alt": "细胞核结构示意图，标注核膜（双层）、核孔、核仁、染色质"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-nucleus-root",
+        "label": "细胞核",
+        "children": [
+          {
+            "id": "mm-nucleus-c1",
+            "label": "结构组成",
+            "children": [
+              {"id": "mm-nucleus-c1a", "label": "核膜（双层）"},
+              {"id": "mm-nucleus-c1b", "label": "核孔"},
+              {"id": "mm-nucleus-c1c", "label": "核仁"},
+              {"id": "mm-nucleus-c1d", "label": "染色质"}
+            ]
+          },
+          {
+            "id": "mm-nucleus-c2",
+            "label": "功能",
+            "children": [
+              {"id": "mm-nucleus-c2a", "label": "遗传信息库"},
+              {"id": "mm-nucleus-c2b", "label": "细胞代谢和遗传的控制中心"},
+              {"id": "mm-nucleus-c2c", "label": "核质间物质交换与信息交流"}
+            ]
+          },
+          {
+            "id": "mm-nucleus-c3",
+            "label": "易混点",
+            "children": [
+              {"id": "mm-nucleus-c3a", "label": "染色质与染色体是同一物质的两种形态"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "nucleus-q1",
+          "type": "single_choice",
+          "difficulty": 2,
+          "importance": 5,
+          "question": "细胞核中，与核糖体形成有关的结构是（　）",
+          "options": ["核膜", "核孔", "核仁", "染色质"],
+          "answer": "核仁",
+          "keywords": [],
+          "explanation": "核仁与某种RNA的合成以及核糖体的形成有关；核膜起分隔作用，核孔是大分子通道，染色质是遗传信息载体。",
+          "points": 1
+        },
+        {
+          "qid": "nucleus-q2",
+          "type": "multi_choice",
+          "difficulty": 3,
+          "importance": 4,
+          "question": "关于细胞核结构与功能的叙述，正确的是（　）",
+          "options": [
+            "核膜是双层膜，能把核内物质与细胞质分开",
+            "核孔是大分子物质进出细胞核的通道",
+            "染色质主要由DNA和蛋白质组成",
+            "细胞核是细胞代谢和遗传的控制中心"
+          ],
+          "answer": ["核膜是双层膜，能把核内物质与细胞质分开", "核孔是大分子物质进出细胞核的通道", "染色质主要由DNA和蛋白质组成", "细胞核是细胞代谢和遗传的控制中心"],
+          "keywords": [],
+          "explanation": "四项均正确：核膜为双层膜起分隔作用；核孔实现核质间大分子运输与信息交流；染色质由DNA和蛋白质组成；细胞核是遗传信息库和代谢遗传的控制中心。",
+          "points": 1
+        },
+        {
+          "qid": "nucleus-q3",
+          "type": "short_answer",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "为什么说细胞核是细胞代谢和遗传的控制中心？",
+          "options": [],
+          "answer": "细胞核中的染色质主要由DNA和蛋白质组成，DNA是遗传信息的载体，储存着细胞生命活动的遗传信息；细胞核通过控制蛋白质的合成，从而控制细胞的代谢和遗传性状，所以细胞核是细胞代谢和遗传的控制中心。",
+          "keywords": ["DNA", "遗传信息", "控制", "蛋白质合成", "代谢", "遗传"],
+          "explanation": "要答出「细胞核含DNA（遗传信息）→控制蛋白质合成→控制代谢与遗传」这条逻辑链。",
+          "points": 1
+        }
+      ],
+      "tags": ["细胞核", "核膜", "核孔", "核仁", "染色质"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 22,
+      "theory_tags": ["dual_coding", "retrieval_practice"]
+    },
+    {
+      "kp_id": "cell-transport",
+      "chapter_id": "cells",
+      "title": "物质跨膜运输",
+      "summary": "被动运输顺浓度梯度、不耗能；主动运输逆浓度梯度、需载体蛋白并消耗能量；大分子和颗粒物质则通过胞吞、胞吐进出细胞。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "物质进出细胞的方式可分为被动运输和主动运输。被动运输包括自由扩散和协助扩散，二者都顺浓度梯度进行、不消耗能量；主动运输则逆浓度梯度进行，需要载体蛋白协助并消耗能量（ATP），是细胞主动选择物质进出的重要方式。此外，大分子物质和颗粒物质通过胞吞和胞吐进出细胞。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "自由扩散：顺浓度梯度，不需载体、不耗能，如O₂、CO₂、水、甘油、乙醇等；",
+            "协助扩散：顺浓度梯度，需载体蛋白、不耗能，如葡萄糖进入红细胞；",
+            "主动运输：逆浓度梯度，需载体蛋白、消耗ATP，如细胞吸收K⁺、Na⁺、氨基酸等；",
+            "胞吞与胞吐：大分子和颗粒物质进出细胞的方式，依赖膜的流动性并消耗能量。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/transport.svg",
+          "caption": "物质跨膜运输的三种方式（自由扩散、协助扩散、主动运输）及胞吞胞吐",
+          "alt": "物质跨膜运输示意图，对比自由扩散、协助扩散与主动运输的浓度方向、是否需载体与是否耗能"
+        },
+        {
+          "type": "table",
+          "caption": "三种跨膜运输方式比较",
+          "headers": ["比较项目", "自由扩散", "协助扩散", "主动运输"],
+          "rows": [
+            ["运输方向", "顺浓度梯度", "顺浓度梯度", "逆浓度梯度"],
+            ["是否需载体蛋白", "不需要", "需要", "需要"],
+            ["是否消耗能量", "不消耗", "不消耗", "消耗ATP"],
+            ["典型实例", "O₂、CO₂、水", "葡萄糖进入红细胞", "K⁺、Na⁺、氨基酸吸收"],
+            ["影响因素", "浓度差", "浓度差、载体数量", "载体数量、能量供应"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "协助扩散与主动运输都需载体蛋白，区别关键在于「是否逆浓度梯度」和「是否直接消耗ATP」。载体蛋白具有特异性，一种载体通常只运输一种或一类物质。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "判断口诀：顺浓度、无载体、不耗能——自由扩散；顺浓度、有载体、不耗能——协助扩散；逆浓度、有载体、耗能量——主动运输。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/transport.svg",
+          "caption": "物质跨膜运输的三种方式（自由扩散、协助扩散、主动运输）及胞吞胞吐",
+          "alt": "物质跨膜运输示意图，对比自由扩散、协助扩散与主动运输的浓度方向、是否需载体与是否耗能"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-transport-root",
+        "label": "物质跨膜运输",
+        "children": [
+          {
+            "id": "mm-transport-c1",
+            "label": "被动运输（不耗能）",
+            "children": [
+              {"id": "mm-transport-c1a", "label": "自由扩散（无载体）"},
+              {"id": "mm-transport-c1b", "label": "协助扩散（有载体）"}
+            ]
+          },
+          {
+            "id": "mm-transport-c2",
+            "label": "主动运输",
+            "children": [
+              {"id": "mm-transport-c2a", "label": "逆浓度梯度"},
+              {"id": "mm-transport-c2b", "label": "需载体蛋白"},
+              {"id": "mm-transport-c2c", "label": "消耗ATP"}
+            ]
+          },
+          {
+            "id": "mm-transport-c3",
+            "label": "大分子运输",
+            "children": [
+              {"id": "mm-transport-c3a", "label": "胞吞"},
+              {"id": "mm-transport-c3b", "label": "胞吐"},
+              {"id": "mm-transport-c3c", "label": "依赖膜的流动性并耗能"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "transport-membrane-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "下列物质进出细胞的方式中，既需要载体蛋白又需要消耗能量的是（　）",
+          "options": ["自由扩散", "协助扩散", "主动运输", "胞吞"],
+          "answer": "主动运输",
+          "keywords": [],
+          "explanation": "主动运输逆浓度梯度进行，需要载体蛋白并消耗ATP。协助扩散需载体但不耗能；自由扩散都不需要；胞吞属于大分子运输方式，不属于跨膜运输的三种基本方式。",
+          "points": 1
+        },
+        {
+          "qid": "transport-membrane-q2",
+          "type": "multi_choice",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "关于物质跨膜运输，下列叙述正确的是（　）",
+          "options": [
+            "自由扩散和协助扩散都顺浓度梯度进行，不消耗能量",
+            "主动运输可以逆浓度梯度运输物质",
+            "葡萄糖进入红细胞的方式是协助扩散",
+            "胞吞和胞吐不需要消耗能量"
+          ],
+          "answer": ["自由扩散和协助扩散都顺浓度梯度进行，不消耗能量", "主动运输可以逆浓度梯度运输物质", "葡萄糖进入红细胞的方式是协助扩散"],
+          "keywords": [],
+          "explanation": "被动运输（自由扩散、协助扩散）顺浓度且不耗能（A对）；主动运输能逆浓度梯度（B对）；葡萄糖进入红细胞为协助扩散（C对）；胞吞胞吐依赖膜的流动性并需消耗能量（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "transport-membrane-q3",
+          "type": "short_answer",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "请比较协助扩散与主动运输的异同。",
+          "options": [],
+          "answer": "相同点：二者都需要载体蛋白协助。不同点：协助扩散顺浓度梯度进行、不消耗能量；主动运输逆浓度梯度进行、需要消耗ATP提供的能量。此外，主动运输能保证细胞按照生命活动的需要主动吸收或排出某些物质。",
+          "keywords": ["载体蛋白", "顺浓度梯度", "逆浓度梯度", "不消耗能量", "消耗ATP"],
+          "explanation": "共同点落在「都需要载体蛋白」，区别集中在运输方向（顺/逆浓度梯度）与是否耗能（不耗/耗ATP）。",
+          "points": 1
+        }
+      ],
+      "tags": ["被动运输", "主动运输", "自由扩散", "协助扩散", "胞吞胞吐"],
+      "difficulty": 4,
+      "importance": 5,
+      "est_minutes": 28,
+      "theory_tags": ["dual_coding", "interleaving", "retrieval_practice"]
+    },
+    {
+      "kp_id": "cell-enzymes-atp",
+      "chapter_id": "cells",
+      "title": "酶与ATP",
+      "summary": "酶是活细胞产生的具有催化作用的有机物，绝大多数是蛋白质；ATP是细胞中的直接能源物质，与ADP相互转化供给能量。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞内的化学反应需要酶的催化。酶是活细胞产生的具有催化作用的有机物，绝大多数是蛋白质，少数是RNA。酶作为生物催化剂，具有高效性、专一性和作用条件较温和三大特性。与此同时，细胞的各种生命活动都需要能量，ATP是细胞中的直接能源物质，被称为细胞的能量「通货」。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "高效性：酶的催化效率远高于无机催化剂；",
+            "专一性：一种酶只能催化一种或一类化学反应；",
+            "作用条件温和：一般需要适宜的温度和pH，过酸、过碱或高温会使酶变性失活；",
+            "ATP的结构简式为A—P~P~P，远离腺苷的高能磷酸键容易断裂并释放能量。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/enzymes-atp.svg",
+          "caption": "酶的专一性（锁钥模型）与ATP的结构简式",
+          "alt": "示意图：酶与底物结合体现专一性；ATP结构简式A-P~P~P及高能磷酸键"
+        },
+        {
+          "type": "formula",
+          "latex": "ATP ⇌ ADP + Pi + 能量",
+          "caption": "ATP与ADP的相互转化以及能量的释吸"
+        },
+        {
+          "type": "table",
+          "caption": "酶与ATP的要点对比",
+          "headers": ["项目", "酶", "ATP"],
+          "rows": [
+            ["化学本质", "绝大多数是蛋白质，少数是RNA", "三磷酸腺苷（A—P~P~P）"],
+            ["主要功能", "降低化学反应的活化能，起催化作用", "为生命活动直接供能"],
+            ["特性/特点", "高效性、专一性、作用条件较温和", "高能磷酸键易断裂，ATP与ADP可相互转化"],
+            ["产生部位", "活细胞（核糖体或细胞核等）", "细胞呼吸、光合作用（绿色植物）"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "text": "易混点：高温、过酸、过碱会使酶的空间结构被破坏而永久失活（变性）；而低温只是降低酶的活性，酶并未失活，温度回升后活性可以恢复。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "记忆口诀：ATP「两高能键、三磷酸基」，水解时远离腺苷的那个高能磷酸键先断，释放的能量直接用于各项生命活动。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/enzymes-atp.svg",
+          "caption": "酶的专一性（锁钥模型）与ATP的结构简式",
+          "alt": "示意图：酶与底物结合体现专一性；ATP结构简式A-P~P~P及高能磷酸键"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-enzyme-root",
+        "label": "酶与ATP",
+        "children": [
+          {
+            "id": "mm-enzyme-c1",
+            "label": "酶",
+            "children": [
+              {"id": "mm-enzyme-c1a", "label": "本质：多为蛋白质，少数RNA"},
+              {"id": "mm-enzyme-c1b", "label": "高效性"},
+              {"id": "mm-enzyme-c1c", "label": "专一性"},
+              {"id": "mm-enzyme-c1d", "label": "作用条件较温和"}
+            ]
+          },
+          {
+            "id": "mm-enzyme-c2",
+            "label": "ATP",
+            "children": [
+              {"id": "mm-enzyme-c2a", "label": "结构简式 A—P~P~P"},
+              {"id": "mm-enzyme-c2b", "label": "高能磷酸键易断裂"},
+              {"id": "mm-enzyme-c2c", "label": "直接能源物质"}
+            ]
+          },
+          {
+            "id": "mm-enzyme-c3",
+            "label": "联系",
+            "children": [
+              {"id": "mm-enzyme-c3a", "label": "ATP ⇌ ADP + Pi + 能量"},
+              {"id": "mm-enzyme-c3b", "label": "水解供能、合成储能"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "enzymes-atp-q1",
+          "type": "single_choice",
+          "difficulty": 2,
+          "importance": 5,
+          "question": "下列关于酶的叙述，正确的是（　）",
+          "options": [
+            "酶都是蛋白质",
+            "酶只能在细胞内发挥作用",
+            "酶具有高效性和专一性",
+            "高温和低温都会使酶永久失活"
+          ],
+          "answer": "酶具有高效性和专一性",
+          "keywords": [],
+          "explanation": "酶绝大多数是蛋白质，少数是RNA（A错）；酶在细胞内外均可起作用（B错）；酶具有高效性、专一性（C对）；低温只降低活性、不使其永久失活（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "enzymes-atp-q2",
+          "type": "multi_choice",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "关于ATP的叙述，正确的是（　）",
+          "options": [
+            "ATP是细胞中的直接能源物质",
+            "ATP的结构简式可表示为A—P~P~P",
+            "ATP水解时远离腺苷的高能磷酸键容易断裂",
+            "ATP与ADP的相互转化是可逆反应"
+          ],
+          "answer": ["ATP是细胞中的直接能源物质", "ATP的结构简式可表示为A—P~P~P", "ATP水解时远离腺苷的高能磷酸键容易断裂"],
+          "keywords": [],
+          "explanation": "ATP是直接能源物质（A对）；结构简式为A—P~P~P（B对）；远离腺苷的高能磷酸键易断（C对）；ATP与ADP的相互转化所需条件不同，不是同一可逆反应（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "enzymes-atp-q3",
+          "type": "short_answer",
+          "difficulty": 3,
+          "importance": 4,
+          "question": "为什么说酶具有专一性？请举一例说明。",
+          "options": [],
+          "answer": "酶具有专一性，是指一种酶只能催化一种或一类化学反应，这与酶活性部位的空间结构有关，遵循「锁钥模型」。例如淀粉酶只能催化淀粉水解，不能催化蔗糖水解。",
+          "keywords": ["一种酶", "一种或一类", "锁钥", "淀粉酶", "淀粉", "蔗糖"],
+          "explanation": "要答出「一种酶只催化一种或一类反应」并结合具体实例（如淀粉酶只催化淀粉）。",
+          "points": 1
+        }
+      ],
+      "tags": ["酶", "ATP", "专一性", "高效性", "直接能源物质"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 24,
+      "theory_tags": ["dual_coding", "retrieval_practice"]
+    },
+    {
+      "kp_id": "cell-respiration",
+      "chapter_id": "cells",
+      "title": "细胞呼吸",
+      "summary": "有氧呼吸与无氧呼吸都从葡萄糖开始，经不同途径分解并释放能量，其中有氧呼吸释放大量能量并生成大量ATP。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞呼吸是细胞将有机物分解并释放能量的过程，分为有氧呼吸和无氧呼吸。有氧呼吸发生在线粒体和细胞质基质中，可分为三个阶段：第一阶段在细胞质基质中，葡萄糖分解为丙酮酸并生成少量ATP；第二阶段在线粒体基质中，丙酮酸彻底分解为CO₂并生成少量ATP；第三阶段在线粒体内膜上，前两阶段产生的[H]与O₂结合生成水，释放大量能量并生成大量ATP。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "第一阶段（细胞质基质）：葡萄糖→丙酮酸+[H]，释放少量能量；",
+            "第二阶段（线粒体基质）：丙酮酸+H₂O→CO₂+[H]，释放少量能量；",
+            "第三阶段（线粒体内膜）：[H]+O₂→H₂O，释放大量能量，生成大量ATP；",
+            "无氧呼吸（细胞质基质）：产物为酒精和CO₂（如酵母菌）或乳酸（如人体肌肉细胞），释放少量能量。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/cell-respiration.svg",
+          "caption": "有氧呼吸的三个阶段：场所、反应物与产物",
+          "alt": "细胞呼吸阶段示意图：细胞质基质中的糖酵解、线粒体基质中的柠檬酸循环、线粒体内膜上的氧化磷酸化"
+        },
+        {
+          "type": "formula",
+          "latex": "C_6H_12O_6 + 6O_2 + 6H_2O → 6CO_2 + 12H_2O + 能量",
+          "caption": "有氧呼吸的总反应式"
+        },
+        {
+          "type": "table",
+          "caption": "有氧呼吸三个阶段对比",
+          "headers": ["阶段", "场所", "主要反应", "ATP生成量"],
+          "rows": [
+            ["第一阶段", "细胞质基质", "葡萄糖→丙酮酸+[H]", "少量"],
+            ["第二阶段", "线粒体基质", "丙酮酸+H₂O→CO₂+[H]", "少量"],
+            ["第三阶段", "线粒体内膜", "[H]+O₂→H₂O", "大量"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "1 mol葡萄糖有氧呼吸约释放2870 kJ能量，其中约1161 kJ储存在ATP中，其余以热能形式散失。无氧呼吸释放的能量远少于有氧呼吸。"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "text": "易混点：有氧呼吸产生CO₂发生在第二阶段（线粒体基质），消耗O₂发生在第三阶段（线粒体内膜）。无氧呼吸全过程都在细胞质基质中进行。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/cell-respiration.svg",
+          "caption": "有氧呼吸的三个阶段：场所、反应物与产物",
+          "alt": "细胞呼吸阶段示意图：细胞质基质中的糖酵解、线粒体基质中的柠檬酸循环、线粒体内膜上的氧化磷酸化"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-respiration-root",
+        "label": "细胞呼吸",
+        "children": [
+          {
+            "id": "mm-respiration-c1",
+            "label": "有氧呼吸",
+            "children": [
+              {"id": "mm-respiration-c1a", "label": "第一阶段：细胞质基质"},
+              {"id": "mm-respiration-c1b", "label": "第二阶段：线粒体基质"},
+              {"id": "mm-respiration-c1c", "label": "第三阶段：线粒体内膜"}
+            ]
+          },
+          {
+            "id": "mm-respiration-c2",
+            "label": "无氧呼吸",
+            "children": [
+              {"id": "mm-respiration-c2a", "label": "场所：细胞质基质"},
+              {"id": "mm-respiration-c2b", "label": "产酒精+CO₂（酵母菌）"},
+              {"id": "mm-respiration-c2c", "label": "产乳酸（人体肌肉细胞）"}
+            ]
+          },
+          {
+            "id": "mm-respiration-c3",
+            "label": "能量",
+            "children": [
+              {"id": "mm-respiration-c3a", "label": "有氧呼吸释放能量最多"},
+              {"id": "mm-respiration-c3b", "label": "部分能量储存在ATP中"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "cell-respiration-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "有氧呼吸过程中，生成大量ATP的阶段发生在（　）",
+          "options": ["细胞质基质", "线粒体基质", "线粒体内膜", "细胞核"],
+          "answer": "线粒体内膜",
+          "keywords": [],
+          "explanation": "有氧呼吸第三阶段在线粒体内膜上，[H]与O₂结合生成水，释放大量能量并生成大量ATP。",
+          "points": 1
+        },
+        {
+          "qid": "cell-respiration-q2",
+          "type": "multi_choice",
+          "difficulty": 5,
+          "importance": 5,
+          "question": "关于有氧呼吸的叙述，正确的是（　）",
+          "options": [
+            "第一阶段在细胞质基质中进行",
+            "第二阶段产生CO₂并释放少量能量",
+            "第三阶段[H]与O₂结合生成水",
+            "有氧呼吸产生的CO₂来自第一阶段的丙酮酸"
+          ],
+          "answer": ["第一阶段在细胞质基质中进行", "第二阶段产生CO₂并释放少量能量", "第三阶段[H]与O₂结合生成水"],
+          "keywords": [],
+          "explanation": "第一阶段在细胞质基质（A对）；第二阶段在线粒体基质，产生CO₂并释放少量能量（B对）；第三阶段[H]与O₂生成水（C对）；CO₂产生于第二阶段，不是第一阶段（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "cell-respiration-q3",
+          "type": "short_answer",
+          "difficulty": 5,
+          "importance": 5,
+          "question": "请写出有氧呼吸三个阶段的场所和主要反应。",
+          "options": [],
+          "answer": "第一阶段：场所为细胞质基质，葡萄糖分解为丙酮酸和[H]，释放少量能量；第二阶段：场所为线粒体基质，丙酮酸与水反应生成CO₂和[H]，释放少量能量；第三阶段：场所为线粒体内膜，[H]与O₂结合生成水，释放大量能量。",
+          "keywords": ["细胞质基质", "丙酮酸", "线粒体基质", "CO₂", "线粒体内膜", "水", "大量能量"],
+          "explanation": "按三阶段分别答出场所、反应物与产物，其中第三阶段释放能量最多、生成大量ATP。",
+          "points": 1
+        }
+      ],
+      "tags": ["细胞呼吸", "有氧呼吸", "无氧呼吸", "线粒体", "ATP"],
+      "difficulty": 5,
+      "importance": 5,
+      "est_minutes": 32,
+      "theory_tags": ["dual_coding", "interleaving", "retrieval_practice"]
+    },
+    {
+      "kp_id": "cell-photosynthesis",
+      "chapter_id": "cells",
+      "title": "光合作用",
+      "summary": "光合作用在叶绿体中进行，光反应在类囊体薄膜上利用光能生成ATP和NADPH，暗反应在基质中固定CO₂并合成有机物。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "光合作用是绿色植物利用光能，把CO₂和水转化为有机物并释放氧气的过程，是生物界有机物和能量的源头。光合作用分为光反应和暗反应（碳反应）两个阶段：光反应在类囊体薄膜上进行，需要光、色素和酶，水光解产生O₂和[H]（NADPH），同时把光能转变为活跃化学能储存在ATP中；暗反应在叶绿体基质中进行，不需要光但需要多种酶，CO₂被固定后，在ATP和NADPH的参与下被还原为糖类等有机物。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "光反应：场所为类囊体薄膜；水光解生成O₂和[H]；生成ATP和NADPH，光能转变为化学能；",
+            "暗反应：场所为叶绿体基质；CO₂与C₅结合生成C₃，C₃被还原为(CH₂O)；消耗ATP和NADPH；",
+            "联系：光反应为暗反应提供ATP和NADPH，暗反应为光反应提供ADP、Pi和NADP⁺；",
+            "影响因素：光照强度、CO₂浓度、温度等均会影响光合作用强度。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/photosynthesis.svg",
+          "caption": "光合作用：光反应（类囊体薄膜）与暗反应（叶绿体基质）",
+          "alt": "光合作用示意图：光反应生成ATP与NADPH供暗反应，暗反应固定CO₂合成有机物"
+        },
+        {
+          "type": "formula",
+          "latex": "6CO_2 + 12H_2O → C_6H_12O_6 + 6O_2 + 6H_2O",
+          "caption": "光合作用的总反应式（反应条件为光和酶）"
+        },
+        {
+          "type": "table",
+          "caption": "光反应与暗反应的比较",
+          "headers": ["比较项目", "光反应", "暗反应"],
+          "rows": [
+            ["场所", "类囊体薄膜", "叶绿体基质"],
+            ["条件", "需要光和色素、酶", "需要多种酶，不需要光"],
+            ["物质变化", "水光解生成O₂和[H]，合成ATP", "CO₂固定生成C₃，C₃还原为糖类"],
+            ["能量变化", "光能→活跃化学能（ATP、NADPH）", "活跃化学能→有机物中稳定化学能"],
+            ["相互关系", "为暗反应提供ATP和NADPH", "为光反应提供ADP、Pi和NADP⁺"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "氧气的来源是水的光解（光反应），而非CO₂；CO₂中的碳最终进入有机物。请勿把二者混淆。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "对比记忆：光反应「产氧、产ATP和NADPH」，暗反应「用ATP和NADPH、产糖」。光合作用与细胞呼吸互为「合成—分解」的能量转化过程。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/photosynthesis.svg",
+          "caption": "光合作用：光反应（类囊体薄膜）与暗反应（叶绿体基质）",
+          "alt": "光合作用示意图：光反应生成ATP与NADPH供暗反应，暗反应固定CO₂合成有机物"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-photo-root",
+        "label": "光合作用",
+        "children": [
+          {
+            "id": "mm-photo-c1",
+            "label": "光反应",
+            "children": [
+              {"id": "mm-photo-c1a", "label": "场所：类囊体薄膜"},
+              {"id": "mm-photo-c1b", "label": "水的光解：产O₂和[H]"},
+              {"id": "mm-photo-c1c", "label": "生成ATP和NADPH"}
+            ]
+          },
+          {
+            "id": "mm-photo-c2",
+            "label": "暗反应",
+            "children": [
+              {"id": "mm-photo-c2a", "label": "场所：叶绿体基质"},
+              {"id": "mm-photo-c2b", "label": "CO₂的固定"},
+              {"id": "mm-photo-c2c", "label": "C₃的还原，合成糖类"}
+            ]
+          },
+          {
+            "id": "mm-photo-c3",
+            "label": "联系与影响因素",
+            "children": [
+              {"id": "mm-photo-c3a", "label": "光反应为暗反应供ATP和NADPH"},
+              {"id": "mm-photo-c3b", "label": "光照强度、CO₂浓度、温度"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "photosynthesis-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "光合作用光反应的场所是（　）",
+          "options": ["叶绿体基质", "类囊体薄膜", "线粒体内膜", "细胞质基质"],
+          "answer": "类囊体薄膜",
+          "keywords": [],
+          "explanation": "光反应在类囊体薄膜上进行，其上有光合色素和光反应所需的酶；暗反应在叶绿体基质中，不需要光但需要多种酶。",
+          "points": 1
+        },
+        {
+          "qid": "photosynthesis-q2",
+          "type": "multi_choice",
+          "difficulty": 5,
+          "importance": 5,
+          "question": "关于光合作用的叙述，正确的是（　）",
+          "options": [
+            "光反应产生的O₂来自水的光解",
+            "光反应为暗反应提供ATP和NADPH",
+            "暗反应在叶绿体基质中进行，需要光直接参与",
+            "CO₂中的碳最终进入有机物"
+          ],
+          "answer": ["光反应产生的O₂来自水的光解", "光反应为暗反应提供ATP和NADPH", "CO₂中的碳最终进入有机物"],
+          "keywords": [],
+          "explanation": "O₂来自水的光解（A对）；光反应为暗反应提供ATP和NADPH（B对）；暗反应不需要光直接参与，但需要光反应提供的ATP和NADPH（C错）；CO₂中的碳经固定与还原进入有机物（D对）。",
+          "points": 1
+        },
+        {
+          "qid": "photosynthesis-q3",
+          "type": "short_answer",
+          "difficulty": 5,
+          "importance": 5,
+          "question": "请说明光反应和暗反应在物质与能量上的联系。",
+          "options": [],
+          "answer": "物质联系：光反应通过水的光解产生O₂和[H]（NADPH）并合成ATP，暗反应利用光反应提供的ATP和NADPH，把CO₂固定生成的C₃还原为糖类等有机物，同时产生ADP、Pi和NADP⁺返回光反应利用。能量联系：光反应把光能转变为活跃的化学能储存在ATP和NADPH中，暗反应再把这些活跃化学能转变为有机物中稳定的化学能。",
+          "keywords": ["ATP", "NADPH", "暗反应", "光反应", "ADP", "Pi", "光能", "化学能", "有机物"],
+          "explanation": "要点包括：光反应供ATP和NADPH给暗反应；暗反应返回ADP、Pi、NADP⁺；能量由光能→活跃化学能→有机物中稳定化学能。",
+          "points": 1
+        }
+      ],
+      "tags": ["光合作用", "光反应", "暗反应", "叶绿体", "类囊体"],
+      "difficulty": 5,
+      "importance": 5,
+      "est_minutes": 32,
+      "theory_tags": ["dual_coding", "interleaving", "retrieval_practice"]
+    },
+    {
+      "kp_id": "cell-division",
+      "chapter_id": "cells",
+      "title": "细胞增殖与有丝分裂",
+      "summary": "有丝分裂使亲代细胞的染色体经复制后平均分配到两个子细胞，保证了遗传性状在亲子代之间的稳定传递。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "细胞增殖是生物体生长、发育、繁殖和遗传的基础，其方式是细胞分裂。真核细胞的主要分裂方式是有丝分裂，它使亲代细胞的染色体经过复制后，精确地平均分配到两个子细胞中，从而保证亲子代细胞间遗传性状的稳定。一个有丝分裂的细胞周期包括分裂间期和分裂期。"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "分裂间期：完成DNA的复制和有关蛋白质的合成，染色体数目不变，细胞适度生长；",
+            "前期：染色质高度螺旋化形成染色体，核膜、核仁逐渐消失，纺锤体出现；",
+            "中期：每条染色体的着丝点排列在细胞中央的赤道板上，染色体形态最清晰稳定；",
+            "后期：着丝点分裂，姐妹染色单体分开成为两条染色体，移向细胞两极；",
+            "末期：染色体解螺旋变为染色质，核膜、核仁重现，纺锤体消失，细胞质分裂。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/cell-division.svg",
+          "caption": "有丝分裂的基本过程：间期→前期→中期→后期→末期",
+          "alt": "有丝分裂各时期示意图，展示染色体行为与细胞形态变化"
+        },
+        {
+          "type": "table",
+          "caption": "有丝分裂各时期的主要特征",
+          "headers": ["时期", "染色体行为", "细胞结构变化"],
+          "rows": [
+            ["间期", "DNA复制、有关蛋白质合成", "染色体数目不变，细胞适度生长"],
+            ["前期", "染色质→染色体", "核膜核仁消失，纺锤体形成"],
+            ["中期", "着丝点排列在赤道板上", "染色体形态最清晰稳定"],
+            ["后期", "着丝点分裂，染色体移向两极", "细胞两极各有一组染色体"],
+            ["末期", "染色体→染色质", "核膜核仁重现，细胞质分裂"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "有丝分裂的重要意义：亲代细胞经复制后，把复制的染色体平均分配到两个子细胞中，使子细胞与亲代细胞具有相同的染色体数目和遗传物质，从而保证遗传性状的稳定。"
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "text": "记忆口诀（时期特征）：「间期复制，前消中排后裂末现」——间期复制DNA；前期核膜核仁消失；中期着丝点排在赤道板；后期着丝点分裂移两极；末期核膜核仁重现。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/cell-division.svg",
+          "caption": "有丝分裂的基本过程：间期→前期→中期→后期→末期",
+          "alt": "有丝分裂各时期示意图，展示染色体行为与细胞形态变化"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-division-root",
+        "label": "细胞增殖与有丝分裂",
+        "children": [
+          {
+            "id": "mm-division-c1",
+            "label": "细胞周期",
+            "children": [
+              {"id": "mm-division-c1a", "label": "分裂间期（DNA复制）"},
+              {"id": "mm-division-c1b", "label": "分裂期（前、中、后、末期）"}
+            ]
+          },
+          {
+            "id": "mm-division-c2",
+            "label": "各时期特征",
+            "children": [
+              {"id": "mm-division-c2a", "label": "前期：染色质→染色体，纺锤体形成"},
+              {"id": "mm-division-c2b", "label": "中期：着丝点排在赤道板"},
+              {"id": "mm-division-c2c", "label": "后期：着丝点分裂，移向两极"},
+              {"id": "mm-division-c2d", "label": "末期：染色体→染色质，核膜核仁重现"}
+            ]
+          },
+          {
+            "id": "mm-division-c3",
+            "label": "意义",
+            "children": [
+              {"id": "mm-division-c3a", "label": "遗传物质平均分配"},
+              {"id": "mm-division-c3b", "label": "保持遗传性状稳定"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "cell-division-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 5,
+          "question": "有丝分裂过程中，着丝点排列在赤道板上的时期是（　）",
+          "options": ["前期", "中期", "后期", "末期"],
+          "answer": "中期",
+          "keywords": [],
+          "explanation": "中期时每条染色体的着丝点排列在细胞中央的赤道板上，此时染色体形态最清晰稳定，是观察染色体的最佳时期。",
+          "points": 1
+        },
+        {
+          "qid": "cell-division-q2",
+          "type": "multi_choice",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "关于有丝分裂各时期，叙述正确的是（　）",
+          "options": [
+            "间期完成DNA复制和有关蛋白质的合成",
+            "前期核膜、核仁逐渐消失，纺锤体出现",
+            "后期着丝点分裂，姐妹染色单体分开",
+            "末期染色体高度螺旋化，数目加倍"
+          ],
+          "answer": ["间期完成DNA复制和有关蛋白质的合成", "前期核膜、核仁逐渐消失，纺锤体出现", "后期着丝点分裂，姐妹染色单体分开"],
+          "keywords": [],
+          "explanation": "间期复制DNA与合成蛋白质（A对）；前期核膜核仁消失、纺锤体形成（B对）；后期着丝点分裂、姐妹染色单体分开（C对）；末期是染色体解螺旋变为染色质，数目不加倍（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "cell-division-q3",
+          "type": "short_answer",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "有丝分裂的重要意义是什么？",
+          "options": [],
+          "answer": "有丝分裂使亲代细胞的染色体经过复制后，精确地平均分配到两个子细胞中，从而使子细胞与亲代细胞在染色体数目和遗传物质上保持一致，保证了生物体遗传性状在亲子代之间的稳定性。",
+          "keywords": ["染色体", "复制", "平均分配", "遗传物质", "性状稳定"],
+          "explanation": "核心是「复制→平均分配→子细胞与亲代遗传物质相同→遗传性状稳定」。",
+          "points": 1
+        }
+      ],
+      "tags": ["有丝分裂", "细胞周期", "染色体", "细胞增殖"],
+      "difficulty": 4,
+      "importance": 5,
+      "est_minutes": 26,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "cell-differentiation",
+      "chapter_id": "cells",
+      "title": "细胞的分化、衰老、凋亡与癌变",
+      "summary": "细胞分化使细胞功能专门化，细胞衰老与凋亡是正常的生命现象，而癌变则是原癌基因与抑癌基因发生突变的结果。",
+      "content_blocks": [
+        {
+          "type": "paragraph",
+          "text": "同一来源的细胞在形态、结构和功能上产生稳定差异的过程叫细胞分化。细胞分化的实质是基因的选择性表达：遗传物质并未改变，只是不同细胞中不同基因被选择性表达，从而合成不同的蛋白质，使细胞功能专门化。细胞在完成使命后会经历衰老、凋亡等过程；而细胞癌变则是细胞在致癌因子作用下发生基因突变，导致细胞异常增殖。"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            "细胞分化：基因选择性表达的结果，遗传物质不变；分化具有稳定性、不可逆性；",
+            "细胞衰老：水分减少、代谢减慢、酶活性降低、色素积累、膜通透性改变；",
+            "细胞凋亡：由基因决定的程序性死亡，如蝌蚪尾消失、胚胎手指成形；",
+            "细胞癌变：原癌基因与抑癌基因发生突变，癌细胞无限增殖、形态结构改变、易分散转移。"
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/static/img/biology/cells/cell-differentiation.svg",
+          "caption": "细胞分化、衰老、凋亡与癌变的要点对照",
+          "alt": "示意图：由一个受精卵分化为不同细胞，并列出细胞衰老、凋亡与癌变的特征"
+        },
+        {
+          "type": "table",
+          "caption": "细胞分化、衰老、凋亡与癌变的比较",
+          "headers": ["项目", "实质/原因", "结果或特征"],
+          "rows": [
+            ["细胞分化", "基因的选择性表达", "细胞功能专门化，遗传物质不变"],
+            ["细胞衰老", "细胞的正常生命历程", "水分减少、酶活性降低、代谢减慢、色素积累"],
+            ["细胞凋亡", "由基因控制的程序性死亡", "主动、有序地死亡，维持内环境稳定"],
+            ["细胞癌变", "原癌基因和抑癌基因突变", "无限增殖、易分散转移、细胞表面糖蛋白减少"]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "note",
+          "text": "细胞凋亡与细胞坏死的区别：凋亡是由基因控制的主动、有序过程，对机体有利；坏死是由外界不利因素（如缺血、强酸强碱）引起的被动死亡，常对机体有害。"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "text": "易错点：细胞分化过程中遗传物质并没有改变，改变的是基因的表达情况；癌细胞表面的糖蛋白等物质减少，使其容易在体内分散转移。"
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/img/biology/cells/cell-differentiation.svg",
+          "caption": "细胞分化、衰老、凋亡与癌变的要点对照",
+          "alt": "示意图：由一个受精卵分化为不同细胞，并列出细胞衰老、凋亡与癌变的特征"
+        }
+      ],
+      "mindmap": {
+        "id": "mm-diff-root",
+        "label": "细胞的命运",
+        "children": [
+          {
+            "id": "mm-diff-c1",
+            "label": "细胞分化",
+            "children": [
+              {"id": "mm-diff-c1a", "label": "实质：基因选择性表达"},
+              {"id": "mm-diff-c1b", "label": "遗传物质不变"}
+            ]
+          },
+          {
+            "id": "mm-diff-c2",
+            "label": "细胞衰老",
+            "children": [
+              {"id": "mm-diff-c2a", "label": "水分减少、代谢减慢"},
+              {"id": "mm-diff-c2b", "label": "酶活性降低、色素积累"}
+            ]
+          },
+          {
+            "id": "mm-diff-c3",
+            "label": "细胞凋亡",
+            "children": [
+              {"id": "mm-diff-c3a", "label": "基因控制的程序性死亡"},
+              {"id": "mm-diff-c3b", "label": "主动、有序，维持内环境稳定"}
+            ]
+          },
+          {
+            "id": "mm-diff-c4",
+            "label": "细胞癌变",
+            "children": [
+              {"id": "mm-diff-c4a", "label": "原癌基因与抑癌基因突变"},
+              {"id": "mm-diff-c4b", "label": "无限增殖、易转移"}
+            ]
+          }
+        ]
+      },
+      "quiz": [
+        {
+          "qid": "cell-differentiation-q1",
+          "type": "single_choice",
+          "difficulty": 3,
+          "importance": 4,
+          "question": "细胞分化的实质是（　）",
+          "options": [
+            "细胞中遗传物质发生改变",
+            "基因的选择性表达",
+            "细胞数目大量增多",
+            "细胞内的染色体数目加倍"
+          ],
+          "answer": "基因的选择性表达",
+          "keywords": [],
+          "explanation": "细胞分化过程中遗传物质并未改变，其实质是基因的选择性表达，不同细胞中不同基因被选择性表达，从而合成不同的蛋白质。",
+          "points": 1
+        },
+        {
+          "qid": "cell-differentiation-q2",
+          "type": "multi_choice",
+          "difficulty": 4,
+          "importance": 4,
+          "question": "关于细胞衰老、凋亡与癌变，叙述正确的是（　）",
+          "options": [
+            "细胞衰老时水分减少、酶活性降低",
+            "细胞凋亡是由基因控制的程序性死亡",
+            "癌细胞能无限增殖且容易分散转移",
+            "细胞坏死是由基因控制的主动过程"
+          ],
+          "answer": ["细胞衰老时水分减少、酶活性降低", "细胞凋亡是由基因控制的程序性死亡", "癌细胞能无限增殖且容易分散转移"],
+          "keywords": [],
+          "explanation": "细胞衰老水分减少、酶活性降低（A对）；凋亡为基因控制的程序性死亡（B对）；癌细胞无限增殖、易转移（C对）；坏死是外界不利因素引起的被动死亡，不是基因控制（D错）。",
+          "points": 1
+        },
+        {
+          "qid": "cell-differentiation-q3",
+          "type": "short_answer",
+          "difficulty": 4,
+          "importance": 5,
+          "question": "请说明细胞分化与细胞癌变在遗传物质上的区别。",
+          "options": [],
+          "answer": "细胞分化过程中，细胞内的遗传物质并没有发生改变，分化的实质是基因的选择性表达；而细胞癌变是由于原癌基因和抑癌基因发生突变，使细胞的遗传物质发生了改变，从而导致细胞无限增殖等异常表现。",
+          "keywords": ["细胞分化", "遗传物质不变", "选择性表达", "癌变", "基因突变", "原癌基因", "抑癌基因"],
+          "explanation": "关键区别：分化是「遗传物质不变、基因选择性表达」；癌变是「原癌基因和抑癌基因发生突变」，遗传物质发生了改变。",
+          "points": 1
+        }
+      ],
+      "tags": ["细胞分化", "细胞衰老", "细胞凋亡", "细胞癌变", "基因选择性表达"],
+      "difficulty": 3,
+      "importance": 4,
+      "est_minutes": 24,
+      "theory_tags": ["dual_coding", "interleaving"]
+    }
+  ]
+}

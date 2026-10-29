@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" role="img" aria-label="线粒体结构示意图">
+  <rect width="660" height="380" fill="#ffffff"/>
+  <text x="330" y="38" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#8a3b10">线粒体的结构（“动力车间”）</text>
+
+  <!-- 外膜 -->
+  <ellipse cx="300" cy="210" rx="240" ry="110" fill="#ffe9d8" stroke="#d1591f" stroke-width="3"/>
+  <!-- 内膜 -->
+  <ellipse cx="300" cy="210" rx="216" ry="94" fill="#ffd9bd" stroke="#b3450f" stroke-width="2.5"/>
+  <!-- 嵴（内膜向内折叠） -->
+  <g fill="#ffc9a3" stroke="#b3450f" stroke-width="2">
+    <rect x="150" y="150" width="26" height="120" rx="12"/>
+    <rect x="215" y="170" width="26" height="80" rx="12"/>
+    <rect x="285" y="150" width="26" height="120" rx="12"/>
+    <rect x="355" y="170" width="26" height="80" rx="12"/>
+    <rect x="425" y="150" width="26" height="120" rx="12"/>
+  </g>
+  <text x="300" y="216" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a3b10">基质</text>
+
+  <!-- 基质内容物 -->
+  <circle cx="330" cy="240" r="6" fill="#7a2d05"/>
+  <circle cx="352" cy="252" r="6" fill="#7a2d05"/>
+  <text x="380" y="266" font-family="sans-serif" font-size="12" fill="#7a2d05">含少量DNA、RNA和核糖体</text>
+
+  <!-- 标注 -->
+  <line x1="300" y1="100" x2="300" y2="72" stroke="#d1591f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="300" y="66" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a3b10">外膜</text>
+
+  <line x1="120" y1="196" x2="66" y2="150" stroke="#b3450f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="40" y="142" font-family="sans-serif" font-size="14" fill="#8a3b10">内膜</text>
+
+  <line x1="163" y1="150" x2="120" y2="96" stroke="#b3450f" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="96" y="88" font-family="sans-serif" font-size="14" fill="#8a3b10">嵴（↓表面积）</text>
+
+  <!-- 功能气泡 -->
+  <rect x="40" y="300" width="580" height="60" rx="10" fill="#fff3e8" stroke="#d1591f" stroke-width="1.5"/>
+  <text x="330" y="326" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#8a3b10">有氧呼吸的主要场所：第二、三阶段在基质与内膜进行</text>
+  <text x="330" y="348" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#8a3b10">大量产ATP（“供能站”），嵴增大内膜面积以提高效率</text>
+</svg>

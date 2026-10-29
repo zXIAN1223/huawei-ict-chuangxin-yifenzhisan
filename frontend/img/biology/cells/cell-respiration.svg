@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-label="细胞呼吸三阶段示意图">
+  <rect width="720" height="440" fill="#ffffff"/>
+  <text x="360" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#8a3b10">有氧呼吸的三个阶段</text>
+
+  <!-- 阶段1 -->
+  <rect x="40" y="70" width="200" height="120" rx="12" fill="#fff3e8" stroke="#d1591f" stroke-width="2"/>
+  <text x="140" y="98" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8a3b10">第一阶段 · 糖酵解</text>
+  <text x="140" y="126" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">场所：细胞质基质</text>
+  <text x="140" y="150" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">葡萄糖 → 2 丙酮酸 + [H]</text>
+  <text x="140" y="174" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">少量 ATP</text>
+
+  <path d="M244 130 L312 130" stroke="#5b5b5b" stroke-width="2" marker-end="url(#ab)"/>
+
+  <!-- 阶段2 -->
+  <rect x="316" y="70" width="200" height="120" rx="12" fill="#fff3e8" stroke="#d1591f" stroke-width="2"/>
+  <text x="416" y="98" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8a3b10">第二阶段 · 柠檬酸循环</text>
+  <text x="416" y="126" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">场所：线粒体基质</text>
+  <text x="416" y="150" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">丙酮酸 + H₂O → CO₂ + [H]</text>
+  <text x="416" y="174" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">少量 ATP</text>
+
+  <path d="M520 130 L588 130" stroke="#5b5b5b" stroke-width="2" marker-end="url(#ab)"/>
+
+  <!-- 阶段3 -->
+  <rect x="592" y="70" width="100" height="120" rx="12" fill="#ffe0bd" stroke="#b3450f" stroke-width="2"/>
+  <text x="642" y="98" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#8a3b10">第三</text>
+  <text x="642" y="118" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#8a3b10">阶段</text>
+  <text x="642" y="146" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a3b10">场所：</text>
+  <text x="642" y="164" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a3b10">线粒体</text>
+  <text x="642" y="182" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a3b10">内膜</text>
+
+  <!-- 阶段3 反应 -->
+  <text x="360" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a3b10">第三阶段：[H] + O₂ → H₂O，释放大量能量，生成大量 ATP</text>
+
+  <!-- 总反应 -->
+  <rect x="60" y="272" width="600" height="80" rx="12" fill="#fff8f0" stroke="#d1591f" stroke-width="1.5"/>
+  <text x="360" y="302" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8a3b10">总反应式</text>
+  <text x="360" y="330" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#8a3b10">C₆H₁₂O₆ + 6O₂ + 6H₂O →(酶) 6CO₂ + 12H₂O + 能量</text>
+
+  <rect x="60" y="368" width="600" height="56" rx="12" fill="#fff3e8" stroke="#d1591f" stroke-width="1.5"/>
+  <text x="360" y="392" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a3b10">无氧呼吸：细胞质基质；产物为酒精+CO₂（酵母菌）或乳酸（人体细胞），仅少量能量</text>
+  <text x="360" y="414" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#8a3b10">1 mol 葡萄糖有氧呼吸约释放 2870 kJ 能量，其中约 1161 kJ 储存在 ATP 中</text>
+
+  <defs>
+    <marker id="ab" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#5b5b5b"/></marker>
+  </defs>
+</svg>

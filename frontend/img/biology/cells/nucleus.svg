@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" role="img" aria-label="细胞核结构示意图">
+  <rect width="660" height="420" fill="#ffffff"/>
+  <text x="330" y="38" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1f3b73">细胞核的结构</text>
+
+  <!-- 核外膜 / 核内膜 -->
+  <ellipse cx="330" cy="220" rx="220" ry="150" fill="#e8f0ff" stroke="#1f3b73" stroke-width="3"/>
+  <ellipse cx="330" cy="220" rx="204" ry="136" fill="#dbe7fb" stroke="#3b6fd4" stroke-width="2"/>
+  <!-- 核孔 -->
+  <g fill="#ffffff" stroke="#1f3b73" stroke-width="2">
+    <rect x="316" y="70" width="28" height="12" rx="4"/>
+    <rect x="524" y="210" width="12" height="28" rx="4"/>
+    <rect x="316" y="358" width="28" height="12" rx="4"/>
+    <rect x="122" y="210" width="12" height="28" rx="4"/>
+  </g>
+  <!-- 核仁 -->
+  <circle cx="392" cy="176" r="34" fill="#5b7ff0"/>
+  <text x="392" y="182" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ffffff">核仁</text>
+  <!-- 染色质 -->
+  <g fill="none" stroke="#7b5bd6" stroke-width="3">
+    <path d="M240 250 q30 -22 60 0 q30 22 60 0"/>
+    <path d="M250 286 q26 -18 52 0 q26 18 52 0"/>
+    <path d="M270 200 q24 -16 48 0"/>
+  </g>
+  <text x="300" y="318" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a2f9e">染色质（DNA+蛋白质）</text>
+
+  <!-- 标注 -->
+  <line x1="330" y1="70" x2="330" y2="44" stroke="#1f3b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="330" y="60" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1f3b73">核孔（大分子进出通道）</text>
+
+  <line x1="110" y1="220" x2="56" y2="200" stroke="#1f3b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="40" y="192" font-family="sans-serif" font-size="14" fill="#1f3b73">核膜（双层）</text>
+
+  <line x1="392" y1="142" x2="480" y2="96" stroke="#3b6fd4" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="482" y="90" font-family="sans-serif" font-size="14" fill="#1f3b73">核仁（与核糖体形成有关）</text>
+
+  <!-- 功能 -->
+  <rect x="40" y="380" width="580" height="30" rx="15" fill="#1f3b73"/>
+  <text x="330" y="401" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#ffffff">功能：遗传信息库，是细胞代谢和遗传的控制中心</text>
+</svg>

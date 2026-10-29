@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="知识点浏览：按章节/标签/难度筛选，阅读结构化正文与配图，查看自绘思维导图并做主动回忆练习" />
+  <title>知识点 · AI 学习助手</title>
+  <link rel="stylesheet" href="/static/css/theme.css" />
+  <link rel="stylesheet" href="/static/css/layout.css" />
+  <link rel="stylesheet" href="/static/css/knowledge.css" />
+  <script>
+    /* 主题引导：优先读取本地偏好，其次跟随系统，避免首屏闪烁 */
+    (function () {
+      try {
+        var saved = localStorage.getItem("ala_theme");
+        if (saved !== "light" && saved !== "dark") {
+          saved = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark" : "light";
+        }
+        document.documentElement.setAttribute("data-theme", saved);
+      } catch (err) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-text">
+          <strong>AI 学习助手</strong>
+          <small>记忆曲线 · 主动回忆</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="/" data-page="home">首页</a>
+        <a href="/static/knowledge.html" data-page="knowledge" class="is-active">知识点</a>
+        <a href="/static/chat.html" data-page="chat">对话</a>
+        <a href="/static/profile.html" data-page="profile">我的 / 测评</a>
+      </nav>
+      <div class="nav-meta">
+        <span class="user-chip" title="本地匿名用户标识（存储于 localStorage）">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="user-id-short">本地用户</span>
+        </span>
+        <button class="icon-btn" id="theme-toggle" type="button" title="切换明暗主题" aria-label="切换明暗主题">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page">
+    <!-- 后端不可用提示 -->
+    <div class="banner banner-danger" id="backend-banner" hidden>
+      <span class="banner-icon" aria-hidden="true">⚠️</span>
+      <div class="banner-body">
+        <strong>暂时无法连接后端服务</strong>
+        <p>请确认已运行 <code>python run.py</code> 并在 127.0.0.1:8000 访问本页。</p>
+      </div>
+    </div>
+
+    <div class="knowledge-layout">
+      <!-- 左侧：章节 + 筛选 + 知识点列表 -->
+      <aside class="sidebar card" aria-label="章节与知识点导航">
+        <div class="sidebar-block">
+          <h2 class="sidebar-title">章节</h2>
+          <div class="chapter-list" id="chapter-list">
+            <p class="muted">加载中…</p>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <div class="sidebar-title-row">
+            <h2 class="sidebar-title">知识点</h2>
+            <span class="badge" id="kp-count">0 个</span>
+          </div>
+
+          <div class="filter-panel">
+            <div class="filter-label" id="tag-filter-label">标签筛选</div>
+            <div class="tag-filter" id="tag-filter" role="group" aria-labelledby="tag-filter-label">
+              <span class="muted">加载中…</span>
+            </div>
+            <div class="filter-row">
+              <label for="difficulty-min">难度</label>
+              <select class="input input-sm" id="difficulty-min" aria-label="难度下限">
+                <option value="">不限</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <span class="filter-dash" aria-hidden="true">–</span>
+              <select class="input input-sm" id="difficulty-max" aria-label="难度上限">
+                <option value="">不限</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button class="btn btn-sm btn-ghost" id="filter-reset" type="button">重置</button>
+            </div>
+          </div>
+
+          <div class="kp-list" id="kp-list">
+            <p class="muted">加载中…</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- 右侧：阅读区 -->
+      <section class="reader" id="reader" aria-live="polite">
+        <div class="card empty-state" id="reader-status">
+          <p id="reader-status-text">从左侧选择一个知识点开始学习。</p>
+        </div>
+
+        <article class="card kp-article" id="kp-article" hidden>
+          <header class="kp-head">
+            <div class="kp-head-main">
+              <h1 class="kp-title" id="kp-title"></h1>
+              <p class="kp-summary" id="kp-summary"></p>
+              <div class="kp-meta" id="kp-meta"></div>
+              <div class="tag-list" id="kp-tags"></div>
+            </div>
+            <div class="kp-actions">
+              <button class="btn btn-primary btn-sm" id="add-review-btn" type="button">加入复习</button>
+            </div>
+          </header>
+
+          <div class="content-blocks" id="kp-content"></div>
+
+          <section class="gallery-section" id="kp-gallery-section">
+            <header class="section-head">
+              <h2>配图</h2>
+            </header>
+            <div class="gallery" id="kp-gallery"></div>
+          </section>
+
+          <section class="mindmap-section" id="kp-mindmap-section">
+            <header class="section-head">
+              <h2>思维导图</h2>
+              <div class="kp-actions">
+                <button class="btn btn-sm btn-ghost" id="mindmap-fit" type="button">适应宽度</button>
+                <button class="btn btn-sm btn-ghost" id="mindmap-refresh" type="button">重新绘制</button>
+              </div>
+            </header>
+            <div class="mindmap-canvas" id="mindmap-canvas"></div>
+          </section>
+
+          <section class="quiz-section" id="quiz-section">
+            <header class="section-head">
+              <h2>主动回忆练习</h2>
+              <span class="badge" id="quiz-progress">0 / 0</span>
+            </header>
+            <div class="quiz-list" id="quiz-list"></div>
+          </section>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>AI 辅助学习助手 · 生物 Demo · 本地用户标识 <code id="footer-user">-</code></p>
+  </footer>
+
+  <div class="toast-host" id="toast-host" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/mindmap.js"></script>
+  <script src="/static/js/knowledge.js"></script>
+</body>
+</html>

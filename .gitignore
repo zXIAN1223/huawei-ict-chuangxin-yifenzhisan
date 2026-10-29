@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 环境变量与密钥（严禁提交）
+.env
+.env.*
+!.env.example
+
+# 运行时数据库
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+app.db
+
+# 测试与覆盖率产物
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE / 操作系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ASR 模型目录（体积大，不提交版本库）
+backend/app/data/vosk/
+

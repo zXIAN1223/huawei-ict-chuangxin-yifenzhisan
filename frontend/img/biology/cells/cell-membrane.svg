@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" role="img" aria-label="细胞膜流动镶嵌模型示意图">
+  <rect width="680" height="420" fill="#ffffff"/>
+  <text x="340" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1f3b73">细胞膜的结构（流动镶嵌模型）</text>
+
+  <!-- 磷脂双分子层：上层头部+尾，下层头部+尾 -->
+  <g fill="#3b6fd4">
+    <!-- 上层磷脂 -->
+    <g>
+      <circle cx="70" cy="150" r="10"/><line x1="70" y1="160" x2="70" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="63" y1="160" x2="63" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+      <circle cx="110" cy="150" r="10"/><line x1="110" y1="160" x2="110" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="103" y1="160" x2="103" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+      <circle cx="150" cy="150" r="10"/><line x1="150" y1="160" x2="150" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="143" y1="160" x2="143" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+      <circle cx="190" cy="150" r="10"/><line x1="190" y1="160" x2="190" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="183" y1="160" x2="183" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+    </g>
+    <!-- 下层磷脂（倒置） -->
+    <g>
+      <circle cx="70" cy="240" r="10"/><line x1="70" y1="202" x2="70" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="77" y1="202" x2="77" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+      <circle cx="110" cy="240" r="10"/><line x1="110" y1="202" x2="110" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="117" y1="202" x2="117" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+      <circle cx="150" cy="240" r="10"/><line x1="150" y1="202" x2="150" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="157" y1="202" x2="157" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+      <circle cx="190" cy="240" r="10"/><line x1="190" y1="202" x2="190" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="197" y1="202" x2="197" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- 右侧磷脂 -->
+  <g fill="#3b6fd4">
+    <circle cx="470" cy="150" r="10"/><line x1="470" y1="160" x2="470" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="463" y1="160" x2="463" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="510" cy="150" r="10"/><line x1="510" y1="160" x2="510" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="503" y1="160" x2="503" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="550" cy="150" r="10"/><line x1="550" y1="160" x2="550" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="543" y1="160" x2="543" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="590" cy="150" r="10"/><line x1="590" y1="160" x2="590" y2="188" stroke="#3b6fd4" stroke-width="3"/><line x1="583" y1="160" x2="583" y2="188" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="470" cy="240" r="10"/><line x1="470" y1="202" x2="470" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="477" y1="202" x2="477" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="510" cy="240" r="10"/><line x1="510" y1="202" x2="510" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="517" y1="202" x2="517" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="550" cy="240" r="10"/><line x1="550" y1="202" x2="550" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="557" y1="202" x2="557" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+    <circle cx="590" cy="240" r="10"/><line x1="590" y1="202" x2="590" y2="230" stroke="#3b6fd4" stroke-width="3"/><line x1="597" y1="202" x2="597" y2="230" stroke="#7aa2e6" stroke-width="3"/>
+  </g>
+
+  <!-- 蛋白质（贯穿/镶嵌） -->
+  <rect x="248" y="128" width="46" height="134" rx="14" fill="#e0a34b" stroke="#a86d15" stroke-width="2"/>
+  <rect x="360" y="180" width="60" height="42" rx="10" fill="#e0a34b" stroke="#a86d15" stroke-width="2"/>
+  <text x="271" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a3a08">蛋白</text>
+  <text x="390" y="206" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#5a3a08">蛋白</text>
+
+  <!-- 糖蛋白（糖侧链） -->
+  <circle cx="248" cy="112" r="9" fill="#2e9e5b"/><circle cx="264" cy="104" r="9" fill="#2e9e5b"/><circle cx="282" cy="98" r="9" fill="#2e9e5b"/>
+  <line x1="271" y1="128" x2="271" y2="118" stroke="#2e9e5b" stroke-width="2"/>
+
+  <!-- 说明标注 -->
+  <line x1="248" y1="100" x2="180" y2="66" stroke="#2e9e5b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="120" y="60" font-family="sans-serif" font-size="14" fill="#155e34">糖蛋白（识别）</text>
+
+  <line x1="330" y1="152" x2="330" y2="66" stroke="#a86d15" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="300" y="60" font-family="sans-serif" font-size="14" fill="#8a5210">蛋白质（载体/通道）</text>
+
+  <line x1="90" y1="196" x2="60" y2="300" stroke="#1f3b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="44" y="322" font-family="sans-serif" font-size="14" fill="#1f3b73">磷脂双分子层</text>
+  <text x="40" y="342" font-family="sans-serif" font-size="13" fill="#1f3b73">（基本骨架）</text>
+
+  <line x1="620" y1="196" x2="644" y2="300" stroke="#1f3b73" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="560" y="322" font-family="sans-serif" font-size="14" fill="#1f3b73">外侧（糖被）</text>
+
+  <!-- 底部特性 -->
+  <rect x="70" y="372" width="540" height="34" rx="17" fill="#eaf2ff" stroke="#3b6fd4" stroke-width="1.5"/>
+  <text x="340" y="395" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#1f3b73">结构特点：流动性 ·  功能特点：选择透过性</text>
+</svg>

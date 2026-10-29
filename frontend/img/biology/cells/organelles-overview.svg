@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-label="细胞质基质与细胞器总览示意图">
+  <rect width="720" height="460" fill="#ffffff"/>
+  <text x="360" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1f3b73">细胞质基质与细胞器总览</text>
+
+  <!-- 细胞轮廓 -->
+  <ellipse cx="360" cy="248" rx="310" ry="188" fill="#f3f8ff" stroke="#3b6fd4" stroke-width="3"/>
+  <text x="600" y="410" font-family="sans-serif" font-size="13" fill="#1f3b73">细胞膜</text>
+
+  <!-- 细胞核 -->
+  <circle cx="200" cy="190" r="58" fill="#dfe8fb" stroke="#1f3b73" stroke-width="2.5"/>
+  <circle cx="200" cy="190" r="48" fill="none" stroke="#1f3b73" stroke-width="1.5"/>
+  <circle cx="200" cy="176" r="14" fill="#5b7ff0"/>
+  <path d="M170 210 q12 -14 24 0 q12 -14 24 0" fill="none" stroke="#3b6fd4" stroke-width="2"/>
+  <text x="200" y="262" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3b73">细胞核</text>
+
+  <!-- 线粒体 -->
+  <ellipse cx="360" cy="130" rx="58" ry="30" fill="#ffe6d1" stroke="#d1591f" stroke-width="2"/>
+  <path d="M320 130 q10 -18 20 0 q10 -18 20 0 q10 -18 20 0" fill="none" stroke="#d1591f" stroke-width="1.8"/>
+  <text x="360" y="176" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a3b10">线粒体</text>
+
+  <!-- 叶绿体 -->
+  <ellipse cx="520" cy="140" rx="58" ry="32" fill="#dff5e3" stroke="#2e9e5b" stroke-width="2"/>
+  <g fill="#2e9e5b"><ellipse cx="504" cy="140" rx="12" ry="6"/><ellipse cx="530" cy="140" rx="12" ry="6"/><ellipse cx="556" cy="140" rx="12" ry="6"/></g>
+  <text x="520" y="188" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">叶绿体</text>
+
+  <!-- 内质网 -->
+  <path d="M290 230 q40 -26 80 0 q40 26 80 0" fill="none" stroke="#7b5bd6" stroke-width="3"/>
+  <path d="M290 250 q40 -26 80 0 q40 26 80 0" fill="none" stroke="#7b5bd6" stroke-width="3"/>
+  <text x="380" y="284" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a2f9e">内质网</text>
+
+  <!-- 高尔基体 -->
+  <g stroke="#c2472f" stroke-width="4" fill="none">
+    <path d="M470 240 q40 -18 80 0"/><path d="M470 254 q40 -18 80 0"/><path d="M470 268 q40 -18 80 0"/>
+  </g>
+  <text x="512" y="292" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a2b18">高尔基体</text>
+
+  <!-- 核糖体 -->
+  <g fill="#8a5210">
+    <circle cx="300" cy="330" r="6"/><circle cx="326" cy="342" r="6"/><circle cx="352" cy="330" r="6"/><circle cx="378" cy="344" r="6"/>
+  </g>
+  <text x="340" y="376" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a5210">核糖体（无膜）</text>
+
+  <!-- 溶酶体 -->
+  <circle cx="470" cy="340" r="26" fill="#fff0c2" stroke="#c98f0f" stroke-width="2"/>
+  <circle cx="470" cy="340" r="16" fill="none" stroke="#c98f0f" stroke-width="1.5"/>
+  <text x="470" y="386" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">溶酶体</text>
+
+  <!-- 中心体 -->
+  <g stroke="#1f3b73" stroke-width="4">
+    <rect x="150" y="330" width="22" height="10" rx="3"/><rect x="176" y="330" width="22" height="10" rx="3"/>
+  </g>
+  <text x="176" y="364" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3b73">中心体（无膜）</text>
+
+  <!-- 液泡 -->
+  <ellipse cx="620" cy="300" rx="52" ry="40" fill="#d8eefb" stroke="#2b7bb9" stroke-width="2"/>
+  <text x="620" y="356" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1c5c8a">液泡（植物）</text>
+
+  <!-- 图例 -->
+  <rect x="40" y="60" width="230" height="66" rx="10" fill="#ffffff" stroke="#c6d5ee" stroke-width="1.5"/>
+  <text x="56" y="84" font-family="sans-serif" font-size="13" fill="#1f3b73">双层膜：线粒体、叶绿体、细胞核</text>
+  <text x="56" y="106" font-family="sans-serif" font-size="13" fill="#1f3b73">单层膜：内质网、高尔基体、溶酶体、液泡</text>
+</svg>

@@ -1,0 +1,122 @@
+{
+  "version": "1",
+  "title": "学习风格与习惯问卷",
+  "description": "用于测评 VARK 学习风格偏好并收集学习习惯信息，帮助生成自适应学习策略。",
+  "questions": [
+    {
+      "qid": "q1",
+      "text": "你通常在什么时间学习效果最好？",
+      "type": "single_choice",
+      "dimension": "habit",
+      "options": [
+        {"value": "morning", "label": "清晨"},
+        {"value": "afternoon", "label": "下午"},
+        {"value": "evening", "label": "傍晚"},
+        {"value": "night", "label": "睡前"}
+      ]
+    },
+    {
+      "qid": "q2",
+      "text": "平均每天你能投入到学习的时间大约是多少？",
+      "type": "scale",
+      "dimension": "time",
+      "min": 1,
+      "max": 5
+    },
+    {
+      "qid": "q3",
+      "text": "你当前最主要的学习目标是？",
+      "type": "single_choice",
+      "dimension": "goal",
+      "options": [
+        {"value": "exam", "label": "应对考试"},
+        {"value": "understand", "label": "深入理解概念"},
+        {"value": "memory", "label": "长期记忆保持"},
+        {"value": "interest", "label": "培养兴趣"}
+      ]
+    },
+    {
+      "qid": "q4",
+      "text": "复习时，哪种信息最容易让你记住？",
+      "type": "single_choice",
+      "dimension": "style",
+      "options": [
+        {"value": "v", "label": "图表、思维导图等视觉材料"},
+        {"value": "a", "label": "讲解、讨论等听觉材料"},
+        {"value": "r", "label": "阅读文字与笔记"},
+        {"value": "k", "label": "动手实践、做题与操作"}
+      ]
+    },
+    {
+      "qid": "q5",
+      "text": "遇到一个全新的知识点，你最先倾向于怎么做？",
+      "type": "single_choice",
+      "dimension": "style",
+      "options": [
+        {"value": "v", "label": "先看示意图或结构图理清关系"},
+        {"value": "a", "label": "先听人讲一遍或自己复述"},
+        {"value": "r", "label": "先通读文字定义与描述"},
+        {"value": "k", "label": "先做几道相关题目试试"}
+      ]
+    },
+    {
+      "qid": "q6",
+      "text": "上课或自学时，你更喜欢老师（或资料）如何呈现内容？",
+      "type": "single_choice",
+      "dimension": "style",
+      "options": [
+        {"value": "v", "label": "配合板书、图片和视频演示"},
+        {"value": "a", "label": "口头讲解并留出提问讨论"},
+        {"value": "r", "label": "提供详尽的讲义与阅读材料"},
+        {"value": "k", "label": "安排实验、演练等动手环节"}
+      ]
+    },
+    {
+      "qid": "q7",
+      "text": "整理归纳知识时，你最偏好的方式？",
+      "type": "single_choice",
+      "dimension": "style",
+      "options": [
+        {"value": "v", "label": "画思维导图或知识地图"},
+        {"value": "a", "label": "讲给别人听或录音复述"},
+        {"value": "r", "label": "写成结构化的文字笔记"},
+        {"value": "k", "label": "通过反复练习巩固"}
+      ]
+    },
+    {
+      "qid": "q8",
+      "text": "下列哪些学习方式对你特别有效？（可多选）",
+      "type": "multi_choice",
+      "dimension": "style",
+      "options": [
+        {"value": "v", "label": "看图表、示意图、视频"},
+        {"value": "a", "label": "听讲解、参与讨论"},
+        {"value": "r", "label": "阅读文字材料、做笔记"},
+        {"value": "k", "label": "动手实验、刷题练习"}
+      ]
+    },
+    {
+      "qid": "q9",
+      "text": "你更希望以怎样的频率安排复习？",
+      "type": "single_choice",
+      "dimension": "habit",
+      "options": [
+        {"value": "daily", "label": "每天少量多次"},
+        {"value": "every_other_day", "label": "隔天一次"},
+        {"value": "weekly", "label": "每周集中几次"},
+        {"value": "flexible", "label": "按状态灵活安排"}
+      ]
+    },
+    {
+      "qid": "q10",
+      "text": "你偏好的学习时段是？",
+      "type": "single_choice",
+      "dimension": "time",
+      "options": [
+        {"value": "morning", "label": "早晨"},
+        {"value": "afternoon", "label": "下午"},
+        {"value": "evening", "label": "晚上"}
+      ]
+    }
+  ]
+}

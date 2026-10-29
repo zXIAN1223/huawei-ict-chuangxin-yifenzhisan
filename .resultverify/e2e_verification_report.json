@@ -1,0 +1,240 @@
+{
+  "task": "T14",
+  "verification_mode": "asgi",
+  "mode_note": "",
+  "loop_workaround": "socketpair→未连接socket; 事件循环=WindowsSelectorEventLoop; anyio.to_thread.run_sync→内联",
+  "generated_at": "2026-10-29T11:23:08.522890+00:00",
+  "verdict": "PASS",
+  "counts": {
+    "total": 32,
+    "pass": 31,
+    "fail": 0,
+    "blocked": 1
+  },
+  "checks": [
+    {
+      "id": "S1",
+      "name": "python run.py 真实服务器启动",
+      "owner": "T1",
+      "status": "BLOCKED",
+      "evidence": "沙箱限制 127.0.0.1（WinError 10051）：子进程与进程内 uvicorn 均无法绑定/连接。子进程日志：raceback (most recent call last):\n  File \"D:\\Lib\\asyncio\\base_events.py\", line 767, in __del__\n  File \"D:\\Lib\\asyncio\\proactor_events.py\", line 692, in close\n  File \"D:\\Lib\\asyncio\\proactor_events.py\", line 773, in _close_self_pipe\nAttributeError: 'ProactorEventLoop' object has no attribute '_ssock'；进程内：未在超时内就绪"
+    },
+    {
+      "id": "S0",
+      "name": "create_app 启动装配（建表/内容/路由/静态）",
+      "owner": "T1",
+      "status": "PASS",
+      "evidence": "7 张表齐全=['behavior_log', 'chat_message', 'chat_session', 'quiz_attempt', 'review_state', 'strategy_snapshot', 'user_profile']，章节=2，知识点=22，路由=12，静态挂载=1"
+    },
+    {
+      "id": "H1",
+      "name": "GET / 返回 index.html(200)",
+      "owner": "T9",
+      "status": "PASS",
+      "evidence": "GET / -> 200，8230 bytes，命中 index.html 标记"
+    },
+    {
+      "id": "H2",
+      "name": "GET /static/index.html 返回 200",
+      "owner": "T9-T12",
+      "status": "PASS",
+      "evidence": "GET /static/index.html -> 200，8230 bytes"
+    },
+    {
+      "id": "H3",
+      "name": "GET /static/knowledge.html 返回 200",
+      "owner": "T9-T12",
+      "status": "PASS",
+      "evidence": "GET /static/knowledge.html -> 200，6740 bytes"
+    },
+    {
+      "id": "H4",
+      "name": "GET /static/chat.html 返回 200",
+      "owner": "T9-T12",
+      "status": "PASS",
+      "evidence": "GET /static/chat.html -> 200，6296 bytes"
+    },
+    {
+      "id": "H5",
+      "name": "GET /static/profile.html 返回 200",
+      "owner": "T9-T12",
+      "status": "PASS",
+      "evidence": "GET /static/profile.html -> 200，10366 bytes"
+    },
+    {
+      "id": "H6",
+      "name": "GET /health 内容已加载且 2 章",
+      "owner": "T1",
+      "status": "PASS",
+      "evidence": "/health -> {'status': 'ok', 'content_loaded': True, 'chapters': 2}"
+    },
+    {
+      "id": "K1",
+      "name": "chapters 返回 2 章且总知识点 ≥16",
+      "owner": "T2/T3/T4",
+      "status": "PASS",
+      "evidence": "2 章，总知识点 22（cells=12, genetics=10），字段=['chapter_id', 'chapter_title', 'chapter_summary', 'kp_count']"
+    },
+    {
+      "id": "K2",
+      "name": "kps?chapter_id 过滤与元数据字段完整",
+      "owner": "T4",
+      "status": "PASS",
+      "evidence": "按章节过滤正确 -> cells=12, genetics=10"
+    },
+    {
+      "id": "K3",
+      "name": "kps/{kp} 含 content_blocks/images/mindmap/quiz",
+      "owner": "T2/T3/T4",
+      "status": "PASS",
+      "evidence": "cell-membrane: blocks=6 types=['callout', 'image', 'list', 'paragraph', 'table'], images=1, mindmap 子=3, quiz=3"
+    },
+    {
+      "id": "K4",
+      "name": "kps/{kp}/mindmap 结构完整",
+      "owner": "T4",
+      "status": "PASS",
+      "evidence": "mindmap 根=mm-membrane-root 标签=细胞膜的结构与功能 子节点=3"
+    },
+    {
+      "id": "K5",
+      "name": "kps/{kp}/images 结构完整",
+      "owner": "T4",
+      "status": "PASS",
+      "evidence": "images=1，示例 src=/static/img/biology/cells/cell-membrane.svg"
+    },
+    {
+      "id": "K6",
+      "name": "[对抗] 未知 kp/章节 -> 404 结构化错误体",
+      "owner": "T4",
+      "status": "PASS",
+      "evidence": "未知 kp -> 404 KP_NOT_FOUND；未知章节 -> 404 CHAPTER_NOT_FOUND（错误体含 code）"
+    },
+    {
+      "id": "P1",
+      "name": "GET /api/profile 默认创建",
+      "owner": "T8",
+      "status": "PASS",
+      "evidence": "默认画像创建成功：daily_minutes=30, learning_style=mixed, reminder=20:00"
+    },
+    {
+      "id": "P2",
+      "name": "问卷 -> 测评 -> 策略 链路",
+      "owner": "T8",
+      "status": "PASS",
+      "evidence": "问卷->测评 learning_style=visual, modes=['flashcard_visual', 'mindmap', 'feynman']；策略 intensity=1.0, session=15min, rationale=4 条"
+    },
+    {
+      "id": "P3",
+      "name": "[对抗] PUT /api/profile 部分更新与 null 清除语义",
+      "owner": "T8",
+      "status": "PASS",
+      "evidence": "部分更新+null 清除语义正确（nickname 更新、daily_minutes→30、nickname→学习者）"
+    },
+    {
+      "id": "R1",
+      "name": "POST /api/review/items 201 且幂等",
+      "owner": "T5",
+      "status": "PASS",
+      "evidence": "加入复习 201（level=0, interval=1, due_at=2026-10-30T11:23:07Z）；再次加入幂等（due_at 不变）"
+    },
+    {
+      "id": "R2",
+      "name": "GET /api/review/today 含到期项且字段完整",
+      "owner": "T5",
+      "status": "PASS",
+      "evidence": "未到期时不在清单（[]）；模拟跨日后纳入清单：due=2026-10-29T10:23:07Z, overdue=0, est=25min, total=25min, truncated=False"
+    },
+    {
+      "id": "R3",
+      "name": "[对抗] today?budget_minutes=0 至少保留 1 项",
+      "owner": "T5",
+      "status": "PASS",
+      "evidence": "预算 0 -> 仍保留 1 项，note='预算不足：单项预计耗时已超过每日预算（0 分钟），仍保留 1 项'（AC-R2-5）"
+    },
+    {
+      "id": "R4",
+      "name": "[对抗] 复习端点错误语义（404/422）",
+      "owner": "T5",
+      "status": "PASS",
+      "evidence": "未知 kp->404 KP_NOT_FOUND；grade=6->422 INVALID_GRADE；未知 kp 删除->404"
+    },
+    {
+      "id": "R5",
+      "name": "GET/PUT /api/review/reminder 语义",
+      "owner": "T5",
+      "status": "PASS",
+      "evidence": "提醒读取={'enabled': True, 'time': '20:00'}；更新(False,07:30)生效；复开保留 07:30；非法 25:00->422"
+    },
+    {
+      "id": "R6",
+      "name": "[对抗] 软删除与 status 过滤（active/removed/all）",
+      "owner": "T5",
+      "status": "PASS",
+      "evidence": "status=all/removed 含软删除项，active 不含；restore 恢复为 active"
+    },
+    {
+      "id": "Q1",
+      "name": "POST /api/quiz/{kp}/attempt 判分并回写 review_state",
+      "owner": "T6->T5",
+      "status": "PASS",
+      "evidence": "qid=cell-membrane-q1(single_choice) 正确作答 score=100；review_state 更新：level 0->1, review_count 0->1, mastery=0.4"
+    },
+    {
+      "id": "Q2",
+      "name": "[对抗] 错误作答/未知 qid/未复习 kp 的边界语义",
+      "owner": "T6",
+      "status": "PASS",
+      "evidence": "错误作答 score=0/is_correct=false；未知 qid->404 QUIZ_ITEM_NOT_FOUND；未加入复习的 kp 作答 review_state=null（不自动建项）"
+    },
+    {
+      "id": "C1",
+      "name": "POST /api/chat/sessions 创建会话(201)",
+      "owner": "T7",
+      "status": "PASS",
+      "evidence": "会话创建 201：session_id=3a120db4-d8cb-4196-97f3-c8bfbf783188, mode=teacher, title=新对话 · 老师讲解"
+    },
+    {
+      "id": "C2",
+      "name": "POST /api/chat/stream SSE 帧序列与 provider=local",
+      "owner": "T7",
+      "status": "PASS",
+      "evidence": "帧序列=['meta']+delta×10+[done]；meta/done.provider=local；done.content 与 delta 拼接一致（130 字）"
+    },
+    {
+      "id": "C3",
+      "name": "聊天消息在 done 前落库（含 provider）",
+      "owner": "T7",
+      "status": "PASS",
+      "evidence": "落库消息 2 条，roles=['user', 'assistant']，助手 provider=local"
+    },
+    {
+      "id": "C4",
+      "name": "[对抗] 非法角色/未知会话 错误语义",
+      "owner": "T7",
+      "status": "PASS",
+      "evidence": "非法角色->422 INVALID_MODE；未知会话->404 SESSION_NOT_FOUND"
+    },
+    {
+      "id": "C5",
+      "name": "feynman 角色 SSE 流为点评式输出",
+      "owner": "T7 -> T8",
+      "status": "PASS",
+      "evidence": "feynman 流式完成（provider=local），输出为点评式：谢谢你的讲解，我先回应两点：✅ 肯定：你愿意主动复述，这一步很关键。❓ 追问：能再举一个具体的例子，说明它是怎么发生的吗..."
+    },
+    {
+      "id": "A1",
+      "name": "[对抗] 缺 X-User-Id -> 400 MISSING_USER_ID",
+      "owner": "T1",
+      "status": "PASS",
+      "evidence": "缺 X-User-Id 的 4 个端点均返回 400 MISSING_USER_ID"
+    },
+    {
+      "id": "A2",
+      "name": "数据隔离：未污染运行库",
+      "owner": "T1/T13/T14",
+      "status": "PASS",
+      "evidence": "运行库 app.db 哈希不变（5af412bdcd50...）；独立临时库=C:\\Users\\HUAWEI\\AppData\\Local\\Temp\\ala_e2e_ccnm0dxc\\e2e.db"
+    }
+  ]
+}

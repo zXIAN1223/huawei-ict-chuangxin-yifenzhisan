@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="光合作用光反应与暗反应示意图">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="360" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#155e34">光合作用：光反应与暗反应</text>
+
+  <!-- 光反应 -->
+  <rect x="40" y="70" width="300" height="230" rx="12" fill="#eaf7ee" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="190" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#155e34">光反应</text>
+  <text x="190" y="126" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">场所：类囊体薄膜</text>
+  <text x="190" y="152" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">条件：光、色素、酶</text>
+  <text x="190" y="186" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">2H₂O → 4[H] + O₂↑</text>
+  <text x="190" y="212" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">光能 → 活跃化学能</text>
+  <text x="190" y="238" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">生成 ATP 和 NADPH([H])</text>
+  <text x="190" y="272" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#155e34">氧来自水的光解</text>
+
+  <!-- 箭头：ATP/NADPH 供暗反应 -->
+  <path d="M344 150 L416 150" stroke="#2e9e5b" stroke-width="2.5" marker-end="url(#gd)"/>
+  <text x="380" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#155e34">ATP、NADPH</text>
+  <!-- 箭头：ADP/Pi 回光反应 -->
+  <path d="M416 200 L344 200" stroke="#c98f0f" stroke-width="2.5" marker-end="url(#yd)"/>
+  <text x="380" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a6410">ADP、Pi、NADP⁺</text>
+
+  <!-- 暗反应 -->
+  <rect x="420" y="70" width="260" height="230" rx="12" fill="#fff8e8" stroke="#c98f0f" stroke-width="2"/>
+  <text x="550" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#8a6410">暗反应（碳反应）</text>
+  <text x="550" y="126" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">场所：叶绿体基质</text>
+  <text x="550" y="152" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">条件：多种酶（不需光）</text>
+  <text x="550" y="186" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">CO₂ + C₅ → 2C₃</text>
+  <text x="550" y="212" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">C₃ + [H] + ATP → (CH₂O)</text>
+  <text x="550" y="238" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">CO₂ 中的碳 → 有机物</text>
+  <text x="550" y="272" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a6410">合成糖类等有机物</text>
+
+  <!-- 总反应 -->
+  <rect x="60" y="330" width="600" height="70" rx="12" fill="#eaf7ee" stroke="#2e9e5b" stroke-width="1.5"/>
+  <text x="360" y="358" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#155e34">总反应式</text>
+  <text x="360" y="384" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#155e34">6CO₂ + 12H₂O →(光、酶) C₆H₁₂O₆ + 6O₂ + 6H₂O</text>
+
+  <defs>
+    <marker id="gd" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2e9e5b"/></marker>
+    <marker id="yd" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#c98f0f"/></marker>
+  </defs>
+</svg>

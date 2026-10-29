@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 490" width="780" height="490" font-family="'Microsoft YaHei','PingFang SC','Segoe UI',sans-serif">
+  <rect width="780" height="490" fill="#ffffff"/>
+  <rect width="780" height="52" fill="#553c9a"/>
+  <text x="390" y="34" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="bold">基因表达调控：以乳糖操纵子为例</text>
+
+  <!-- 操纵子结构 -->
+  <text x="50" y="92" font-size="14" fill="#1a202c" font-weight="bold">操纵子结构（原核生物）</text>
+  <rect x="50" y="104" width="120" height="46" rx="6" fill="#bee3f8" stroke="#3182ce" stroke-width="2"/>
+  <text x="110" y="132" text-anchor="middle" font-size="13" fill="#2c5282" font-weight="bold">调节基因</text>
+
+  <rect x="185" y="104" width="90" height="46" rx="6" fill="#fefcbf" stroke="#d69e2e" stroke-width="2"/>
+  <text x="230" y="126" text-anchor="middle" font-size="12" fill="#975a16" font-weight="bold">启动子</text>
+  <text x="230" y="142" text-anchor="middle" font-size="11" fill="#975a16">P</text>
+
+  <rect x="290" y="104" width="90" height="46" rx="6" fill="#fed7d7" stroke="#e53e3e" stroke-width="2"/>
+  <text x="335" y="126" text-anchor="middle" font-size="12" fill="#9b2c2c" font-weight="bold">操纵基因</text>
+  <text x="335" y="142" text-anchor="middle" font-size="11" fill="#9b2c2c">O</text>
+
+  <rect x="395" y="104" width="220" height="46" rx="6" fill="#c6f6d5" stroke="#38a169" stroke-width="2"/>
+  <text x="505" y="126" text-anchor="middle" font-size="12" fill="#22543d" font-weight="bold">结构基因 Z · Y · A</text>
+  <text x="505" y="142" text-anchor="middle" font-size="11" fill="#22543d">编码分解乳糖的酶</text>
+
+  <line x1="50" y1="170" x2="720" y2="170" stroke="#e2e8f0" stroke-width="2"/>
+
+  <!-- 状态一：无乳糖 -->
+  <text x="50" y="206" font-size="14" fill="#c53030" font-weight="bold">① 无乳糖时：基因关闭</text>
+  <rect x="185" y="220" width="90" height="46" rx="6" fill="#fefcbf" stroke="#d69e2e" stroke-width="2"/>
+  <text x="230" y="248" text-anchor="middle" font-size="12" fill="#975a16">P</text>
+  <rect x="290" y="220" width="90" height="46" rx="6" fill="#fed7d7" stroke="#e53e3e" stroke-width="2"/>
+  <text x="335" y="248" text-anchor="middle" font-size="12" fill="#9b2c2c">O</text>
+  <rect x="395" y="220" width="220" height="46" rx="6" fill="#edf2f7" stroke="#a0aec0" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="505" y="248" text-anchor="middle" font-size="12" fill="#718096">Z · Y · A 不表达</text>
+  <ellipse cx="335" cy="220" rx="34" ry="24" fill="#e53e3e" fill-opacity="0.72"/>
+  <text x="335" y="224" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">阻遏蛋白</text>
+  <path d="M335 196 L335 200" stroke="#e53e3e" stroke-width="3"/>
+  <text x="452" y="240" font-size="12" fill="#4a5568">阻遏蛋白结合 O，RNA 聚合酶无法前进</text>
+
+  <!-- 状态二：有乳糖 -->
+  <text x="50" y="304" font-size="14" fill="#2f855a" font-weight="bold">② 有乳糖时：基因开启</text>
+  <rect x="185" y="318" width="90" height="46" rx="6" fill="#fefcbf" stroke="#d69e2e" stroke-width="2"/>
+  <text x="230" y="346" text-anchor="middle" font-size="12" fill="#975a16">P</text>
+  <rect x="290" y="318" width="90" height="46" rx="6" fill="#fed7d7" stroke="#e53e3e" stroke-width="2"/>
+  <text x="335" y="346" text-anchor="middle" font-size="12" fill="#9b2c2c">O</text>
+  <rect x="395" y="318" width="220" height="46" rx="6" fill="#c6f6d5" stroke="#38a169" stroke-width="2"/>
+  <text x="505" y="346" text-anchor="middle" font-size="12" fill="#22543d">Z · Y · A 表达分解乳糖酶</text>
+  <ellipse cx="336" cy="292" rx="30" ry="20" fill="#dd6b20" fill-opacity="0.75"/>
+  <text x="336" y="296" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">乳糖</text>
+  <text x="378" y="296" font-size="12" fill="#2c5282">乳糖与阻遏蛋白结合使其失活</text>
+  <path d="M395 341 L640 341" stroke="#3182ce" stroke-width="3" marker-end="url(#ar)"/>
+  <text x="660" y="345" font-size="12" fill="#2b6cb0" font-weight="bold">转录</text>
+
+  <rect x="50" y="392" width="670" height="76" rx="10" fill="#faf5ff" stroke="#d6bcfa"/>
+  <text x="385" y="416" text-anchor="middle" font-size="14" fill="#44337a" font-weight="bold">调控规律</text>
+  <text x="70" y="438" font-size="13" fill="#553c9a">· 原核生物多以操纵子为单位整体调控，实现「按需合成、节省能量」</text>
+  <text x="70" y="458" font-size="13" fill="#553c9a">· 真核生物调控更复杂：受转录水平、转录后加工、翻译等多层次调控，并伴有表观遗传修饰</text>
+
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#3182ce"/></marker>
+  </defs>
+</svg>

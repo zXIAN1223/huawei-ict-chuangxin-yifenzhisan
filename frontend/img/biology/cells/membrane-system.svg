@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="分泌蛋白的合成与运输及生物膜系统示意图">
+  <rect width="720" height="400" fill="#ffffff"/>
+  <text x="360" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#4a2f9e">分泌蛋白的合成与运输（膜泡运输）</text>
+
+  <!-- 核糖体 -->
+  <circle cx="80" cy="180" r="18" fill="#8a5210"/>
+  <circle cx="80" cy="180" r="10" fill="#c88a2e"/>
+  <text x="80" y="222" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a5210">核糖体</text>
+
+  <!-- 箭头 -->
+  <path d="M104 180 L154 180" stroke="#5b5b5b" stroke-width="2" marker-end="url(#ar)"/>
+  <!-- 内质网 -->
+  <path d="M170 160 q40 -22 80 0 q40 22 80 0" fill="none" stroke="#7b5bd6" stroke-width="4"/>
+  <path d="M170 184 q40 -22 80 0 q40 22 80 0" fill="none" stroke="#7b5bd6" stroke-width="4"/>
+  <text x="250" y="222" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4a2f9e">内质网（加工、折叠）</text>
+
+  <path d="M334 182 L384 182" stroke="#5b5b5b" stroke-width="2" marker-end="url(#ar)"/>
+  <!-- 高尔基体 -->
+  <g stroke="#c2472f" stroke-width="5" fill="none">
+    <path d="M392 150 q34 -12 70 0"/><path d="M392 172 q34 -12 70 0"/><path d="M392 194 q34 -12 70 0"/>
+  </g>
+  <text x="428" y="230" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a2b18">高尔基体（再加工、分类）</text>
+
+  <path d="M466 182 L516 182" stroke="#5b5b5b" stroke-width="2" marker-end="url(#ar)"/>
+  <!-- 囊泡 -->
+  <circle cx="540" cy="182" r="16" fill="#ffe0e0" stroke="#c2472f" stroke-width="2"/>
+  <text x="540" y="224" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#8a2b18">囊泡</text>
+
+  <path d="M560 182 L636 182" stroke="#5b5b5b" stroke-width="2" marker-end="url(#ar)"/>
+  <!-- 细胞膜 -->
+  <rect x="640" y="120" width="14" height="124" rx="7" fill="#3b6fd4"/>
+  <text x="660" y="278" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3b73">细胞膜</text>
+  <text x="640" y="110" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1f3b73">分泌到胞外</text>
+
+  <!-- 定义箭头标记 -->
+  <defs>
+    <marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#5b5b5b"/>
+    </marker>
+  </defs>
+
+  <!-- 生物膜系统说明 -->
+  <rect x="40" y="300" width="640" height="80" rx="10" fill="#f0ecfd" stroke="#7b5bd6" stroke-width="1.5"/>
+  <text x="360" y="326" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#4a2f9e">生物膜系统 = 细胞膜 + 核膜 + 细胞器膜（内质网、高尔基体、溶酶体、线粒体、叶绿体等）</text>
+  <text x="360" y="350" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#4a2f9e">意义：使细胞功能区域化；提供酶附着位点；运输、能量转换与信息传递</text>
+  <text x="360" y="372" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#4a2f9e">内质网是“交通枢纽”，高尔基体是“加工分类车间”</text>
+</svg>

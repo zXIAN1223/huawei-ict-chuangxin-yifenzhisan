@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" role="img" aria-label="细胞学说三个要点示意图">
+  <rect width="660" height="400" fill="#ffffff"/>
+  <text x="330" y="38" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1f3b73">细胞学说的三个要点</text>
+
+  <!-- 要点1 -->
+  <rect x="60" y="66" width="540" height="72" rx="12" fill="#eaf2ff" stroke="#3b6fd4" stroke-width="2"/>
+  <circle cx="100" cy="102" r="24" fill="#ffffff" stroke="#3b6fd4" stroke-width="2"/>
+  <circle cx="100" cy="102" r="9" fill="#3b6fd4"/>
+  <text x="140" y="97" font-family="sans-serif" font-size="16" fill="#1f3b73">① 所有动植物都由细胞发育而来，</text>
+  <text x="140" y="121" font-family="sans-serif" font-size="16" fill="#1f3b73">并由细胞和细胞产物构成。</text>
+
+  <!-- 要点2 -->
+  <rect x="60" y="156" width="540" height="88" rx="12" fill="#eaf7ee" stroke="#2e9e5b" stroke-width="2"/>
+  <circle cx="100" cy="200" r="24" fill="#ffffff" stroke="#2e9e5b" stroke-width="2"/>
+  <circle cx="100" cy="200" r="9" fill="#2e9e5b"/>
+  <text x="140" y="190" font-family="sans-serif" font-size="16" fill="#155e34">② 细胞是相对独立的单位：既有自己的生命，</text>
+  <text x="140" y="214" font-family="sans-serif" font-size="16" fill="#155e34">又对与其他细胞共同构成的整体生命起作用。</text>
+
+  <!-- 要点3 -->
+  <rect x="60" y="262" width="540" height="72" rx="12" fill="#fff3e0" stroke="#e08a1e" stroke-width="2"/>
+  <circle cx="100" cy="298" r="24" fill="#ffffff" stroke="#e08a1e" stroke-width="2"/>
+  <circle cx="100" cy="298" r="9" fill="#e08a1e"/>
+  <text x="140" y="293" font-family="sans-serif" font-size="16" fill="#8a5210">③ 新细胞由老细胞分裂（增殖）产生。</text>
+  <text x="140" y="317" font-family="sans-serif" font-size="16" fill="#8a5210">（魏尔肖补充：一切细胞来自细胞）</text>
+
+  <!-- 底部结论 -->
+  <rect x="150" y="352" width="360" height="34" rx="17" fill="#1f3b73"/>
+  <text x="330" y="375" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">细胞是生命活动的基本单位</text>
+</svg>

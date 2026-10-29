@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" role="img" aria-label="物质跨膜运输三种方式示意图">
+  <rect width="720" height="440" fill="#ffffff"/>
+  <text x="360" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1f3b73">物质跨膜运输的三种方式</text>
+
+  <!-- 三个并排单元 -->
+  <!-- 1 自由扩散 -->
+  <g>
+    <text x="120" y="80" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2e9e5b">自由扩散</text>
+    <rect x="40" y="140" width="160" height="26" fill="#cfe0ff" stroke="#3b6fd4" stroke-width="1.5"/>
+    <rect x="40" y="200" width="160" height="26" fill="#cfe0ff" stroke="#3b6fd4" stroke-width="1.5"/>
+    <text x="120" y="126" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">高浓度（胞外）</text>
+    <text x="120" y="246" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">低浓度（胞内）</text>
+    <path d="M120 150 L120 200" stroke="#2e9e5b" stroke-width="3" marker-end="url(#g)"/>
+    <text x="120" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#155e34">O₂、CO₂、水、甘油、乙醇</text>
+    <text x="120" y="310" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#155e34">顺浓度、不需载体、不耗能</text>
+  </g>
+
+  <!-- 2 协助扩散 -->
+  <g>
+    <text x="360" y="80" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#c98f0f">协助扩散</text>
+    <rect x="280" y="140" width="160" height="26" fill="#cfe0ff" stroke="#3b6fd4" stroke-width="1.5"/>
+    <rect x="280" y="200" width="160" height="26" fill="#cfe0ff" stroke="#3b6fd4" stroke-width="1.5"/>
+    <rect x="348" y="152" width="24" height="62" rx="10" fill="#e0a34b" stroke="#a86d15" stroke-width="1.5"/>
+    <text x="360" y="126" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">高浓度</text>
+    <text x="360" y="246" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">低浓度</text>
+    <path d="M360 150 L360 200" stroke="#c98f0f" stroke-width="3" marker-end="url(#y)"/>
+    <text x="360" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a6410">葡萄糖进入红细胞</text>
+    <text x="360" y="310" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a6410">顺浓度、需载体、不耗能</text>
+  </g>
+
+  <!-- 3 主动运输 -->
+  <g>
+    <text x="600" y="80" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#c2472f">主动运输</text>
+    <rect x="520" y="140" width="160" height="26" fill="#cfe0ff" stroke="#3b6fd4" stroke-width="1.5"/>
+    <rect x="520" y="200" width="160" height="26" fill="#cfe0ff" stroke="#3b6fd4" stroke-width="1.5"/>
+    <rect x="588" y="152" width="24" height="62" rx="10" fill="#e0a34b" stroke="#a86d15" stroke-width="1.5"/>
+    <text x="600" y="126" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">低浓度</text>
+    <text x="600" y="246" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">高浓度（胞内）</text>
+    <path d="M600 150 L600 200" stroke="#c2472f" stroke-width="3" marker-end="url(#r)"/>
+    <text x="600" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a2b18">K⁺、Na⁺、氨基酸</text>
+    <text x="600" y="310" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#8a2b18">逆浓度、需载体、需ATP</text>
+  </g>
+
+  <defs>
+    <marker id="g" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2e9e5b"/></marker>
+    <marker id="y" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c98f0f"/></marker>
+    <marker id="r" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#c2472f"/></marker>
+  </defs>
+
+  <!-- 胞吞胞吐 -->
+  <rect x="40" y="336" width="640" height="88" rx="10" fill="#fff3e0" stroke="#e08a1e" stroke-width="1.5"/>
+  <text x="360" y="362" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#8a5210">大分子与颗粒物质：胞吞（内陷成囊泡进入）与胞吐（囊泡与膜融合排出）</text>
+  <text x="360" y="386" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#8a5210">特点：需消耗能量、依赖膜的流动性；如白细胞吞噬病菌、胰岛素分泌</text>
+  <text x="360" y="410" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#8a5210">被动运输：自由扩散 + 协助扩散（不耗能）；主动运输：逆浓度梯度，耗ATP</text>
+</svg>

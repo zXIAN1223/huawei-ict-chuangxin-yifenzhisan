@@ -1,0 +1,612 @@
+/* ==========================================================================
+ * chat.css — 类豆包聊天界面样式（T11）
+ * 页面骨架与通用组件（卡片/按钮/徽标/输入/提示条/Toast）复用 theme.css 与
+ * layout.css；本文件仅提供：双栏聊天布局、角色切换、会话列表、消息气泡、
+ * 流式光标、输入区与响应式适配。
+ * ========================================================================== */
+
+/* ------------------------------ 页面布局 ------------------------------ */
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5) 0 var(--space-6);
+}
+
+.chat-layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: stretch;
+}
+
+/* ------------------------------ 左侧栏 ------------------------------ */
+
+.chat-sidebar {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  height: calc(100vh - 160px);
+  min-height: 520px;
+  overflow: auto;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 0.95rem;
+}
+
+.sidebar-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+/* ------------------------------ 角色切换 ------------------------------ */
+
+.role-switch {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: var(--space-3);
+}
+
+.role-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition),
+    box-shadow var(--transition), transform var(--transition);
+}
+
+.role-btn:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+  transform: translateY(-1px);
+}
+
+.role-btn.is-active {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  box-shadow: var(--shadow-sm);
+}
+
+.role-icon {
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.role-name {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.role-tag {
+  font-size: 0.7rem;
+  color: var(--text-soft);
+}
+
+.role-btn.is-active .role-tag {
+  color: var(--primary-strong);
+}
+
+.role-desc {
+  margin: var(--space-3) 0 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ------------------------------ 会话列表 ------------------------------ */
+
+#new-session-btn {
+  margin-top: var(--space-3);
+  width: 100%;
+}
+
+.session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: var(--space-3);
+}
+
+.session-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+  padding: 10px 34px 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.session-item:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+
+.session-item.is-active {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.session-item-title {
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-item-sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+.session-item-sub .mode-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-soft);
+}
+
+.session-item-sub .mode-dot.teacher { background: var(--primary); }
+.session-item-sub .mode-dot.student { background: var(--accent); }
+.session-item-sub .mode-dot.feynman { background: var(--amber); }
+
+.session-del {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.session-del:hover {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+/* ------------------------------ 对话主体 ------------------------------ */
+
+.chat-main {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: calc(100vh - 160px);
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.chat-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.chat-head-main {
+  min-width: 0;
+}
+
+.chat-title {
+  font-size: 1.05rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 7px;
+}
+
+.feynman-tip {
+  margin: var(--space-4) var(--space-5) 0;
+}
+
+/* ------------------------------ 消息滚动区 ------------------------------ */
+
+.chat-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-5);
+  background: var(--bg-grad);
+  overscroll-behavior: contain;
+}
+
+/* 欢迎区 */
+.chat-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin: var(--space-6) auto;
+  max-width: 46ch;
+  text-align: center;
+}
+
+.welcome-avatar {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.28);
+}
+
+.welcome-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+}
+
+.welcome-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.suggest-chip {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition),
+    background var(--transition);
+}
+
+.suggest-chip:hover {
+  border-color: var(--primary);
+  color: var(--primary-strong);
+  background: var(--primary-soft);
+}
+
+/* ------------------------------ 消息气泡 ------------------------------ */
+
+.msg-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.msg-avatar {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+.msg-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  max-width: min(78%, 720px);
+}
+
+.msg-bubble {
+  padding: 11px 15px;
+  border-radius: 16px;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.msg-user {
+  flex-direction: row-reverse;
+}
+
+.msg-user .msg-body {
+  align-items: flex-end;
+}
+
+.msg-user .msg-avatar {
+  background: linear-gradient(135deg, var(--accent), #22d3ee);
+}
+
+.msg-user .msg-bubble {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #ffffff;
+  border-bottom-right-radius: 6px;
+}
+
+.msg-assistant .msg-bubble {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-bottom-left-radius: 6px;
+  box-shadow: var(--shadow-sm);
+}
+
+.msg-system .msg-bubble {
+  background: var(--amber-soft);
+  border: 1px solid rgba(245, 158, 11, 0.32);
+  color: var(--text);
+  border-radius: var(--radius);
+}
+
+.msg-error .msg-bubble {
+  background: var(--danger-soft);
+  border: 1px solid rgba(225, 29, 72, 0.3);
+  color: var(--danger);
+  border-radius: var(--radius);
+}
+
+.msg-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--text-soft);
+  padding: 0 4px;
+}
+
+.msg-user .msg-meta {
+  justify-content: flex-end;
+}
+
+/* 流式生成中的光标 */
+.msg-bubble.is-streaming::after {
+  content: "▋";
+  margin-left: 2px;
+  color: var(--primary);
+  animation: chat-blink 1s steps(1, end) infinite;
+}
+
+@keyframes chat-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* ------------------------------ 语音工具栏 ------------------------------ */
+/* 契约 C-ASR-UI@1：主通道（录音上传后端 ASR）/ 降级通道（浏览器原生识别）/ 播报。 */
+
+.chat-voice-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-3) var(--space-5) var(--space-2);
+  border-top: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+/* `.btn` 为 inline-flex，作者样式优先于 UA 的 [hidden]{display:none}，需显式覆盖 */
+.chat-voice-bar [hidden] {
+  display: none !important;
+}
+
+.voice-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.voice-btn {
+  padding: 5px 12px;
+  font-size: 0.78rem;
+}
+
+.voice-btn-icon {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.voice-btn.is-active {
+  background: var(--primary-soft);
+  border-color: transparent;
+  color: var(--primary-strong);
+}
+
+.voice-btn.is-recording {
+  background: var(--danger-soft);
+  border-color: rgba(225, 29, 72, 0.35);
+  color: var(--danger);
+  animation: voice-pulse-danger 1.6s ease-out infinite;
+}
+
+.voice-btn.is-listening {
+  background: var(--accent-soft);
+  border-color: transparent;
+  color: #0369a1;
+  animation: voice-pulse-accent 1.6s ease-out infinite;
+}
+
+:root[data-theme="dark"] .voice-btn.is-listening {
+  color: var(--accent);
+}
+
+@keyframes voice-pulse-danger {
+  0% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.34); }
+  70% { box-shadow: 0 0 0 7px rgba(225, 29, 72, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0); }
+}
+
+@keyframes voice-pulse-accent {
+  0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.34); }
+  70% { box-shadow: 0 0 0 7px rgba(14, 165, 233, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+}
+
+.voice-status {
+  margin: 0;
+  min-height: 1.1em;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+
+.voice-status-sub {
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+.voice-status.is-ok { color: var(--success); }
+.voice-status.is-warn { color: #b45309; }
+.voice-status.is-error { color: var(--danger); }
+
+:root[data-theme="dark"] .voice-status.is-warn {
+  color: var(--amber);
+}
+
+/* ------------------------------ 输入区 ------------------------------ */
+
+.chat-composer {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.composer-input {
+  flex: 1;
+  min-height: 44px;
+  max-height: 160px;
+  padding: 11px 13px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.6;
+  resize: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.composer-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: var(--ring);
+}
+
+.composer-input:disabled {
+  background: var(--surface-2);
+  cursor: not-allowed;
+}
+
+.composer-send {
+  flex: none;
+  height: 44px;
+  padding: 0 22px;
+}
+
+.composer-hint {
+  position: absolute;
+  left: -9999px;
+  margin: 0;
+}
+
+/* ------------------------------ 响应式 ------------------------------ */
+
+@media (max-width: 1000px) {
+  .chat-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-sidebar {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .chat-main {
+    height: auto;
+    min-height: 62vh;
+  }
+
+  .chat-scroll {
+    max-height: 62vh;
+  }
+}
+
+@media (max-width: 720px) {
+  .msg-body {
+    max-width: 86%;
+  }
+
+  .chat-scroll {
+    padding: var(--space-4);
+  }
+
+  .chat-head,
+  .chat-composer,
+  .chat-voice-bar {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .feynman-tip {
+    margin-left: var(--space-4);
+    margin-right: var(--space-4);
+  }
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="'Microsoft YaHei','PingFang SC','Segoe UI',sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <rect width="780" height="52" fill="#b7791f"/>
+  <text x="390" y="34" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="bold">表观遗传：不改变碱基序列的修饰</text>
+
+  <!-- DNA 双链 -->
+  <path d="M60 170 L720 170" stroke="#2b6cb0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 200 L720 200" stroke="#63b3ed" stroke-width="8" stroke-linecap="round"/>
+  <text x="70" y="150" font-size="13" fill="#2b6cb0" font-weight="bold">DNA 双链（碱基序列不变）</text>
+
+  <!-- CpG 岛甲基化 -->
+  <text x="60" y="96" font-size="14" fill="#1a202c" font-weight="bold">① DNA 甲基化：CpG 岛上的胞嘧啶被加上甲基（CH₃）</text>
+  <g>
+    <rect x="150" y="112" width="44" height="26" fill="#edf2f7"/><text x="172" y="131" text-anchor="middle" font-size="13" fill="#2d3748">C</text>
+    <rect x="194" y="112" width="44" height="26" fill="#edf2f7"/><text x="216" y="131" text-anchor="middle" font-size="13" fill="#2d3748">G</text>
+    <circle cx="172" cy="108" r="12" fill="#dd6b20"/><text x="172" y="112" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">CH₃</text>
+  </g>
+  <text x="260" y="130" font-size="13" fill="#975a16">甲基化程度高 → 基因表达被抑制</text>
+
+  <!-- 组蛋白修饰 -->
+  <text x="60" y="248" font-size="14" fill="#1a202c" font-weight="bold">② 组蛋白修饰：乙酰化/甲基化改变染色质松紧，影响基因可及性</text>
+  <g>
+    <circle cx="150" cy="296" r="18" fill="#a0aec0"/><circle cx="196" cy="296" r="18" fill="#a0aec0"/>
+    <circle cx="242" cy="296" r="18" fill="#a0aec0"/><circle cx="288" cy="296" r="18" fill="#a0aec0"/>
+    <circle cx="334" cy="296" r="18" fill="#a0aec0"/>
+    <path d="M132 296 C110 272 100 272 88 268" fill="none" stroke="#2b6cb0" stroke-width="4"/>
+    <path d="M150 314 C160 330 180 340 200 344" fill="none" stroke="#2b6cb0" stroke-width="4"/>
+  </g>
+  <text x="360" y="290" font-size="13" fill="#2d3748">组蛋白八聚体缠绕 DNA 形成核小体</text>
+  <text x="360" y="312" font-size="13" fill="#38a169">乙酰化 → 染色质疏松 → 转录活跃</text>
+
+  <!-- 对比 -->
+  <rect x="60" y="356" width="320" height="94" rx="10" fill="#fff5f5" stroke="#feb2b2"/>
+  <text x="220" y="380" text-anchor="middle" font-size="13" fill="#9b2c2c" font-weight="bold">沉默状态</text>
+  <text x="80" y="404" font-size="12" fill="#742a2a">高度甲基化 · 染色质紧密</text>
+  <text x="80" y="426" font-size="12" fill="#742a2a">基因关闭，不表达该性状</text>
+
+  <rect x="400" y="356" width="330" height="94" rx="10" fill="#f0fff4" stroke="#9ae6b4"/>
+  <text x="565" y="380" text-anchor="middle" font-size="13" fill="#22543d" font-weight="bold">活跃状态</text>
+  <text x="420" y="404" font-size="12" fill="#22543d">低甲基化 · 组蛋白乙酰化</text>
+  <text x="420" y="426" font-size="12" fill="#22543d">染色质疏松，基因表达</text>
+
+  <text x="60" y="140" font-size="12" fill="#718096">注：表观遗传不改变 DNA 碱基序列，但可遗传给子代</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="'Microsoft YaHei','PingFang SC','Segoe UI',sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <rect width="780" height="52" fill="#2f855a"/>
+  <text x="390" y="34" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="bold">基因型与表现型：基因如何控制性状</text>
+
+  <!-- 核心流程 -->
+  <rect x="50" y="120" width="170" height="76" rx="12" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="2.5"/>
+  <text x="135" y="152" text-anchor="middle" font-size="15" fill="#2b6cb0" font-weight="bold">基因型</text>
+  <text x="135" y="176" text-anchor="middle" font-size="14" fill="#2c5282">如 Aa / AA / aa</text>
+
+  <path d="M226 158 L288 158" fill="none" stroke="#4a5568" stroke-width="3" marker-end="url(#g1)"/>
+  <text x="257" y="148" text-anchor="middle" font-size="12" fill="#4a5568">转录·翻译</text>
+
+  <rect x="295" y="120" width="190" height="76" rx="12" fill="#faf5ff" stroke="#6b46c1" stroke-width="2.5"/>
+  <text x="390" y="152" text-anchor="middle" font-size="15" fill="#6b46c1" font-weight="bold">蛋白质 / 酶</text>
+  <text x="390" y="176" text-anchor="middle" font-size="13" fill="#553c9a">结构蛋白或功能酶</text>
+
+  <path d="M491 158 L553 158" fill="none" stroke="#4a5568" stroke-width="3" marker-end="url(#g2)"/>
+  <text x="522" y="148" text-anchor="middle" font-size="12" fill="#4a5568">代谢调控</text>
+
+  <rect x="560" y="120" width="170" height="76" rx="12" fill="#fffaf0" stroke="#c05621" stroke-width="2.5"/>
+  <text x="645" y="152" text-anchor="middle" font-size="15" fill="#c05621" font-weight="bold">表现型</text>
+  <text x="645" y="176" text-anchor="middle" font-size="13" fill="#975a16">可观察的性状</text>
+
+  <!-- 显隐性 -->
+  <text x="50" y="246" font-size="14" fill="#1a202c" font-weight="bold">显性 / 隐性（以一对等位基因为例，A 显性、a 隐性）</text>
+  <rect x="50" y="260" width="130" height="52" rx="8" fill="#c6f6d5" stroke="#38a169"/>
+  <text x="115" y="284" text-anchor="middle" font-size="14" fill="#22543d" font-weight="bold">AA</text>
+  <text x="115" y="304" text-anchor="middle" font-size="12" fill="#22543d">显性性状</text>
+
+  <rect x="196" y="260" width="130" height="52" rx="8" fill="#c6f6d5" stroke="#38a169"/>
+  <text x="261" y="284" text-anchor="middle" font-size="14" fill="#22543d" font-weight="bold">Aa</text>
+  <text x="261" y="304" text-anchor="middle" font-size="12" fill="#22543d">显性性状（杂合）</text>
+
+  <rect x="342" y="260" width="130" height="52" rx="8" fill="#fed7d7" stroke="#e53e3e"/>
+  <text x="407" y="284" text-anchor="middle" font-size="14" fill="#9b2c2c" font-weight="bold">aa</text>
+  <text x="407" y="304" text-anchor="middle" font-size="12" fill="#9b2c2c">隐性性状</text>
+
+  <text x="500" y="284" font-size="13" fill="#4a5568">基因型决定表现型</text>
+  <text x="500" y="306" font-size="13" fill="#4a5568">但表现型还受环境影响</text>
+
+  <!-- 环境 -->
+  <rect x="50" y="336" width="670" height="60" rx="10" fill="#f7fafc" stroke="#cbd5e0"/>
+  <text x="70" y="360" font-size="13" fill="#2d3748">· 表现型 = 基因型 + 环境条件（如阳光、温度、营养影响同基因型的性状表现）</text>
+  <text x="70" y="382" font-size="13" fill="#2d3748">· 一对相对性状的遗传遵循孟德尔分离定律（F₁ 自交后代表现 3:1）</text>
+
+  <rect x="50" y="410" width="670" height="46" rx="10" fill="#f0fff4" stroke="#9ae6b4"/>
+  <text x="70" y="438" font-size="13" fill="#22543d">· 等位基因：位于同源染色体相同位置、控制相对性状的基因（如 A 与 a）</text>
+
+  <defs>
+    <marker id="g1" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#4a5568"/></marker>
+    <marker id="g2" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#4a5568"/></marker>
+  </defs>
+</svg>

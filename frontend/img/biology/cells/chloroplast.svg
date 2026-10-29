@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 390" role="img" aria-label="叶绿体结构示意图">
+  <rect width="660" height="390" fill="#ffffff"/>
+  <text x="330" y="38" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#155e34">叶绿体的结构（“养料制造车间”）</text>
+
+  <!-- 外膜 -->
+  <ellipse cx="300" cy="210" rx="250" ry="120" fill="#e6f7ea" stroke="#2e9e5b" stroke-width="3"/>
+  <!-- 内膜 -->
+  <ellipse cx="300" cy="210" rx="228" ry="104" fill="#d7f2de" stroke="#1f7a45" stroke-width="2.5"/>
+  <!-- 基质 -->
+  <text x="120" y="300" font-family="sans-serif" font-size="14" fill="#155e34">基质</text>
+
+  <!-- 基粒（类囊体堆叠） -->
+  <g stroke="#1f7a45" stroke-width="1.8">
+    <g fill="#8fd6a4">
+      <ellipse cx="200" cy="180" rx="46" ry="10"/><ellipse cx="200" cy="198" rx="46" ry="10"/><ellipse cx="200" cy="216" rx="46" ry="10"/><ellipse cx="200" cy="234" rx="46" ry="10"/>
+    </g>
+    <g fill="#8fd6a4">
+      <ellipse cx="340" cy="170" rx="46" ry="10"/><ellipse cx="340" cy="188" rx="46" ry="10"/><ellipse cx="340" cy="206" rx="46" ry="10"/>
+    </g>
+    <g fill="#8fd6a4">
+      <ellipse cx="470" cy="210" rx="46" ry="10"/><ellipse cx="470" cy="228" rx="46" ry="10"/><ellipse cx="470" cy="246" rx="46" ry="10"/>
+    </g>
+  </g>
+  <!-- 连接类囊体的基质片层 -->
+  <path d="M246 216 q30 -10 48 -28" fill="none" stroke="#1f7a45" stroke-width="2"/>
+  <path d="M386 200 q30 6 40 8" fill="none" stroke="#1f7a45" stroke-width="2"/>
+
+  <!-- 标注 -->
+  <line x1="300" y1="92" x2="300" y2="64" stroke="#2e9e5b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="300" y="58" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#155e34">外膜 / 内膜（双层膜）</text>
+
+  <line x1="200" y1="180" x2="120" y2="120" stroke="#1f7a45" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="40" y="112" font-family="sans-serif" font-size="14" fill="#155e34">基粒（类囊体堆叠，含色素）</text>
+
+  <line x1="340" y1="170" x2="360" y2="96" stroke="#1f7a45" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="344" y="92" font-family="sans-serif" font-size="14" fill="#155e34">类囊体薄膜</text>
+
+  <!-- 功能气泡 -->
+  <rect x="40" y="310" width="580" height="62" rx="10" fill="#eefaf1" stroke="#2e9e5b" stroke-width="1.5"/>
+  <text x="330" y="336" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#155e34">光合作用场所：光反应在类囊体薄膜，暗反应（碳反应）在基质</text>
+  <text x="330" y="358" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#155e34">含叶绿素等色素；基质中含少量DNA和核糖体，可半自主复制</text>
+</svg>

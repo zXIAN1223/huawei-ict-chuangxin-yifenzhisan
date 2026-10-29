@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="'Microsoft YaHei','PingFang SC','Segoe UI',sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <rect width="780" height="52" fill="#6b46c1"/>
+  <text x="390" y="34" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="bold">转录：DNA 模板 → mRNA</text>
+
+  <!-- DNA 双链 -->
+  <path d="M60 300 L720 300" stroke="#2b6cb0" stroke-width="9" stroke-linecap="round"/>
+  <path d="M60 336 L330 336" stroke="#63b3ed" stroke-width="9" stroke-linecap="round"/>
+  <path d="M450 336 L720 336" stroke="#63b3ed" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- 解旋区（转录泡） -->
+  <path d="M330 336 C300 300 300 300 330 300" fill="none" stroke="#63b3ed" stroke-width="9" stroke-linecap="round"/>
+  <rect x="300" y="288" width="160" height="62" rx="26" fill="#ebf8ff" stroke="#90cdf4" stroke-dasharray="5 4"/>
+
+  <text x="70" y="292" font-size="13" fill="#2b6cb0" font-weight="bold">模板链 3′→5′（模板）</text>
+  <text x="70" y="356" font-size="13" fill="#2c5282" font-weight="bold">编码链 5′→3′（不转录）</text>
+
+  <!-- RNA 聚合酶 -->
+  <ellipse cx="380" cy="318" rx="72" ry="42" fill="#b794f4" fill-opacity="0.55" stroke="#6b46c1" stroke-width="2"/>
+  <text x="380" y="322" text-anchor="middle" font-size="13" fill="#ffffff" font-weight="bold">RNA 聚合酶</text>
+
+  <!-- mRNA 延伸 -->
+  <path d="M360 288 C300 236 250 236 190 214" fill="none" stroke="#dd6b20" stroke-width="8" stroke-linecap="round"/>
+  <text x="180" y="200" font-size="14" fill="#c05621" font-weight="bold">mRNA（单链）</text>
+  <text x="180" y="182" font-size="13" fill="#975a16">方向 5′→3′</text>
+
+  <!-- 碱基配对示例 -->
+  <circle cx="340" cy="288" r="12" fill="#e53e3e"/><text x="340" y="293" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">A</text>
+  <line x1="340" y1="288" x2="340" y2="300" stroke="#a0aec0" stroke-width="2"/>
+  <circle cx="340" cy="312" r="12" fill="#dd6b20"/><text x="340" y="317" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">U</text>
+  <text x="358" y="272" font-size="12" fill="#4a5568">DNA 的 A 对应 mRNA 的 U</text>
+
+  <circle cx="418" cy="300" r="12" fill="#805ad5"/><text x="418" y="305" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">G</text>
+  <circle cx="418" cy="318" r="12" fill="#dd6b20"/><text x="418" y="323" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">C</text>
+
+  <rect x="70" y="382" width="640" height="70" rx="10" fill="#faf5ff" stroke="#d6bcfa"/>
+  <text x="390" y="406" text-anchor="middle" font-size="14" fill="#44337a" font-weight="bold">转录要点</text>
+  <text x="90" y="428" font-size="13" fill="#553c9a">· 以 DNA 一条链为模板，合成 RNA（mRNA/rRNA/tRNA）</text>
+  <text x="90" y="446" font-size="13" fill="#553c9a">· 碱基互补：A→U、T→A、G→C、C→G；配对原则同样适用于转录</text>
+</svg>

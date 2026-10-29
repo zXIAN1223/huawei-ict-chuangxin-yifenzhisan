@@ -1,0 +1,446 @@
+{
+  "subject": "biology",
+  "chapter_id": "genetics",
+  "chapter_title": "遗传的分子基础",
+  "chapter_summary": "本章从遗传物质 DNA 的分子结构出发，依次学习 DNA 的复制、基因的表达（转录与翻译）、基因表达的调控，以及基因突变、基因重组、表观遗传等变异类型，最终建立「基因通过控制蛋白质的合成来控制生物性状」的整体认识。全章贯穿两条主线：结构决定功能（双螺旋与碱基互补配对决定了复制的精确性）与信息流动（中心法则描述了遗传信息在核酸与蛋白质之间的传递方向）。",
+  "theory_notes": "学习落点：① 用「模板、原料、酶、能量、产物、方向」六要素对比记忆复制、转录、翻译三个过程；② 掌握碱基互补配对原则及其在复制、转录中的迁移应用；③ 理解中心法则及其发展（逆转录、RNA 复制）；④ 区分可遗传变异的三大来源（基因突变、基因重组、染色体变异）并认识表观遗传这一「不改变碱基序列却可遗传」的特例。建议为每个过程绘制一张流程图，并追问「如果配对出错会发生什么」，串联起突变与进化。",
+  "knowledge_points": [
+    {
+      "kp_id": "genetics-dna-structure",
+      "chapter_id": "genetics",
+      "title": "DNA 分子的结构与碱基互补配对",
+      "summary": "DNA 由两条反向平行的脱氧核苷酸链盘旋成双螺旋，内侧碱基按 A-T、G-C 严格互补配对，兼具稳定性、多样性与特异性。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "DNA（脱氧核糖核酸）是绝大多数生物的遗传物质。1953 年沃森和克里克提出 DNA 双螺旋结构模型，揭示遗传信息如何被稳定储存：两条脱氧核苷酸长链反向平行盘旋成规则的双螺旋，外侧由磷酸和脱氧核糖交替连接构成的基本骨架，内侧的碱基对通过氢键相连，宛如一座旋转楼梯的扶手与踏板。"},
+        {"type": "list", "ordered": false, "items": [
+          "基本单位：脱氧核苷酸 = 一分子磷酸 + 一分子脱氧核糖 + 一分子含氮碱基；",
+          "碱基种类：A（腺嘌呤）、T（胸腺嘧啶）、G（鸟嘌呤）、C（胞嘧啶）；",
+          "两条链反向平行：一条链取向 5′→3′，另一条链取向 3′→5′。"
+        ]},
+        {"type": "table", "caption": "碱基互补配对规则", "headers": ["碱基", "配对对象", "氢键数", "关系标记"], "rows": [
+          ["A（腺嘌呤）", "T", "2", "A = T"],
+          ["T（胸腺嘧啶）", "A", "2", "A = T"],
+          ["G（鸟嘌呤）", "C", "3", "G ≡ C"],
+          ["C（胞嘧啶）", "G", "3", "G ≡ C"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/dna-structure.svg", "caption": "DNA 双螺旋结构与碱基互补配对", "alt": "DNA 双螺旋及 A-T、G-C 碱基配对示意图"},
+        {"type": "formula", "latex": "A = T,\\quad G = C,\\quad \\frac{A+G}{A+T+G+C} = 50\\%", "caption": "双链 DNA 中嘌呤总数等于嘧啶总数，A 与 T 相等、G 与 C 相等"},
+        {"type": "callout", "variant": "tip", "text": "记忆口诀：外侧磷酸糖，内侧碱基对；反向平行绕，直径两纳米。遇到碱基数量计算题，先写出 A=T、G=C，再对每条链分别列方程。"},
+        {"type": "paragraph", "text": "结构稳定性来自三方面：碱基对之间的氢键维持双链的横向连接，碱基堆积力与外侧骨架的磷酸二酯键维持纵向连续。这种「既稳定又能在需要时解旋」的特性，正是 DNA 能够精确复制、又能被转录为 RNA 的物理基础。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/dna-structure.svg", "caption": "DNA 双螺旋结构与碱基互补配对", "alt": "DNA 双螺旋、反向平行骨架与碱基配对示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "DNA 分子结构", "note": "结构与功能相适应", "children": [
+          {"id": "a1", "label": "基本单位", "children": [{"id": "a1a", "label": "脱氧核苷酸"}, {"id": "a1b", "label": "磷酸+脱氧核糖+碱基"}]},
+          {"id": "a2", "label": "空间结构", "children": [{"id": "a2a", "label": "双螺旋"}, {"id": "a2b", "label": "反向平行"}, {"id": "a2c", "label": "直径约 2 nm"}]},
+          {"id": "a3", "label": "碱基互补配对", "children": [{"id": "a3a", "label": "A=T（2 个氢键）"}, {"id": "a3b", "label": "G≡C（3 个氢键）"}]},
+          {"id": "a4", "label": "结构特性", "children": [{"id": "a4a", "label": "稳定性"}, {"id": "a4b", "label": "多样性"}, {"id": "a4c", "label": "特异性"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 2, "importance": 4, "question": "下列关于 DNA 双螺旋结构的叙述，正确的是？", "options": ["两条链的碱基序列完全相同", "两条链反向平行，A 与 U 严格配对", "双链中 (A+G)/(T+C) 的比值恒为 1", "脱氧核糖和碱基都位于双螺旋的外侧"], "answer": "双链中 (A+G)/(T+C) 的比值恒为 1", "explanation": "双链 DNA 中 A=T、G=C，故嘌呤总数等于嘧啶总数，(A+G)/(T+C)=1；A 与 U 配对只出现在 RNA 中；外侧是磷酸和脱氧核糖交替构成的骨架，碱基在内部。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于双链 DNA 分子，下列说法正确的是？", "options": ["A 与 T 之间形成 2 个氢键", "G 与 C 之间形成 3 个氢键", "嘌呤碱基总数等于嘧啶碱基总数", "DNA 分子中每个脱氧核糖都连接两个磷酸基团"], "answer": ["A 与 T 之间形成 2 个氢键", "G 与 C 之间形成 3 个氢键", "嘌呤碱基总数等于嘧啶碱基总数"], "explanation": "A-T 为 2 个氢键、G-C 为 3 个氢键；由 A=T、G=C 可知嘌呤=嘧啶。DNA 链中位于末端的脱氧核糖只连接一个磷酸基团，故第 4 项错误。", "points": 2},
+        {"qid": "q3", "type": "short_answer", "difficulty": 3, "importance": 5, "question": "请说明 DNA 双螺旋结构中碱基互补配对对遗传信息准确传递的重要作用。", "answer": "碱基互补配对使 DNA 的每条链都能作为模板，在复制和转录时按 A-T（转录时为 A-U）、G-C 的规则精确配对，从而把遗传信息准确传递给子代 DNA 或 mRNA，保证遗传信息不发生改变。", "keywords": ["模板", "互补配对", "精确"], "explanation": "要点是「每一条链皆可作模板」以及「互补配对保证精确性」，这两点共同保证了遗传信息在传递过程中的稳定与准确。", "points": 2}
+      ],
+      "tags": ["DNA", "双螺旋", "碱基互补配对", "分子结构", "遗传物质"],
+      "difficulty": 2,
+      "importance": 5,
+      "est_minutes": 25,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "genetics-dna-replication",
+      "chapter_id": "genetics",
+      "title": "DNA 的复制：半保留复制",
+      "summary": "DNA 以半保留方式复制：双链解开后各作模板合成互补链，每个子代 DNA 都含一条母链和一条新链。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "DNA 复制是指以亲代 DNA 为模板合成子代 DNA 的过程。由于碱基互补配对，新合成的链与原链严格对应，因此复制是精确的。复制发生在细胞分裂间期（有丝分裂和减数第一次分裂前的间期），是遗传信息由亲代传给子代的分子基础。"},
+        {"type": "list", "ordered": true, "items": [
+          "解旋：解旋酶使双链的氢键断裂，局部分开成为两条单链，各自作为模板；",
+          "合成：以游离的四种脱氧核苷酸为原料，DNA 聚合酶沿模板 5′→3′ 方向延伸新链，按 A-T、G-C 配对；",
+          "连接：相邻脱氧核苷酸通过磷酸二酯键连接，形成两条新的子链，与母链重新盘绕成双螺旋。"
+        ]},
+        {"type": "table", "caption": "DNA 复制的六要素", "headers": ["要素", "内容"], "rows": [
+          ["模板", "亲代 DNA 的两条链"],
+          ["原料", "四种脱氧核苷酸（dATP、dTTP、dGTP、dCTP）"],
+          ["酶", "解旋酶、DNA 聚合酶（部分生物还需连接酶）"],
+          ["能量", "由 ATP 水解提供"],
+          ["产物", "两个与亲代完全相同的子代 DNA 分子"],
+          ["方向与特点", "边解旋边复制；半保留复制；半不连续复制"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/dna-replication.svg", "caption": "DNA 的半保留复制过程", "alt": "亲代 DNA 解旋、以两条母链为模板合成新链，形成两个子代 DNA 的示意图"},
+        {"type": "formula", "latex": "1 \\text{ 个 DNA 复制 } n \\text{ 次} \\Rightarrow 2^{n} \\text{ 个子代 DNA，其中含母链的有 } 2 \\text{ 个}", "caption": "复制次数的定量关系"},
+        {"type": "callout", "variant": "note", "text": "「半保留」意味着：无论复制多少次，最初的两条母链始终分别保留在两个子代 DNA 分子中，其余均是新合成的链。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/dna-replication.svg", "caption": "DNA 的半保留复制", "alt": "DNA 半保留复制过程示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "DNA 复制", "note": "半保留复制", "children": [
+          {"id": "b1", "label": "时间", "children": [{"id": "b1a", "label": "细胞分裂间期"}]},
+          {"id": "b2", "label": "过程", "children": [{"id": "b2a", "label": "解旋"}, {"id": "b2b", "label": "合成子链"}, {"id": "b2c", "label": "重新盘绕"}]},
+          {"id": "b3", "label": "条件", "children": [{"id": "b3a", "label": "模板"}, {"id": "b3b", "label": "原料"}, {"id": "b3c", "label": "酶与能量"}]},
+          {"id": "b4", "label": "特点", "children": [{"id": "b4a", "label": "半保留"}, {"id": "b4b", "label": "边解旋边复制"}, {"id": "b4c", "label": "半不连续"}]},
+          {"id": "b5", "label": "意义", "children": [{"id": "b5a", "label": "保持遗传信息稳定"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 2, "importance": 5, "question": "一个被 ¹⁵N 标记的 DNA 分子，在含 ¹⁴N 的培养基中连续复制 3 次，含有 ¹⁵N 的子代 DNA 分子个数是？", "options": ["1 个", "2 个", "4 个", "8 个"], "answer": "2 个", "explanation": "半保留复制中最初的两条 ¹⁵N 母链始终分别保留在两个子代 DNA 分子中，故无论复制几次，含 ¹⁵N 的 DNA 都是 2 个；总 DNA 数为 2³=8 个。", "points": 1},
+        {"qid": "q2", "type": "true_false", "difficulty": 2, "importance": 4, "question": "DNA 复制时，两条模板链都是连续合成新链，不存在不连续合成。", "options": ["正确", "错误"], "answer": "错误", "explanation": "DNA 聚合酶只能沿 5′→3′ 方向合成，而两条模板链方向相反，因此其中一条新链必须分片段合成再连接，即半不连续复制。", "points": 1},
+        {"qid": "q3", "type": "short_answer", "difficulty": 3, "importance": 4, "question": "为什么说 DNA 的半保留复制能保证遗传信息准确传给子代？", "answer": "因为复制以亲代 DNA 的两条链分别为模板，按碱基互补配对原则（A-T、G-C）合成新链，碱基序列与模板严格对应，所以每个子代 DNA 都与亲代完全相同，遗传信息得以精确传递。", "keywords": ["模板", "碱基互补配对", "精确"], "explanation": "关键在于「以母链为模板」与「碱基互补配对保证对应关系」两点，使新链序列与原链严格互补，从而保证复制精确。", "points": 2}
+      ],
+      "tags": ["DNA复制", "半保留复制", "解旋酶", "DNA聚合酶"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 30,
+      "theory_tags": ["dual_coding"]
+    },
+    {
+      "kp_id": "genetics-transcription",
+      "chapter_id": "genetics",
+      "title": "转录：以 DNA 为模板合成 RNA",
+      "summary": "转录是以 DNA 的一条链为模板，按碱基互补配对（A-U、T-A、G-C、C-G）合成 RNA 的过程，是基因表达的第一步。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "基因是有遗传效应的 DNA 片段。基因中的遗传信息要发挥作用，首先要通过转录传递给 RNA。转录发生在细胞核（真核细胞）或拟核区（原核细胞），以 DNA 的一条链为模板，合成 mRNA、tRNA、rRNA 等 RNA 分子。"},
+        {"type": "list", "ordered": false, "items": [
+          "模板：DNA 的一条链（称为模板链），另一条链为编码链，不参与转录；",
+          "原料：四种核糖核苷酸（ATP、UTP、GTP、CTP）；",
+          "酶：RNA 聚合酶，能识别启动子并沿模板链 5′→3′ 移动；",
+          "产物：单链 RNA，其中 mRNA 将作为翻译的模板。"
+        ]},
+        {"type": "table", "caption": "DNA 与 RNA 的比较", "headers": ["项目", "DNA", "RNA"], "rows": [
+          ["五碳糖", "脱氧核糖", "核糖"],
+          ["碱基", "A、T、G、C", "A、U、G、C"],
+          ["链数", "通常双链", "通常单链"],
+          ["碱基配对", "A-T、G-C", "A-U、G-C、T-A（转录时）"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/transcription.svg", "caption": "转录：DNA 模板 → mRNA", "alt": "RNA 聚合酶以 DNA 的一条链为模板合成 mRNA 的示意图"},
+        {"type": "formula", "latex": "\\text{DNA 模板链：} \\dots ATGC\\dots \\Rightarrow \\text{mRNA：} \\dots UACG\\dots", "caption": "转录时 mRNA 上的 A 与模板链的 T 配对，U 与 A 配对"},
+        {"type": "callout", "variant": "tip", "text": "做碱基推理题时先分清「模板链」与「编码链」：mRNA 与模板链互补，与编码链（非模板链）碱基序列基本相同，只是把 T 换成 U。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/transcription.svg", "caption": "转录过程", "alt": "转录示意图：DNA 模板、RNA 聚合酶与 mRNA"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "转录", "note": "基因表达第一步", "children": [
+          {"id": "c1", "label": "场所", "children": [{"id": "c1a", "label": "真核：细胞核"}, {"id": "c1b", "label": "原核：拟核区"}]},
+          {"id": "c2", "label": "条件", "children": [{"id": "c2a", "label": "模板链"}, {"id": "c2b", "label": "核糖核苷酸"}, {"id": "c2c", "label": "RNA 聚合酶"}]},
+          {"id": "c3", "label": "配对原则", "children": [{"id": "c3a", "label": "A→U"}, {"id": "c3b", "label": "T→A"}, {"id": "c3c", "label": "G→C / C→G"}]},
+          {"id": "c4", "label": "产物", "children": [{"id": "c4a", "label": "mRNA（信使）"}, {"id": "c4b", "label": "tRNA（运载）"}, {"id": "c4c", "label": "rRNA（核糖体）"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 2, "importance": 4, "question": "已知某 DNA 模板链的一段序列为 3′-TACGGA-5′，则转录产生的 mRNA 相应序列是？", "options": ["5′-AUGCCT-3′", "5′-ATGCCA-3′", "5′-UACGGA-3′", "5′-ATGCCT-3′"], "answer": "5′-AUGCCT-3′", "explanation": "mRNA 与模板链互补配对，模板 T→A、A→U、C→G、G→C、G→C、A→U，故得到 5′-AUGCCT-3′；注意 RNA 中不含 T。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于转录过程，下列说法正确的是？", "options": ["以 DNA 的一条链为模板", "原料是四种核糖核苷酸", "需要 RNA 聚合酶参与", "产物一定是 mRNA"], "answer": ["以 DNA 的一条链为模板", "原料是四种核糖核苷酸", "需要 RNA 聚合酶参与"], "explanation": "转录以 DNA 的一条链为模板，用四种核糖核苷酸作原料，需 RNA 聚合酶；产物除 mRNA 外还有 tRNA、rRNA，故第 4 项错误。", "points": 2},
+        {"qid": "q3", "type": "true_false", "difficulty": 2, "importance": 3, "question": "转录时，DNA 的两条链都会作为模板同时转录。", "options": ["正确", "错误"], "answer": "错误", "explanation": "转录只以 DNA 的一条链为模板，另一条链（编码链）不参与转录。", "points": 1}
+      ],
+      "tags": ["转录", "RNA", "RNA聚合酶", "基因表达", "碱基互补配对"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 28,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "genetics-translation",
+      "chapter_id": "genetics",
+      "title": "翻译：以 mRNA 为模板合成蛋白质",
+      "summary": "翻译是核糖体以 mRNA 为模板，按密码子顺序把氨基酸连接成多肽链的过程；密码子与反密码子互补配对决定氨基酸序列。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "翻译是把 mRNA 上的碱基序列「解读」为蛋白质中氨基酸序列的过程，发生在细胞质中的核糖体上。核糖体沿 mRNA 移动，每读取一个密码子（mRNA 上相邻的 3 个碱基），就由一个携带相应氨基酸的 tRNA 通过反密码子互补配对把氨基酸送到位，氨基酸依次连接成多肽链。"},
+        {"type": "list", "ordered": true, "items": [
+          "起始：核糖体与 mRNA 结合，携带甲硫氨酸的 tRNA 识别起始密码子 AUG；",
+          "延伸：核糖体沿 mRNA 移动，tRNA 的反密码子与 mRNA 的密码子互补配对，氨基酸逐一加到多肽链上；",
+          "终止：遇到终止密码子（UAA、UAG、UGA）时翻译停止，多肽链释放并折叠成蛋白质。"
+        ]},
+        {"type": "table", "caption": "遗传信息的三个层次", "headers": ["名称", "位置", "含义"], "rows": [
+          ["密码子", "mRNA", "决定 1 个氨基酸的 3 个相邻碱基，共 64 种"],
+          ["反密码子", "tRNA", "与密码子互补配对的 3 个碱基"],
+          ["遗传密码", "通用密码子表", "绝大多数生物共用，体现生物界的统一性"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/translation.svg", "caption": "翻译：mRNA → 多肽链", "alt": "核糖体沿 mRNA 移动、tRNA 携带氨基酸合成多肽链的示意图"},
+        {"type": "formula", "latex": "\\text{mRNA 碱基数} : \\text{氨基酸数} = 3 : 1", "caption": "不考虑终止密码子时，mRNA 上每 3 个碱基决定 1 个氨基酸"},
+        {"type": "callout", "variant": "warning", "text": "易错点：64 种密码子中有 3 种是终止密码子，不决定氨基酸；因此决定氨基酸的密码子只有 61 种。起始密码子 AUG 同时决定甲硫氨酸。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/translation.svg", "caption": "翻译过程", "alt": "翻译示意图：mRNA、核糖体、tRNA 与多肽链"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "翻译", "note": "mRNA → 蛋白质", "children": [
+          {"id": "d1", "label": "场所", "children": [{"id": "d1a", "label": "核糖体（细胞质）"}]},
+          {"id": "d2", "label": "模板", "children": [{"id": "d2a", "label": "mRNA 的密码子"}]},
+          {"id": "d3", "label": "工具", "children": [{"id": "d3a", "label": "tRNA 与反密码子"}, {"id": "d3b", "label": "氨基酸"}, {"id": "d3c", "label": "酶与能量"}]},
+          {"id": "d4", "label": "过程", "children": [{"id": "d4a", "label": "起始（AUG）"}, {"id": "d4b", "label": "延伸"}, {"id": "d4c", "label": "终止（终止密码子）"}]},
+          {"id": "d5", "label": "产物", "children": [{"id": "d5a", "label": "多肽链 → 功能蛋白"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 3, "importance": 4, "question": "某 mRNA 上有 90 个碱基，其中包含一个终止密码子，则其翻译产生的多肽链最多含有多少个氨基酸？", "options": ["29 个", "30 个", "31 个", "90 个"], "answer": "29 个", "explanation": "90 个碱基对应 30 个密码子，其中 1 个为终止密码子不编码氨基酸，故最多编码 30-1=29 个氨基酸。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于翻译过程，下列说法正确的是？", "options": ["核糖体沿 mRNA 移动读取密码子", "tRNA 的反密码子与密码子互补配对", "终止密码子不决定任何氨基酸", "密码子共有 64 种，全部决定氨基酸"], "answer": ["核糖体沿 mRNA 移动读取密码子", "tRNA 的反密码子与密码子互补配对", "终止密码子不决定任何氨基酸"], "explanation": "核糖体读取密码子、tRNA 以反密码子配对接运氨基酸、终止密码子不编码氨基酸；64 种密码子中只有 61 种决定氨基酸，故第 4 项错误。", "points": 2},
+        {"qid": "q3", "type": "short_answer", "difficulty": 3, "importance": 4, "question": "简述遗传信息在翻译过程中的传递途径。", "answer": "mRNA 上的密码子与 tRNA 上的反密码子互补配对，tRNA 携带相应氨基酸进入核糖体，氨基酸按密码子顺序逐一连接成多肽链，从而把 mRNA 的碱基序列转变为蛋白质的氨基酸序列。", "keywords": ["密码子", "反密码子", "互补配对", "多肽"], "explanation": "核心是「密码子—反密码子互补配对」把核酸序列转换为氨基酸序列。", "points": 2}
+      ],
+      "tags": ["翻译", "密码子", "反密码子", "核糖体", "tRNA", "蛋白质"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 30,
+      "theory_tags": ["dual_coding"]
+    },
+    {
+      "kp_id": "genetics-central-dogma",
+      "chapter_id": "genetics",
+      "title": "中心法则及其发展",
+      "summary": "中心法则描述遗传信息在 DNA、RNA、蛋白质之间传递的规律：DNA→RNA→蛋白质，并被逆转录、RNA 复制等发现不断补充完善。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "中心法则由克里克提出，概括了遗传信息在生物大分子之间的流动方向：遗传信息可以从 DNA 流向 DNA（复制），从 DNA 流向 RNA（转录），再从 RNA 流向蛋白质（翻译）。后来在病毒中又发现了逆转录和 RNA 复制，使中心法则得到补充和完善。"},
+        {"type": "list", "ordered": false, "items": [
+          "DNA → DNA：DNA 复制，发生在细胞分裂间期；",
+          "DNA → RNA：转录，是基因表达的第一步；",
+          "RNA → 蛋白质：翻译，实现基因对性状的控制；",
+          "RNA → DNA：逆转录，见于逆转录病毒（如 HIV）；",
+          "RNA → RNA：RNA 复制，见于某些 RNA 病毒。"
+        ]},
+        {"type": "table", "caption": "中心法则各途径的比较", "headers": ["途径", "模板", "产物", "主要发生场所"], "rows": [
+          ["复制", "DNA", "DNA", "细胞核/拟核"],
+          ["转录", "DNA", "RNA", "细胞核/拟核"],
+          ["翻译", "mRNA", "多肽链", "核糖体"],
+          ["逆转录", "RNA", "DNA", "被感染的宿主细胞内"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/central-dogma.svg", "caption": "中心法则与信息流向", "alt": "DNA、RNA、蛋白质之间信息流向的流程图"},
+        {"type": "callout", "variant": "note", "text": "中心法则体现了不同生物在分子水平上的统一性；而逆转录、RNA 复制等发现说明科学认识是不断发展的。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/central-dogma.svg", "caption": "中心法则", "alt": "中心法则流程图"},
+        {"src": "/static/img/biology/genetics/translation.svg", "caption": "翻译是中心法则的重要环节", "alt": "翻译示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "中心法则", "note": "遗传信息的流向", "children": [
+          {"id": "e1", "label": "主线索", "children": [{"id": "e1a", "label": "DNA 复制"}, {"id": "e1b", "label": "转录"}, {"id": "e1c", "label": "翻译"}]},
+          {"id": "e2", "label": "补充", "children": [{"id": "e2a", "label": "逆转录（RNA→DNA）"}, {"id": "e2b", "label": "RNA 复制（RNA→RNA）"}]},
+          {"id": "e3", "label": "意义", "children": [{"id": "e3a", "label": "揭示信息流动规律"}, {"id": "e3b", "label": "体现生物界统一性"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 2, "importance": 4, "question": "下列过程中，不属于中心法则主线索的是？", "options": ["DNA 复制", "转录", "翻译", "逆转录"], "answer": "逆转录", "explanation": "中心法则主线索为 DNA→RNA→蛋白质，包括复制、转录、翻译；逆转录（RNA→DNA）是对中心法则的补充，见于逆转录病毒。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于中心法则，下列说法正确的是？", "options": ["DNA 复制使遗传信息在亲子代间传递", "转录以 DNA 为模板合成 RNA", "翻译以 mRNA 为模板合成蛋白质", "所有生物的遗传信息都能逆转录"], "answer": ["DNA 复制使遗传信息在亲子代间传递", "转录以 DNA 为模板合成 RNA", "翻译以 mRNA 为模板合成蛋白质"], "explanation": "复制、转录、翻译是中心法则主线索；逆转录只发生在逆转录病毒等特殊生物中，并非所有生物都有，故第 4 项错误。", "points": 2},
+        {"qid": "q3", "type": "true_false", "difficulty": 2, "importance": 3, "question": "中心法则一旦提出就固定不变，不再被补充或修改。", "options": ["正确", "错误"], "answer": "错误", "explanation": "逆转录和 RNA 复制的发现补充和完善了中心法则，说明科学认识是不断发展、动态修正的。", "points": 1}
+      ],
+      "tags": ["中心法则", "复制", "转录", "翻译", "逆转录"],
+      "difficulty": 3,
+      "importance": 5,
+      "est_minutes": 24,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "genetics-gene-regulation",
+      "chapter_id": "genetics",
+      "title": "基因表达的调控",
+      "summary": "基因表达受精密调控：原核生物多以操纵子为单位整体调控，真核生物则在转录、加工、翻译等多层次进行调控，实现「按需表达」。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "生物体的每个细胞都含有全套基因，但在特定时空只表达其中一部分基因，这就是基因表达调控。它使细胞能适应环境变化、实现分化，是「同一基因型可产生不同表现型」的重要原因。原核生物中，最经典的模型是乳糖操纵子。"},
+        {"type": "list", "ordered": false, "items": [
+          "乳糖操纵子结构：调节基因、启动子 P、操纵基因 O 与结构基因 Z、Y、A；",
+          "无乳糖时：阻遏蛋白与操纵基因 O 结合，RNA 聚合酶无法通过，结构基因不表达；",
+          "有乳糖时：乳糖与阻遏蛋白结合使其失活，RNA 聚合酶顺利转录，分解乳糖的酶被合成。"
+        ]},
+        {"type": "table", "caption": "原核与真核基因表达调控比较", "headers": ["比较项", "原核生物", "真核生物"], "rows": [
+          ["调控单位", "以操纵子为单位", "以单个基因/基因网络为主"],
+          ["主要层次", "转录水平为主", "转录、转录后加工、翻译等多层次"],
+          ["染色质影响", "无", "受染色质结构、表观修饰影响"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/gene-regulation.svg", "caption": "乳糖操纵子的开关调控", "alt": "乳糖操纵子结构与阻遏蛋白调控示意图"},
+        {"type": "callout", "variant": "tip", "text": "理解调控的核心是「节约与适应」：细胞只在需要时才合成相应蛋白质，避免浪费能量；环境变化时又能迅速开启或关闭相关基因。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/gene-regulation.svg", "caption": "基因表达调控（乳糖操纵子）", "alt": "乳糖操纵子调控示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "基因表达调控", "children": [
+          {"id": "f1", "label": "意义", "children": [{"id": "f1a", "label": "适应环境"}, {"id": "f1b", "label": "细胞分化"}, {"id": "f1c", "label": "节省能量"}]},
+          {"id": "f2", "label": "原核", "children": [{"id": "f2a", "label": "操纵子模型"}, {"id": "f2b", "label": "阻遏蛋白开关"}]},
+          {"id": "f3", "label": "真核", "children": [{"id": "f3a", "label": "转录水平"}, {"id": "f3b", "label": "转录后加工"}, {"id": "f3c", "label": "翻译水平"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 3, "importance": 4, "question": "在乳糖操纵子中，阻遏蛋白直接结合的部位是？", "options": ["启动子 P", "操纵基因 O", "结构基因 Z", "调节基因"], "answer": "操纵基因 O", "explanation": "无乳糖时阻遏蛋白与操纵基因 O 结合，阻止 RNA 聚合酶通过启动子转录结构基因；乳糖存在时乳糖与阻遏蛋白结合使其失活，基因得以表达。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于基因表达调控，下列说法正确的是？", "options": ["同一细胞中并非所有基因都同时表达", "原核生物常以操纵子为单位调控", "基因表达调控有利于细胞适应环境", "真核生物只在翻译水平调控"], "answer": ["同一细胞中并非所有基因都同时表达", "原核生物常以操纵子为单位调控", "基因表达调控有利于细胞适应环境"], "explanation": "基因选择性表达使细胞分化并适应环境，原核多以操纵子调控；真核生物在转录、加工、翻译等多层次调控，故第 4 项错误。", "points": 2},
+        {"qid": "q3", "type": "short_answer", "difficulty": 4, "importance": 4, "question": "为什么说基因表达调控是「按需表达」？请举例说明。", "answer": "细胞只在需要时才表达相应基因以节省能量并适应环境。例如大肠杆菌在有乳糖时开启分解乳糖的酶基因，无乳糖时关闭；真核细胞则通过选择性表达实现细胞分化。", "keywords": ["按需", "节省", "适应", "乳糖"], "explanation": "核心是「环境变化→需求变化→基因开关」，乳糖操纵子是最典型例子。", "points": 2}
+      ],
+      "tags": ["基因表达调控", "操纵子", "阻遏蛋白", "细胞分化"],
+      "difficulty": 4,
+      "importance": 4,
+      "est_minutes": 28,
+      "theory_tags": ["interleaving"]
+    },
+    {
+      "kp_id": "genetics-mutation",
+      "chapter_id": "genetics",
+      "title": "基因突变",
+      "summary": "基因突变是基因内部碱基对发生替换、增添或缺失，导致基因结构改变，是产生新基因的根本途径，属于可遗传变异。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "基因突变是指基因内部碱基对的替换、增添或缺失，使基因的结构发生改变。它是可遗传变异的重要来源，也是生物变异的根本来源，能产生新的等位基因，为生物进化提供原材料。"},
+        {"type": "list", "ordered": false, "items": [
+          "碱基对替换（点突变）：如 A-T 变为 G-C，可能改变氨基酸（错义）、也可能不改变（同义）；",
+          "碱基对增添：会使插入点之后的密码子全部错位，属于移码突变；",
+          "碱基对缺失：同样使之后的密码子错位，通常后果比替换严重。"
+        ]},
+        {"type": "table", "caption": "基因突变的特点与原因", "headers": ["类别", "内容"], "rows": [
+          ["诱发原因", "物理因素（紫外线、辐射）、化学因素（亚硝酸盐等）、生物因素（某些病毒）"],
+          ["主要特点", "普遍性、随机性、低频性、不定向性、多害少利性"],
+          ["发生时期", "主要发生在 DNA 复制时（细胞分裂间期）"],
+          ["结果", "产生等位基因，可能导致性状改变"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/mutation.svg", "caption": "基因突变的三种碱基水平类型", "alt": "碱基替换、缺失、插入三种突变示意图"},
+        {"type": "callout", "variant": "warning", "text": "注意区分：碱基替换改变的是个别密码子，而增添或缺失会造成其后所有密码子移位（移码突变），一般危害更大；但突变的具体方向是「不定向」的，自然环境对突变进行选择。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/mutation.svg", "caption": "碱基替换、缺失与插入", "alt": "基因突变类型示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "基因突变", "children": [
+          {"id": "g1", "label": "本质", "children": [{"id": "g1a", "label": "基因内部碱基对改变"}]},
+          {"id": "g2", "label": "类型", "children": [{"id": "g2a", "label": "替换"}, {"id": "g2b", "label": "增添"}, {"id": "g2c", "label": "缺失"}]},
+          {"id": "g3", "label": "原因", "children": [{"id": "g3a", "label": "物理因素"}, {"id": "g3b", "label": "化学因素"}, {"id": "g3c", "label": "生物因素"}]},
+          {"id": "g4", "label": "特点", "children": [{"id": "g4a", "label": "普遍性"}, {"id": "g4b", "label": "随机性·低频性"}, {"id": "g4c", "label": "不定向性"}]},
+          {"id": "g5", "label": "意义", "children": [{"id": "g5a", "label": "产生新基因"}, {"id": "g5b", "label": "进化的原材料"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 3, "importance": 4, "question": "下列变异中，能产生新基因的是？", "options": ["基因突变", "基因重组", "染色体数目变异", "环境影响引起的不可遗传变异"], "answer": "基因突变", "explanation": "基因突变改变基因内部碱基序列，能产生新的等位基因，是生物变异的根本来源，也是进化的原始材料；基因重组只产生新的基因组合而非新基因。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于基因突变，下列说法正确的是？", "options": ["碱基对的替换、增添、缺失都可能导致基因突变", "基因突变具有随机性和不定向性", "移码突变通常比单个碱基替换后果更严重", "基因突变一定会导致生物性状改变"], "answer": ["碱基对的替换、增添、缺失都可能导致基因突变", "基因突变具有随机性和不定向性", "移码突变通常比单个碱基替换后果更严重"], "explanation": "替换、增添、缺失都能改变基因结构；突变具有随机性、不定向性，移码常更严重。但由于密码子的简并性等因素，突变不一定改变性状，故第 4 项错误。", "points": 2},
+        {"qid": "q3", "type": "short_answer", "difficulty": 4, "importance": 4, "question": "为什么说基因突变是生物变异的根本来源？", "answer": "基因突变能改变基因内部的碱基序列，产生新的等位基因，从而产生新的性状类型，为生物进化提供原始材料，因此是生物变异的根本来源。", "keywords": ["新基因", "等位基因", "根本来源", "进化"], "explanation": "关键是基因突变产生「新基因（新等位基因）」，而基因重组等只产生新的基因组合。", "points": 2}
+      ],
+      "tags": ["基因突变", "碱基替换", "移码突变", "可遗传变异"],
+      "difficulty": 4,
+      "importance": 5,
+      "est_minutes": 28,
+      "theory_tags": ["dual_coding"]
+    },
+    {
+      "kp_id": "genetics-recombination",
+      "chapter_id": "genetics",
+      "title": "基因重组",
+      "summary": "基因重组是控制不同性状的基因重新组合，主要发生在减数分裂的交叉互换和自由组合中，能产生大量新的基因组合。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "基因重组是指在生物体进行有性生殖的过程中，控制不同性状的基因的重新组合。它并不产生新基因，而是把原有的基因重新搭配，形成大量新的基因型，是生物多样性形成的重要原因。"},
+        {"type": "list", "ordered": false, "items": [
+          "自由组合：减数第一次分裂后期，非同源染色体上的非等位基因随非同源染色体自由组合；",
+          "交叉互换：减数第一次分裂前期，同源染色体的非姐妹染色单体之间交换片段。"
+        ]},
+        {"type": "table", "caption": "基因重组与基因突变比较", "headers": ["比较项", "基因重组", "基因突变"], "rows": [
+          ["本质", "基因重新组合", "基因结构改变"],
+          ["是否产生新基因", "不产生", "产生"],
+          ["发生时期", "减数分裂（有性生殖）", "主要是 DNA 复制时"],
+          ["结果", "新的基因型/性状组合", "新的等位基因"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/recombination.svg", "caption": "基因重组的两种来源", "alt": "交叉互换与自由组合示意图"},
+        {"type": "callout", "variant": "note", "text": "基因重组是「已有基因的重新洗牌」，它极大地丰富了后代的变异类型，是杂交育种和生物多样性的重要来源。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/recombination.svg", "caption": "基因重组的来源", "alt": "基因重组示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "基因重组", "children": [
+          {"id": "h1", "label": "来源", "children": [{"id": "h1a", "label": "非同源染色体自由组合"}, {"id": "h1b", "label": "同源染色体交叉互换"}]},
+          {"id": "h2", "label": "本质", "children": [{"id": "h2a", "label": "基因重新组合"}, {"id": "h2b", "label": "不产生新基因"}]},
+          {"id": "h3", "label": "意义", "children": [{"id": "h3a", "label": "增加变异多样性"}, {"id": "h3b", "label": "杂交育种基础"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 3, "importance": 4, "question": "基因重组与基因突变的本质区别在于？", "options": ["基因重组产生新基因，基因突变不产生", "基因重组不产生新基因，基因突变产生新基因", "两者都产生新基因", "两者都不产生新基因"], "answer": "基因重组不产生新基因，基因突变产生新基因", "explanation": "基因重组只是原有基因的重新组合，不产生新基因；基因突变改变基因结构，能产生新的等位基因。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "下列属于基因重组来源的是？", "options": ["减数第一次分裂前期非姐妹染色单体交叉互换", "减数第一次分裂后期非同源染色体自由组合", "紫外线照射引起碱基对替换", "非同源染色体之间片段的移接（易位）"], "answer": ["减数第一次分裂前期非姐妹染色单体交叉互换", "减数第一次分裂后期非同源染色体自由组合"], "explanation": "交叉互换与自由组合是基因重组的主要来源；碱基替换属于基因突变；染色体片段易位属于染色体结构变异，均不属于基因重组。", "points": 2},
+        {"qid": "q3", "type": "true_false", "difficulty": 2, "importance": 3, "question": "基因重组能产生新的基因，是生物变异的根本来源。", "options": ["正确", "错误"], "answer": "错误", "explanation": "基因重组只产生新的基因组合，不产生新基因；产生新基因、作为生物变异根本来源的是基因突变。", "points": 1}
+      ],
+      "tags": ["基因重组", "交叉互换", "自由组合", "减数分裂"],
+      "difficulty": 4,
+      "importance": 4,
+      "est_minutes": 26,
+      "theory_tags": ["interleaving"]
+    },
+    {
+      "kp_id": "genetics-epigenetics",
+      "chapter_id": "genetics",
+      "title": "表观遗传",
+      "summary": "表观遗传指 DNA 碱基序列不变，但基因表达和性状发生可遗传改变的现象，主要通过 DNA 甲基化、组蛋白修饰等机制实现。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "传统遗传学认为基因决定性状，但科学家发现：在 DNA 碱基序列没有改变的情况下，基因的表达也可能发生可遗传的改变，这种现象称为表观遗传。它像一个「开关」，决定基因在何时、何处、以何种强度表达。"},
+        {"type": "list", "ordered": false, "items": [
+          "DNA 甲基化：胞嘧啶（尤其在 CpG 岛）被加上甲基，通常抑制基因表达；",
+          "组蛋白修饰：组蛋白的乙酰化使染色质疏松、促进转录，某些甲基化则使染色质紧密、抑制转录；",
+          "非编码 RNA 调控：部分小 RNA 参与基因表达的调控。"
+        ]},
+        {"type": "table", "caption": "表观遗传与基因突变比较", "headers": ["比较项", "表观遗传", "基因突变"], "rows": [
+          ["碱基序列", "不改变", "改变"],
+          ["可遗传性", "可遗传给子代", "可遗传"],
+          ["典型机制", "DNA 甲基化、组蛋白修饰", "碱基替换/增添/缺失"],
+          ["可逆性", "一般可逆（受环境等影响）", "通常不可逆"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/epigenetics.svg", "caption": "表观遗传的主要机制", "alt": "DNA 甲基化与组蛋白修饰示意图"},
+        {"type": "callout", "variant": "tip", "text": "理解表观遗传的关键词是「序列不变、表达改变、可以遗传」。它解释了同卵双胞胎性状为何可能有差异，也说明环境可以通过影响基因表达来影响性状。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/epigenetics.svg", "caption": "表观遗传机制", "alt": "表观遗传示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "表观遗传", "note": "序列不变、表达改变", "children": [
+          {"id": "i1", "label": "核心特征", "children": [{"id": "i1a", "label": "碱基序列不变"}, {"id": "i1b", "label": "表达与性状改变"}, {"id": "i1c", "label": "可遗传"}]},
+          {"id": "i2", "label": "主要机制", "children": [{"id": "i2a", "label": "DNA 甲基化"}, {"id": "i2b", "label": "组蛋白修饰"}, {"id": "i2c", "label": "非编码 RNA"}]},
+          {"id": "i3", "label": "意义", "children": [{"id": "i3a", "label": "解释同卵双胞胎差异"}, {"id": "i3b", "label": "环境影响的分子机制"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 3, "importance": 4, "question": "下列现象中，属于表观遗传的是？", "options": ["基因中碱基对缺失导致性状改变", "DNA 碱基序列不变但甲基化水平改变使基因表达改变并遗传", "染色体数目增多导致性状改变", "同源染色体交叉互换产生新组合"], "answer": "DNA 碱基序列不变但甲基化水平改变使基因表达改变并遗传", "explanation": "表观遗传的特点是碱基序列不变而基因表达和性状发生可遗传的改变，DNA 甲基化是典型机制；其余选项分别属于基因突变、染色体变异和基因重组。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于表观遗传，下列说法正确的是？", "options": ["DNA 碱基序列没有发生改变", "可通过 DNA 甲基化等方式实现", "其改变一般不能遗传给后代", "同卵双胞胎性状差异可能与其有关"], "answer": ["DNA 碱基序列没有发生改变", "可通过 DNA 甲基化等方式实现", "同卵双胞胎性状差异可能与其有关"], "explanation": "表观遗传不改变碱基序列、却可遗传，常通过甲基化、组蛋白修饰实现，可解释同卵双胞胎的性状差异，故第 3 项错误。", "points": 2},
+        {"qid": "q3", "type": "short_answer", "difficulty": 4, "importance": 4, "question": "请说明表观遗传与基因突变在本质上的区别。", "answer": "表观遗传不改变 DNA 的碱基序列，只是通过甲基化、组蛋白修饰等改变基因的表达并可能遗传；而基因突变是基因内部碱基序列发生了改变，产生了新的等位基因，两者本质不同。", "keywords": ["碱基序列不变", "甲基化", "表达", "碱基序列改变"], "explanation": "本质区别在于「碱基序列是否改变」：表观遗传不改序列只改表达，基因突变则改变序列。", "points": 2}
+      ],
+      "tags": ["表观遗传", "DNA甲基化", "组蛋白修饰", "基因表达"],
+      "difficulty": 4,
+      "importance": 4,
+      "est_minutes": 26,
+      "theory_tags": ["dual_coding", "interleaving"]
+    },
+    {
+      "kp_id": "genetics-gene-trait",
+      "chapter_id": "genetics",
+      "title": "基因与性状的关系",
+      "summary": "基因通过控制蛋白质的合成来控制生物性状，基因型决定表现型，但表现型还受环境影响；相对性状的遗传遵循孟德尔遗传规律。",
+      "content_blocks": [
+        {"type": "paragraph", "text": "基因是有遗传效应的 DNA 片段，通过控制蛋白质的合成来控制生物性状。基因对性状的控制有两种基本方式：一是通过控制酶的合成来控制代谢过程，从而间接控制性状（如白化病）；二是通过控制结构蛋白的合成直接控制性状（如镰刀型细胞贫血症）。"},
+        {"type": "list", "ordered": false, "items": [
+          "间接控制：基因 → 酶 → 代谢过程 → 性状；",
+          "直接控制：基因 → 结构蛋白 → 性状；",
+          "表现型 = 基因型 + 环境条件，即性状是基因与环境共同作用的结果。"
+        ]},
+        {"type": "table", "caption": "基因型与表现型的关系（一对等位基因 A/a）", "headers": ["基因型", "是否含显性基因", "表现型"], "rows": [
+          ["AA", "是（纯合）", "显性性状"],
+          ["Aa", "是（杂合）", "显性性状"],
+          ["aa", "否（纯合隐性）", "隐性性状"]
+        ]},
+        {"type": "image", "src": "/static/img/biology/genetics/gene-trait.svg", "caption": "基因控制性状的途径与显隐性", "alt": "基因型到表现型的关系示意图"},
+        {"type": "formula", "latex": "\\text{表现型} = \\text{基因型} + \\text{环境}；\\quad Aa \\times Aa \\Rightarrow 3 \\text{ 显} : 1 \\text{ 隐}", "caption": "表现型由基因型与环境共同决定，一对相对性状杂交 F₂ 表现型比约 3:1"},
+        {"type": "callout", "variant": "tip", "text": "理解「基因与环境」的经典例子：同种种子种在光照充足和阴暗处，植株高矮不同——基因型相同，表现型不同，说明环境会影响基因的表达。"}
+      ],
+      "images": [
+        {"src": "/static/img/biology/genetics/gene-trait.svg", "caption": "基因与性状的关系", "alt": "基因型、蛋白质与表现型关系示意图"}
+      ],
+      "mindmap": {
+        "id": "root", "label": "基因与性状", "children": [
+          {"id": "j1", "label": "控制途径", "children": [{"id": "j1a", "label": "控制酶的合成（间接）"}, {"id": "j1b", "label": "控制结构蛋白（直接）"}]},
+          {"id": "j2", "label": "基因型与表现型", "children": [{"id": "j2a", "label": "显性 AA / Aa"}, {"id": "j2b", "label": "隐性 aa"}]},
+          {"id": "j3", "label": "环境的作用", "children": [{"id": "j3a", "label": "表现型=基因型+环境"}]},
+          {"id": "j4", "label": "遗传规律", "children": [{"id": "j4a", "label": "分离定律 3:1"}]}
+        ]
+      },
+      "quiz": [
+        {"qid": "q1", "type": "single_choice", "difficulty": 3, "importance": 4, "question": "白化病患者的皮肤、毛发呈白色，这主要说明基因控制性状的方式是？", "options": ["直接控制结构蛋白的合成", "通过控制酶的合成来控制代谢过程", "通过控制染色体数目", "通过环境因素直接决定"], "answer": "通过控制酶的合成来控制代谢过程", "explanation": "白化病是因为缺乏合成黑色素的酶，属于基因通过控制酶的合成间接控制代谢过程和性状；镰刀型细胞贫血症则属于直接控制结构蛋白。", "points": 1},
+        {"qid": "q2", "type": "multi_choice", "difficulty": 3, "importance": 4, "question": "关于基因、蛋白质与性状的关系，下列说法正确的是？", "options": ["基因通过控制蛋白质的合成来控制性状", "基因对性状的控制有两种基本方式", "表现型完全由基因型决定，与环境无关", "基因型相同的个体表现型一定相同"], "answer": ["基因通过控制蛋白质的合成来控制性状", "基因对性状的控制有两种基本方式"], "explanation": "基因通过控制蛋白质合成控制性状，方式有间接（酶）和直接（结构蛋白）两种；表现型是基因型与环境共同作用的结果，基因型相同表现型也可能不同，故后两项错误。", "points": 2},
+        {"qid": "q3", "type": "short_answer", "difficulty": 4, "importance": 4, "question": "请说明「表现型 = 基因型 + 环境」的含义，并举一例。", "answer": "表现型是基因型与环境条件共同作用的结果，基因型相同的个体在不同环境下可能表现出不同的性状。例如同一批种子种在光照充足处植株高大，种在阴暗处植株矮小，说明环境会影响基因表达从而影响性状。", "keywords": ["基因型", "环境", "共同", "光照"], "explanation": "核心是「性状由基因与环境共同决定」；光照等环境因素通过影响基因表达改变表现型。", "points": 2}
+      ],
+      "tags": ["基因与性状", "表现型", "基因型", "酶", "孟德尔遗传"],
+      "difficulty": 4,
+      "importance": 5,
+      "est_minutes": 28,
+      "theory_tags": ["dual_coding", "interleaving"]
+    }
+  ]
+}

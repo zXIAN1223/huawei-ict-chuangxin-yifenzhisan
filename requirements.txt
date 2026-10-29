@@ -1,3 +1,15 @@
+HEAD
 streamlit>=1.30.0
 pandas>=2.0.0
-plotly>=5.18.0
+plotly>=5.18.
+# AI 辅助学习助手 —— 后端运行时依赖
+# 固定主版本范围以保证可复现且可按环境安装（R8.3）。
+# 安装：pip install -r requirements.txt
+
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+python-multipart>=0.0.9
+# 离线语音识别（C-ASR-ENGINE@1）；模型需另用 scripts/download_asr_model.py 下载
+vosk>=0.3.45,<0.4
+dbe807e (first)

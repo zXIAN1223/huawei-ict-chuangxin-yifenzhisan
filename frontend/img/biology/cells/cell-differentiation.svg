@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="细胞分化衰老凋亡与癌变示意图">
+  <rect width="720" height="420" fill="#ffffff"/>
+  <text x="360" y="34" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1f3b73">细胞的分化、衰老、凋亡与癌变</text>
+
+  <!-- 分化 -->
+  <circle cx="120" cy="140" r="34" fill="#dfe8fb" stroke="#1f3b73" stroke-width="2"/>
+  <text x="120" y="146" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1f3b73">受精卵</text>
+
+  <path d="M154 140 L214 96" stroke="#5b5b5b" stroke-width="2" marker-end="url(#tk)"/>
+  <path d="M154 140 L214 140" stroke="#5b5b5b" stroke-width="2" marker-end="url(#tk)"/>
+  <path d="M154 140 L214 184" stroke="#5b5b5b" stroke-width="2" marker-end="url(#tk)"/>
+
+  <circle cx="250" cy="96" r="26" fill="#e0a34b" stroke="#a86d15" stroke-width="2"/>
+  <text x="250" y="102" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#5a3a08">肌细胞</text>
+  <circle cx="250" cy="140" r="26" fill="#9ad7ad" stroke="#2e9e5b" stroke-width="2"/>
+  <text x="250" y="146" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#155e34">神经细胞</text>
+  <circle cx="250" cy="184" r="26" fill="#e59a9a" stroke="#b33b3b" stroke-width="2"/>
+  <text x="250" y="190" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#7a1c1c">红细胞</text>
+
+  <text x="360" y="96" font-family="sans-serif" font-size="14" fill="#1f3b73">细胞分化：基因选择性表达，</text>
+  <text x="360" y="120" font-family="sans-serif" font-size="14" fill="#1f3b73">遗传物质不变，形态结构功能产生差异。</text>
+
+  <!-- 分隔 -->
+  <line x1="360" y1="150" x2="700" y2="150" stroke="#c6d5ee" stroke-width="1.5" stroke-dasharray="6 4"/>
+
+  <!-- 衰老 -->
+  <rect x="380" y="170" width="300" height="100" rx="10" fill="#fff8e8" stroke="#c98f0f" stroke-width="1.5"/>
+  <text x="400" y="196" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8a6410">细胞衰老主要特征</text>
+  <text x="400" y="220" font-family="sans-serif" font-size="13" fill="#8a6410">水分减少、体积变小、酶活性降低</text>
+  <text x="400" y="242" font-family="sans-serif" font-size="13" fill="#8a6410">色素积累、膜通透性改变、代谢减慢</text>
+  <text x="400" y="262" font-family="sans-serif" font-size="13" fill="#8a6410">（不是细胞坏死，属正常生命现象）</text>
+
+  <!-- 凋亡 -->
+  <rect x="60" y="286" width="290" height="106" rx="10" fill="#eef3ff" stroke="#3b6fd4" stroke-width="1.5"/>
+  <text x="80" y="312" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1f3b73">细胞凋亡（程序性死亡）</text>
+  <text x="80" y="336" font-family="sans-serif" font-size="13" fill="#1f3b73">由基因控制的主动有序死亡过程</text>
+  <text x="80" y="358" font-family="sans-serif" font-size="13" fill="#1f3b73">例：蝌蚪尾消失、人胚胎手指成形</text>
+  <text x="80" y="380" font-family="sans-serif" font-size="13" fill="#1f3b73">意义：维持内环境稳定与发育</text>
+
+  <!-- 癌变 -->
+  <rect x="380" y="286" width="300" height="106" rx="10" fill="#ffeaea" stroke="#c2472f" stroke-width="1.5"/>
+  <text x="400" y="312" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8a2b18">细胞癌变</text>
+  <text x="400" y="336" font-family="sans-serif" font-size="13" fill="#8a2b18">原癌基因与抑癌基因发生突变</text>
+  <text x="400" y="358" font-family="sans-serif" font-size="13" fill="#8a2b18">特征：无限增殖、形态结构改变</text>
+  <text x="400" y="380" font-family="sans-serif" font-size="13" fill="#8a2b18">易分散转移、细胞表面糖蛋白减少</text>
+
+  <defs>
+    <marker id="tk" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#5b5b5b"/></marker>
+  </defs>
+</svg>

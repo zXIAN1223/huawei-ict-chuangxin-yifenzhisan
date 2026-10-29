@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI 对话：老师细讲 / 像学生提问 / 费曼讲解三种角色，回答以流式增量逐步呈现" />
+  <title>对话 · AI 学习助手</title>
+  <link rel="stylesheet" href="/static/css/theme.css" />
+  <link rel="stylesheet" href="/static/css/layout.css" />
+  <link rel="stylesheet" href="/static/css/chat.css" />
+  <script>
+    /* 主题引导：优先读取本地偏好，其次跟随系统，避免首屏闪烁 */
+    (function () {
+      try {
+        var saved = localStorage.getItem("ala_theme");
+        if (saved !== "light" && saved !== "dark") {
+          saved = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark" : "light";
+        }
+        document.documentElement.setAttribute("data-theme", saved);
+      } catch (err) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-text">
+          <strong>AI 学习助手</strong>
+          <small>记忆曲线 · 主动回忆</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="/" data-page="home">首页</a>
+        <a href="/static/knowledge.html" data-page="knowledge">知识点</a>
+        <a href="/static/chat.html" data-page="chat" class="is-active">对话</a>
+        <a href="/static/profile.html" data-page="profile">我的 / 测评</a>
+      </nav>
+      <div class="nav-meta">
+        <span class="user-chip" title="本地匿名用户标识（存储于 localStorage）">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="user-id-short">本地用户</span>
+        </span>
+        <button class="icon-btn" id="theme-toggle" type="button" title="切换明暗主题" aria-label="切换明暗主题">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container chat-page">
+    <!-- 后端不可用提示 -->
+    <div class="banner banner-danger" id="backend-banner" hidden>
+      <span class="banner-icon" aria-hidden="true">⚠️</span>
+      <div class="banner-body">
+        <strong>暂时无法连接后端服务</strong>
+        <p id="backend-banner-text">请确认已运行 <code>python run.py</code> 并在 127.0.0.1:8000 访问本页。</p>
+      </div>
+    </div>
+
+    <div class="chat-layout">
+      <!-- 左侧：角色切换 + 会话列表 -->
+      <aside class="chat-sidebar card" aria-label="角色与会话">
+        <section class="sidebar-section">
+          <h2 class="sidebar-title">对话角色</h2>
+          <div class="role-switch" id="role-switch" role="group" aria-label="选择 AI 角色">
+            <button class="role-btn" type="button" data-role="teacher" aria-pressed="false">
+              <span class="role-icon" aria-hidden="true">📘</span>
+              <span class="role-name">老师</span>
+              <span class="role-tag">细讲</span>
+            </button>
+            <button class="role-btn" type="button" data-role="student" aria-pressed="false">
+              <span class="role-icon" aria-hidden="true">🙋</span>
+              <span class="role-name">学生</span>
+              <span class="role-tag">提问</span>
+            </button>
+            <button class="role-btn" type="button" data-role="feynman" aria-pressed="false">
+              <span class="role-icon" aria-hidden="true">🧠</span>
+              <span class="role-name">费曼</span>
+              <span class="role-tag">点评</span>
+            </button>
+          </div>
+          <p class="role-desc" id="role-desc"></p>
+        </section>
+
+        <section class="sidebar-section">
+          <div class="sidebar-title-row">
+            <h2 class="sidebar-title">我的会话</h2>
+            <span class="badge" id="session-count">0</span>
+          </div>
+          <button class="btn btn-primary btn-sm" id="new-session-btn" type="button">＋ 新建对话</button>
+          <div class="session-list" id="session-list">
+            <p class="muted">加载中…</p>
+          </div>
+        </section>
+      </aside>
+
+      <!-- 右侧：对话主体 -->
+      <section class="chat-main card" aria-label="对话区">
+        <header class="chat-head">
+          <div class="chat-head-main">
+            <h1 class="chat-title" id="chat-title">新对话</h1>
+            <div class="chat-meta">
+              <span class="badge badge-primary" id="mode-badge">老师</span>
+              <span class="badge" id="provider-badge" hidden>本地模拟</span>
+              <span class="chip" id="kp-context" hidden></span>
+            </div>
+          </div>
+          <button class="btn btn-sm btn-ghost" id="clear-btn" type="button" title="清空当前对话视图">清屏</button>
+        </header>
+
+        <div class="banner banner-info feynman-tip" id="feynman-tip" hidden>
+          <span class="banner-icon" aria-hidden="true">🧠</span>
+          <div class="banner-body">
+            <strong>费曼模式：把知识讲给我听</strong>
+            <p>用你自己的话讲解知识点，我会给出「先肯定 → 指出遗漏或偏差 → 追问」的点评，帮你查漏补缺。</p>
+          </div>
+        </div>
+
+        <div class="chat-scroll" id="chat-scroll">
+          <div class="chat-welcome" id="chat-welcome">
+            <div class="welcome-avatar" aria-hidden="true">A</div>
+            <p class="welcome-text" id="welcome-text"></p>
+            <div class="welcome-chips" id="welcome-chips"></div>
+          </div>
+          <div class="msg-list" id="msg-list" aria-live="polite" aria-relevant="additions text"></div>
+        </div>
+
+        <!-- 语音输入与播报（契约 C-ASR-UI@1）：主通道 = 录音上传后端 ASR；降级 = 浏览器原生识别 -->
+        <div class="chat-voice-bar" role="group" aria-label="语音输入与播报">
+          <div class="voice-controls">
+            <button class="btn btn-sm btn-soft voice-btn" id="asr-record-btn" type="button"
+                    aria-pressed="false" title="录音并上传后端识别（主通道）">
+              <span class="voice-btn-icon" aria-hidden="true">🎙️</span>
+              <span class="voice-btn-text">录音</span>
+            </button>
+            <button class="btn btn-sm btn-ghost voice-btn" id="voice-input-btn" type="button"
+                    aria-pressed="false" title="使用浏览器原生语音识别（降级通道）">
+              <span class="voice-btn-icon" aria-hidden="true">🗣️</span>
+              <span class="voice-btn-text">原生识别</span>
+            </button>
+            <button class="btn btn-sm btn-ghost voice-btn" id="speak-toggle" type="button"
+                    aria-pressed="false" title="AI 回复完成后自动朗读">
+              <span class="voice-btn-icon" aria-hidden="true">🔊</span>
+              <span class="voice-btn-text">播报</span>
+            </button>
+            <button class="btn btn-sm btn-ghost voice-btn" id="speak-stop-btn" type="button"
+                    title="停止朗读" hidden>
+              <span class="voice-btn-icon" aria-hidden="true">⏹️</span>
+              <span class="voice-btn-text">停止播报</span>
+            </button>
+          </div>
+          <p class="voice-status" id="asr-status" aria-live="polite">录音上传识别（主通道）：点击「录音」开始说话</p>
+          <p class="voice-status voice-status-sub" id="voice-status" aria-live="polite">浏览器原生识别（降级通道）</p>
+        </div>
+
+        <form class="chat-composer" id="composer" autocomplete="off">
+          <textarea class="composer-input" id="composer-input" rows="1"
+                    placeholder="输入你的问题，Enter 发送，Shift+Enter 换行…"
+                    aria-label="消息输入框"></textarea>
+          <button class="btn btn-primary composer-send" id="send-btn" type="submit">发送</button>
+          <p class="composer-hint" id="composer-hint">Enter 发送 · Shift+Enter 换行</p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>AI 辅助学习助手 · 生物 Demo · 本地用户标识 <code id="footer-user">-</code></p>
+  </footer>
+
+  <div class="toast-host" id="toast-host" aria-live="polite" aria-atomic="false"></div>
+
+  <!-- 脚本顺序不可调换：api.js（window.API）→ asr.js（window.ALA.asr）→ chat.js（UI 编排，挂 window.ALA.voice） -->
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/asr.js"></script>
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>

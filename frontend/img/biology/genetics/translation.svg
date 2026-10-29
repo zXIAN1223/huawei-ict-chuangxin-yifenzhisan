@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 490" width="780" height="490" font-family="'Microsoft YaHei','PingFang SC','Segoe UI',sans-serif">
+  <rect width="780" height="490" fill="#ffffff"/>
+  <rect width="780" height="52" fill="#c05621"/>
+  <text x="390" y="34" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="bold">翻译：mRNA → 多肽链（蛋白质）</text>
+
+  <!-- mRNA -->
+  <rect x="60" y="330" width="660" height="30" rx="8" fill="#fbd38d" stroke="#dd6b20" stroke-width="2"/>
+  <text x="70" y="318" font-size="13" fill="#975a16" font-weight="bold">mRNA 5′→3′</text>
+  <!-- 密码子格 -->
+  <g font-size="14" fill="#7b341e" font-weight="bold" text-anchor="middle">
+    <text x="105" y="351">AUG</text><text x="180" y="351">UAC</text><text x="255" y="351">GGU</text>
+    <text x="330" y="351">CGA</text><text x="405" y="351">UUU</text><text x="480" y="351">ACA</text><text x="555" y="351">UGA</text>
+  </g>
+  <g stroke="#dd6b20" stroke-width="1">
+    <line x1="142" y1="330" x2="142" y2="360"/><line x1="217" y1="330" x2="217" y2="360"/>
+    <line x1="292" y1="330" x2="292" y2="360"/><line x1="367" y1="330" x2="367" y2="360"/>
+    <line x1="442" y1="330" x2="442" y2="360"/><line x1="517" y1="330" x2="517" y2="360"/>
+  </g>
+
+  <!-- 核糖体 -->
+  <ellipse cx="285" cy="300" rx="120" ry="46" fill="#a0aec0" fill-opacity="0.45" stroke="#4a5568" stroke-width="2"/>
+  <ellipse cx="285" cy="368" rx="120" ry="46" fill="#a0aec0" fill-opacity="0.45" stroke="#4a5568" stroke-width="2"/>
+  <text x="285" y="290" text-anchor="middle" font-size="13" fill="#2d3748" font-weight="bold">核糖体（大·小亚基）</text>
+  <text x="285" y="396" text-anchor="middle" font-size="12" fill="#4a5568">沿 mRNA 移动，每次读取一个密码子</text>
+
+  <!-- tRNA 1 -->
+  <path d="M255 250 L255 200" stroke="#3182ce" stroke-width="5"/>
+  <circle cx="255" cy="188" r="16" fill="#3182ce"/><text x="255" y="193" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Met</text>
+  <path d="M240 250 L270 250" stroke="#3182ce" stroke-width="5"/>
+  <text x="285" y="238" font-size="12" fill="#2b6cb0">tRNA 反密码子 UAC 与密码子 AUG 互补配对</text>
+
+  <!-- tRNA 2 -->
+  <path d="M370 240 L370 190" stroke="#3182ce" stroke-width="5"/>
+  <circle cx="370" cy="178" r="16" fill="#3182ce"/><text x="370" y="183" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">Tyr</text>
+
+  <!-- 多肽链 -->
+  <path d="M255 170 C210 150 180 150 150 130" fill="none" stroke="#38a169" stroke-width="4"/>
+  <circle cx="150" cy="126" r="14" fill="#38a169"/><text x="150" y="131" text-anchor="middle" font-size="11" fill="#fff" font-weight="bold">肽</text>
+  <text x="80" y="150" font-size="13" fill="#22543d" font-weight="bold">多肽链</text>
+  <text x="80" y="168" font-size="12" fill="#2f855a">氨基酸逐一连接</text>
+
+  <!-- 终止 -->
+  <text x="560" y="300" font-size="13" fill="#c53030" font-weight="bold">UGA = 终止密码子</text>
+  <text x="560" y="320" font-size="12" fill="#742a2a">翻译终止，多肽链释放</text>
+
+  <rect x="70" y="414" width="660" height="62" rx="10" fill="#fffaf0" stroke="#f6ad55"/>
+  <text x="90" y="438" font-size="13" fill="#7b341e">· 密码子：mRNA 上决定 1 个氨基酸的 3 个相邻碱基，共 64 种（含 3 种终止密码子）</text>
+  <text x="90" y="458" font-size="13" fill="#7b341e">· 反密码子：tRNA 上与密码子互补配对的 3 个碱基；起始密码子为 AUG</text>
+</svg>

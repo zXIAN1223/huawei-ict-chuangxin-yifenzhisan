@@ -1,0 +1,8 @@
+{
+  "verification_scenario": "new-feature",
+  "task_id": 14,
+  "task_name": "T14 · 端到端集成与运行验证（独立验证）",
+  "rationale": "T14 是对已交付新特性（AI 辅助学习助手，T1~T12）的端到端集成与运行验证，作为功能最终闸门，属于新特性验收而非缺陷修复，故归类为 new-feature。",
+  "produced_by": "result-verify-agent",
+  "generated_at": "2026-10-29"
+}

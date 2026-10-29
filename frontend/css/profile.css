@@ -1,0 +1,371 @@
+/* ==========================================================================
+ * profile.css — 问卷 / 测评 / 策略 / 进度 页面样式（T12）
+ * 复用 theme.css 的设计令牌与基础组件；此处仅补充本页专属组件：
+ *    questionnaire（题型渲染）、style-bars（VARK 得分）、mode-chips（推荐方式）、
+ *    metric-grid（策略指标）、settings-grid（偏好设置）。
+ * 依赖顺序：theme.css → layout.css → profile.css。
+ * ========================================================================== */
+
+/* ------------------------------ 概览补充 ------------------------------ */
+
+.hero-sep {
+  margin: 0 4px;
+  color: var(--text-soft);
+}
+
+#profile-daily-minutes {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ------------------------------ 问卷 ------------------------------ */
+
+.q-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.q-item {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.q-item:hover {
+  border-color: var(--border-strong);
+}
+
+/* 未作答高亮：提交校验时提示用户补全 */
+.q-item.is-unanswered {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px var(--danger-soft);
+}
+
+/* 首次使用引导：高亮问卷卡片，引导用户优先完成问卷 */
+#questionnaire-card.is-highlighted {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 3px var(--amber-soft), var(--shadow-sm);
+}
+
+.q-item-head {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.q-index {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.q-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.q-dim {
+  margin-left: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-soft);
+}
+
+/* 单选 / 多选：选项卡片 */
+.q-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.q-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  font-size: 0.9rem;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition),
+    color var(--transition);
+}
+
+.q-option:hover {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+}
+
+.q-option input {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.q-option.is-checked {
+  border-color: var(--primary);
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-weight: 600;
+}
+
+/* 量表题 */
+.q-scale {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-2) 0;
+}
+
+.q-scale input[type="range"] {
+  flex: 1;
+  min-width: 0;
+  height: 26px;
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.q-scale-value {
+  flex: none;
+  min-width: 42px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-weight: 700;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.q-scale-ends {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.74rem;
+  color: var(--text-soft);
+  padding: 0 var(--space-1);
+}
+
+/* 操作区 */
+.q-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+.q-actions .spacer {
+  flex: 1;
+}
+
+/* ------------------------------ 测评结果 ------------------------------ */
+
+.sub-head {
+  margin: var(--space-5) 0 var(--space-3);
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.style-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.style-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) 52px;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.88rem;
+}
+
+.style-name {
+  color: var(--text-muted);
+}
+
+.style-row .progress {
+  height: 10px;
+}
+
+.style-pct {
+  text-align: right;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 主导维度高亮 */
+.style-row.is-dominant .style-name {
+  color: var(--primary-strong);
+  font-weight: 700;
+}
+
+.style-row.is-dominant .progress-bar {
+  background: linear-gradient(90deg, var(--primary), var(--success));
+}
+
+/* 推荐学习方式标签片 */
+.mode-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.mode-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--primary-soft);
+  color: var(--primary-strong);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.mode-chip .mode-code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-soft);
+}
+
+/* 说明列表 */
+.rationale-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.rationale-list li::marker {
+  color: var(--primary);
+}
+
+/* ------------------------------ 策略指标 ------------------------------ */
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.metric {
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--primary-strong);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.metric-label {
+  margin-top: 4px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.strategy-generated {
+  margin-top: var(--space-3);
+  font-size: 0.78rem;
+}
+
+/* ------------------------------ 进度：趋势与掌握度 ------------------------------ */
+
+.analytics-grid {
+  margin-top: var(--space-5);
+}
+
+.analytics-grid .bar-chart {
+  height: 168px;
+}
+
+/* ------------------------------ 偏好设置 ------------------------------ */
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 7px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.field > span:first-child {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.field-inline {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+
+.field-inline > span:first-child {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.settings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+}
+
+/* ------------------------------ 响应式 ------------------------------ */
+
+@media (max-width: 720px) {
+  .metric-grid,
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  .style-row {
+    grid-template-columns: 76px minmax(0, 1fr) 46px;
+  }
+}

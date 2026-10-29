@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="'Microsoft YaHei','PingFang SC','Segoe UI',sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <rect width="780" height="52" fill="#9b2c2c"/>
+  <text x="390" y="34" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="bold">基因突变的类型（碱基水平）</text>
+
+  <!-- 原序列 -->
+  <text x="40" y="96" font-size="14" fill="#1a202c" font-weight="bold">原 DNA 序列（模板链）</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <rect x="40" y="108" width="46" height="34" fill="#e2e8f0"/><text x="63" y="131">A</text>
+    <rect x="86" y="108" width="46" height="34" fill="#e2e8f0"/><text x="109" y="131">T</text>
+    <rect x="132" y="108" width="46" height="34" fill="#e2e8f0"/><text x="155" y="131">G</text>
+    <rect x="178" y="108" width="46" height="34" fill="#e2e8f0"/><text x="201" y="131">C</text>
+    <rect x="224" y="108" width="46" height="34" fill="#e2e8f0"/><text x="247" y="131">A</text>
+    <rect x="270" y="108" width="46" height="34" fill="#e2e8f0"/><text x="293" y="131">T</text>
+    <rect x="316" y="108" width="46" height="34" fill="#e2e8f0"/><text x="339" y="131">G</text>
+    <rect x="362" y="108" width="46" height="34" fill="#e2e8f0"/><text x="385" y="131">C</text>
+  </g>
+  <text x="430" y="131" font-size="13" fill="#4a5568">对应多肽：Met - Tyr - Gly …</text>
+
+  <!-- 替换 -->
+  <text x="40" y="192" font-size="14" fill="#805ad5" font-weight="bold">① 碱基对替换（点突变）</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <rect x="40" y="204" width="46" height="34" fill="#e2e8f0"/><text x="63" y="227">A</text>
+    <rect x="86" y="204" width="46" height="34" fill="#fbd38d"/><text x="109" y="227">G</text>
+    <rect x="132" y="204" width="46" height="34" fill="#e2e8f0"/><text x="155" y="227">G</text>
+    <rect x="178" y="204" width="46" height="34" fill="#e2e8f0"/><text x="201" y="227">C</text>
+    <rect x="224" y="204" width="46" height="34" fill="#e2e8f0"/><text x="247" y="227">A</text>
+    <rect x="270" y="204" width="46" height="34" fill="#e2e8f0"/><text x="293" y="227">T</text>
+    <rect x="316" y="204" width="46" height="34" fill="#e2e8f0"/><text x="339" y="227">G</text>
+    <rect x="362" y="204" width="46" height="34" fill="#e2e8f0"/><text x="385" y="227">C</text>
+  </g>
+  <text x="430" y="227" font-size="13" fill="#805ad5">T→G：可能改变氨基酸（错义），也可能不改变（同义）</text>
+
+  <!-- 缺失 -->
+  <text x="40" y="288" font-size="14" fill="#c05621" font-weight="bold">② 碱基对缺失</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <rect x="40" y="300" width="46" height="34" fill="#e2e8f0"/><text x="63" y="323">A</text>
+    <rect x="86" y="300" width="46" height="34" fill="#e2e8f0"/><text x="109" y="323">T</text>
+    <rect x="132" y="300" width="46" height="34" fill="#feb2b2"/><text x="155" y="323" opacity="0.55">∅</text>
+    <rect x="178" y="300" width="46" height="34" fill="#e2e8f0"/><text x="201" y="323">C</text>
+    <rect x="224" y="300" width="46" height="34" fill="#e2e8f0"/><text x="247" y="323">A</text>
+    <rect x="270" y="300" width="46" height="34" fill="#e2e8f0"/><text x="293" y="323">T</text>
+    <rect x="316" y="300" width="46" height="34" fill="#e2e8f0"/><text x="339" y="323">G</text>
+    <rect x="362" y="300" width="46" height="34" fill="#e2e8f0"/><text x="385" y="323">C</text>
+  </g>
+  <text x="430" y="323" font-size="13" fill="#c05621">缺失 1 个碱基 → 其后密码子全部移位（移码突变）</text>
+
+  <!-- 插入 -->
+  <text x="40" y="384" font-size="14" fill="#2f855a" font-weight="bold">③ 碱基对插入</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle">
+    <rect x="40" y="396" width="46" height="34" fill="#e2e8f0"/><text x="63" y="419">A</text>
+    <rect x="86" y="396" width="46" height="34" fill="#e2e8f0"/><text x="109" y="419">T</text>
+    <rect x="132" y="396" width="46" height="34" fill="#c6f6d5"/><text x="155" y="419">+</text>
+    <rect x="178" y="396" width="46" height="34" fill="#e2e8f0"/><text x="201" y="419">G</text>
+    <rect x="224" y="396" width="46" height="34" fill="#e2e8f0"/><text x="247" y="419">C</text>
+    <rect x="270" y="396" width="46" height="34" fill="#e2e8f0"/><text x="293" y="419">A</text>
+    <rect x="316" y="396" width="46" height="34" fill="#e2e8f0"/><text x="339" y="419">T</text>
+    <rect x="362" y="396" width="46" height="34" fill="#e2e8f0"/><text x="385" y="419">G</text>
+  </g>
+  <text x="430" y="419" font-size="13" fill="#2f855a">插入 1 个碱基 → 移码突变，通常后果更严重</text>
+</svg>
